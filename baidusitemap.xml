@@ -5,11 +5,38 @@
     
   <url>
     <loc>https://0x400.com/fundamental/storage/ddia-ch5-reading-notes-i/</loc>
-    <lastmod>2023-03-15T14:26:57.619Z</lastmod>
+    <lastmod>2023-03-16T04:15:40.578Z</lastmod>
     <data>
         <display>
         <title>DDIA reading notes - chapter 5 Replication (Part I)</title>
         <pubTime>2023-03-15T14:30:34.000Z</pubTime>
+        
+        <tag>DDIA</tag>
+         
+        <tag>Replication</tag>
+         
+        <tag>Replica</tag>
+         
+         
+           
+             
+              <breadCrumb title="Fundamental" url="https://0x400.com/categories/fundamental/"/>
+          
+             
+              <breadCrumb title="storage" url="https://0x400.com/categories/fundamental/storage/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://0x400.com/fundamental/storage/ddia-ch4-reading-notes/</loc>
+    <lastmod>2023-03-16T04:14:52.259Z</lastmod>
+    <data>
+        <display>
+        <title>DDIA reading notes - chapter 4 Encoding & Evolution</title>
+        <pubTime>2023-03-11T11:30:34.000Z</pubTime>
         
         <tag>DDIA</tag>
          
@@ -55,58 +82,6 @@
     </url>
 
     
-  <url>
-    <loc>https://0x400.com/fundamental/storage/ddia-ch4-reading-notes/</loc>
-    <lastmod>2023-03-11T09:49:07.784Z</lastmod>
-    <data>
-        <display>
-        <title>DDIA reading notes - chapter 4 Encoding & Evolution</title>
-        <pubTime>2023-03-11T11:30:34.000Z</pubTime>
-        
-        <tag>DDIA</tag>
-         
-        <tag>Encoding</tag>
-         
-        <tag>Serialization</tag>
-         
-        <tag>Marshalling</tag>
-         
-         
-           
-             
-              <breadCrumb title="Fundamental" url="https://0x400.com/categories/fundamental/"/>
-          
-             
-              <breadCrumb title="storage" url="https://0x400.com/categories/fundamental/storage/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>https://0x400.com/fundamental/storage/mysql-sql-about-trigger/</loc>
-    <lastmod>2023-03-11T09:35:49.901Z</lastmod>
-    <data>
-        <display>
-        <title>MySQL 触发器相关的 SQL</title>
-        <pubTime>2018-03-26T11:42:28.000Z</pubTime>
-        
-        <tag>MySQL</tag>
-         
-         
-           
-             
-              <breadCrumb title="Fundamental" url="https://0x400.com/categories/fundamental/"/>
-          
-             
-              <breadCrumb title="Storage" url="https://0x400.com/categories/fundamental/storage/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>https://0x400.com/fundamental/storage/mysql-store-tree-using-closure-table/</loc>
@@ -134,12 +109,12 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/storage/mysql-optimize/</loc>
-    <lastmod>2023-03-11T09:35:49.900Z</lastmod>
+    <loc>https://0x400.com/fundamental/storage/mysql-sql-about-trigger/</loc>
+    <lastmod>2023-03-11T09:35:49.901Z</lastmod>
     <data>
         <display>
-        <title>MySQL 基础优化</title>
-        <pubTime>2017-08-08T10:03:32.000Z</pubTime>
+        <title>MySQL 触发器相关的 SQL</title>
+        <pubTime>2018-03-26T11:42:28.000Z</pubTime>
         
         <tag>MySQL</tag>
          
@@ -163,6 +138,29 @@
         <display>
         <title>MySQL 索引相关 SQL</title>
         <pubTime>2018-01-19T08:41:35.000Z</pubTime>
+        
+        <tag>MySQL</tag>
+         
+         
+           
+             
+              <breadCrumb title="Fundamental" url="https://0x400.com/categories/fundamental/"/>
+          
+             
+              <breadCrumb title="Storage" url="https://0x400.com/categories/fundamental/storage/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://0x400.com/fundamental/storage/mysql-optimize/</loc>
+    <lastmod>2023-03-11T09:35:49.900Z</lastmod>
+    <data>
+        <display>
+        <title>MySQL 基础优化</title>
+        <pubTime>2017-08-08T10:03:32.000Z</pubTime>
         
         <tag>MySQL</tag>
          
@@ -283,12 +281,12 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/programming-language/php/php-autoload-and-composer/</loc>
+    <loc>https://0x400.com/fundamental/programming-language/php/php-internal-function-note/</loc>
     <lastmod>2023-03-11T09:35:49.897Z</lastmod>
     <data>
         <display>
-        <title>PHP 自动加载和 Composer</title>
-        <pubTime>2019-03-01T12:41:35.000Z</pubTime>
+        <title>PHP 内置函数的一些注意事项</title>
+        <pubTime>2018-02-10T11:30:30.000Z</pubTime>
         
         <tag>PHP</tag>
          
@@ -309,12 +307,12 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/programming-language/php/php-internal-function-note/</loc>
+    <loc>https://0x400.com/fundamental/programming-language/php/php-autoload-and-composer/</loc>
     <lastmod>2023-03-11T09:35:49.897Z</lastmod>
     <data>
         <display>
-        <title>PHP 内置函数的一些注意事项</title>
-        <pubTime>2018-02-10T11:30:30.000Z</pubTime>
+        <title>PHP 自动加载和 Composer</title>
+        <pubTime>2019-03-01T12:41:35.000Z</pubTime>
         
         <tag>PHP</tag>
          
@@ -363,14 +361,16 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/programming-language/javascript/dev-translate-promise-a-plus-specification/</loc>
+    <loc>https://0x400.com/fundamental/programming-language/javascript/dev-implement-promise-step-by-step/</loc>
     <lastmod>2023-03-11T09:35:49.895Z</lastmod>
     <data>
         <display>
-        <title>Promises/A+ 标准翻译</title>
-        <pubTime>2019-10-17T11:23:12.000Z</pubTime>
+        <title>JavaScipr 异步和 Promise</title>
+        <pubTime>2019-10-15T01:30:03.000Z</pubTime>
         
         <tag>Promise</tag>
+         
+        <tag>Asynchronous</tag>
          
          
            
@@ -389,16 +389,14 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/programming-language/javascript/dev-implement-promise-step-by-step/</loc>
+    <loc>https://0x400.com/fundamental/programming-language/javascript/dev-translate-promise-a-plus-specification/</loc>
     <lastmod>2023-03-11T09:35:49.895Z</lastmod>
     <data>
         <display>
-        <title>JavaScipr 异步和 Promise</title>
-        <pubTime>2019-10-15T01:30:03.000Z</pubTime>
+        <title>Promises/A+ 标准翻译</title>
+        <pubTime>2019-10-17T11:23:12.000Z</pubTime>
         
         <tag>Promise</tag>
-         
-        <tag>Asynchronous</tag>
          
          
            
@@ -642,16 +640,14 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/algorithm/lc-79-word-search/</loc>
+    <loc>https://0x400.com/fundamental/algorithm/lc-938-range-sum-of-bst/</loc>
     <lastmod>2023-03-11T09:35:49.889Z</lastmod>
     <data>
         <display>
-        <title>Leetcode-79 Word Search</title>
-        <pubTime>2019-11-11T14:58:43.000Z</pubTime>
+        <title>Leetcode-938 Range Sum of BST</title>
+        <pubTime>2019-08-20T13:31:23.000Z</pubTime>
         
         <tag>DFS</tag>
-         
-        <tag>Backtrack</tag>
          
          
            
@@ -667,14 +663,16 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/algorithm/lc-938-range-sum-of-bst/</loc>
+    <loc>https://0x400.com/fundamental/algorithm/lc-79-word-search/</loc>
     <lastmod>2023-03-11T09:35:49.889Z</lastmod>
     <data>
         <display>
-        <title>Leetcode-938 Range Sum of BST</title>
-        <pubTime>2019-08-20T13:31:23.000Z</pubTime>
+        <title>Leetcode-79 Word Search</title>
+        <pubTime>2019-11-11T14:58:43.000Z</pubTime>
         
         <tag>DFS</tag>
+         
+        <tag>Backtrack</tag>
          
          
            
@@ -736,29 +734,6 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/algorithm/lc-67-add-binary/</loc>
-    <lastmod>2023-03-11T09:35:49.887Z</lastmod>
-    <data>
-        <display>
-        <title>Leetcode-67 —— Add Binary</title>
-        <pubTime>2019-07-10T03:17:49.000Z</pubTime>
-        
-        <tag>Binary</tag>
-         
-         
-           
-             
-              <breadCrumb title="Fundamental" url="https://0x400.com/categories/fundamental/"/>
-          
-             
-              <breadCrumb title="Algorithm" url="https://0x400.com/categories/fundamental/algorithm/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://0x400.com/fundamental/algorithm/lc-739-daily-temperatures/</loc>
     <lastmod>2023-03-11T09:35:49.887Z</lastmod>
     <data>
@@ -782,14 +757,14 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/algorithm/lc-617-merge-tow-binary-trees/</loc>
-    <lastmod>2023-03-11T09:35:49.886Z</lastmod>
+    <loc>https://0x400.com/fundamental/algorithm/lc-67-add-binary/</loc>
+    <lastmod>2023-03-11T09:35:49.887Z</lastmod>
     <data>
         <display>
-        <title>Leetcode-617 Merge Two Binary Trees</title>
-        <pubTime>2019-07-22T00:52:34.000Z</pubTime>
+        <title>Leetcode-67 —— Add Binary</title>
+        <pubTime>2019-07-10T03:17:49.000Z</pubTime>
         
-        <tag>Tree</tag>
+        <tag>Binary</tag>
          
          
            
@@ -828,14 +803,14 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/algorithm/lc-241-different-ways-to-add-parentheses/</loc>
-    <lastmod>2023-03-11T09:35:49.885Z</lastmod>
+    <loc>https://0x400.com/fundamental/algorithm/lc-617-merge-tow-binary-trees/</loc>
+    <lastmod>2023-03-11T09:35:49.886Z</lastmod>
     <data>
         <display>
-        <title>Leetcode-241 —— different ways to add parentheses</title>
-        <pubTime>2019-12-15T02:56:02.000Z</pubTime>
+        <title>Leetcode-617 Merge Two Binary Trees</title>
+        <pubTime>2019-07-22T00:52:34.000Z</pubTime>
         
-        <tag>Recursion</tag>
+        <tag>Tree</tag>
          
          
            
@@ -874,14 +849,37 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/algorithm/lc-202-happy-number/</loc>
+    <loc>https://0x400.com/fundamental/algorithm/lc-241-different-ways-to-add-parentheses/</loc>
+    <lastmod>2023-03-11T09:35:49.885Z</lastmod>
+    <data>
+        <display>
+        <title>Leetcode-241 —— different ways to add parentheses</title>
+        <pubTime>2019-12-15T02:56:02.000Z</pubTime>
+        
+        <tag>Recursion</tag>
+         
+         
+           
+             
+              <breadCrumb title="Fundamental" url="https://0x400.com/categories/fundamental/"/>
+          
+             
+              <breadCrumb title="Algorithm" url="https://0x400.com/categories/fundamental/algorithm/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://0x400.com/fundamental/algorithm/lc-20-valid-parentheses/</loc>
     <lastmod>2023-03-11T09:35:49.884Z</lastmod>
     <data>
         <display>
-        <title>Leetcode-202 Happy Number</title>
-        <pubTime>2019-07-30T16:00:00.000Z</pubTime>
+        <title>Leetcode-20 —— Valid Parentheses</title>
+        <pubTime>2019-07-09T09:44:49.000Z</pubTime>
         
-        <tag>Algorithm</tag>
+        <tag>Stack</tag>
          
          
            
@@ -920,14 +918,14 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/algorithm/lc-20-valid-parentheses/</loc>
+    <loc>https://0x400.com/fundamental/algorithm/lc-202-happy-number/</loc>
     <lastmod>2023-03-11T09:35:49.884Z</lastmod>
     <data>
         <display>
-        <title>Leetcode-20 —— Valid Parentheses</title>
-        <pubTime>2019-07-09T09:44:49.000Z</pubTime>
+        <title>Leetcode-202 Happy Number</title>
+        <pubTime>2019-07-30T16:00:00.000Z</pubTime>
         
-        <tag>Stack</tag>
+        <tag>Algorithm</tag>
          
          
            
@@ -1083,29 +1081,6 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/algorithm/lc-05-longest-palindromic-substring/</loc>
-    <lastmod>2023-03-11T09:35:49.878Z</lastmod>
-    <data>
-        <display>
-        <title>Leetcode-5 Longest palindromic substring</title>
-        <pubTime>2019-08-08T03:00:05.000Z</pubTime>
-        
-        <tag>DP</tag>
-         
-         
-           
-             
-              <breadCrumb title="Fundamental" url="https://0x400.com/categories/fundamental/"/>
-          
-             
-              <breadCrumb title="Algorithm" url="https://0x400.com/categories/fundamental/algorithm/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://0x400.com/fundamental/algorithm/lc-01-two-sum/</loc>
     <lastmod>2023-03-11T09:35:49.878Z</lastmod>
     <data>
@@ -1129,14 +1104,14 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/algorithm/dev-lru-implementation/</loc>
-    <lastmod>2023-03-11T09:35:49.877Z</lastmod>
+    <loc>https://0x400.com/fundamental/algorithm/lc-05-longest-palindromic-substring/</loc>
+    <lastmod>2023-03-11T09:35:49.878Z</lastmod>
     <data>
         <display>
-        <title>LRU 实现</title>
-        <pubTime>2020-04-20T11:20:00.000Z</pubTime>
+        <title>Leetcode-5 Longest palindromic substring</title>
+        <pubTime>2019-08-08T03:00:05.000Z</pubTime>
         
-        <tag>LRU</tag>
+        <tag>DP</tag>
          
          
            
@@ -1177,6 +1152,29 @@
 
     
   <url>
+    <loc>https://0x400.com/fundamental/algorithm/dev-lru-implementation/</loc>
+    <lastmod>2023-03-11T09:35:49.877Z</lastmod>
+    <data>
+        <display>
+        <title>LRU 实现</title>
+        <pubTime>2020-04-20T11:20:00.000Z</pubTime>
+        
+        <tag>LRU</tag>
+         
+         
+           
+             
+              <breadCrumb title="Fundamental" url="https://0x400.com/categories/fundamental/"/>
+          
+             
+              <breadCrumb title="Algorithm" url="https://0x400.com/categories/fundamental/algorithm/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://0x400.com/fundamental/algorithm/algorithm-find-circle-linked-list/</loc>
     <lastmod>2023-03-11T09:35:49.876Z</lastmod>
     <data>
@@ -1200,14 +1198,18 @@
 
     
   <url>
-    <loc>https://0x400.com/experience/practice/linux-web-security/</loc>
+    <loc>https://0x400.com/experience/practice/restful-api-design-along-with-swagger/</loc>
     <lastmod>2023-03-11T09:35:49.875Z</lastmod>
     <data>
         <display>
-        <title>WEB 安全实战</title>
-        <pubTime>2017-09-10T15:30:32.000Z</pubTime>
+        <title>使用 OpenAPI 设计 RESTful API (一)</title>
+        <pubTime>2021-01-18T13:47:30.000Z</pubTime>
         
-        <tag>安全</tag>
+        <tag>API</tag>
+         
+        <tag>Swagger</tag>
+         
+        <tag>OpenAPI</tag>
          
          
            
@@ -1223,18 +1225,14 @@
 
     
   <url>
-    <loc>https://0x400.com/experience/practice/restful-api-design-along-with-swagger/</loc>
+    <loc>https://0x400.com/experience/practice/linux-web-security/</loc>
     <lastmod>2023-03-11T09:35:49.875Z</lastmod>
     <data>
         <display>
-        <title>使用 OpenAPI 设计 RESTful API (一)</title>
-        <pubTime>2021-01-18T13:47:30.000Z</pubTime>
+        <title>WEB 安全实战</title>
+        <pubTime>2017-09-10T15:30:32.000Z</pubTime>
         
-        <tag>API</tag>
-         
-        <tag>Swagger</tag>
-         
-        <tag>OpenAPI</tag>
+        <tag>安全</tag>
          
          
            
@@ -1375,16 +1373,16 @@
 
     
   <url>
-    <loc>https://0x400.com/experience/practice/linux-command-note/</loc>
+    <loc>https://0x400.com/experience/practice/linux-learning-docker-I/</loc>
     <lastmod>2023-03-11T09:35:49.871Z</lastmod>
     <data>
         <display>
-        <title>Linux 命令使用笔记</title>
-        <pubTime>2017-03-24T15:44:49.000Z</pubTime>
+        <title>Docker 学习笔记（1）</title>
+        <pubTime>2018-07-05T14:23:19.000Z</pubTime>
         
         <tag>Linux</tag>
          
-        <tag>命令</tag>
+        <tag>Docker</tag>
          
          
            
@@ -1400,16 +1398,16 @@
 
     
   <url>
-    <loc>https://0x400.com/experience/practice/linux-learning-docker-I/</loc>
+    <loc>https://0x400.com/experience/practice/linux-command-note/</loc>
     <lastmod>2023-03-11T09:35:49.871Z</lastmod>
     <data>
         <display>
-        <title>Docker 学习笔记（1）</title>
-        <pubTime>2018-07-05T14:23:19.000Z</pubTime>
+        <title>Linux 命令使用笔记</title>
+        <pubTime>2017-03-24T15:44:49.000Z</pubTime>
         
         <tag>Linux</tag>
          
-        <tag>Docker</tag>
+        <tag>命令</tag>
          
          
            
@@ -1477,14 +1475,16 @@
 
     
   <url>
-    <loc>https://0x400.com/experience/practice/frontend-learn-about-cros/</loc>
+    <loc>https://0x400.com/experience/practice/frontend-datatable-js-example/</loc>
     <lastmod>2023-03-11T09:35:49.868Z</lastmod>
     <data>
         <display>
-        <title>关于 CORS 跨域的一点点理解</title>
-        <pubTime>2017-08-02T05:41:32.000Z</pubTime>
+        <title>DataTable.js 使用笔记</title>
+        <pubTime>2018-08-10T02:44:55.000Z</pubTime>
         
-        <tag>CORS</tag>
+        <tag>jQuery</tag>
+         
+        <tag>Web</tag>
          
          
            
@@ -1500,16 +1500,14 @@
 
     
   <url>
-    <loc>https://0x400.com/experience/practice/frontend-datatable-js-example/</loc>
+    <loc>https://0x400.com/experience/practice/frontend-learn-about-cros/</loc>
     <lastmod>2023-03-11T09:35:49.868Z</lastmod>
     <data>
         <display>
-        <title>DataTable.js 使用笔记</title>
-        <pubTime>2018-08-10T02:44:55.000Z</pubTime>
+        <title>关于 CORS 跨域的一点点理解</title>
+        <pubTime>2017-08-02T05:41:32.000Z</pubTime>
         
-        <tag>jQuery</tag>
-         
-        <tag>Web</tag>
+        <tag>CORS</tag>
          
          
            
@@ -1673,16 +1671,14 @@
 
     
   <url>
-    <loc>https://0x400.com/experience/guide/dev-sublime-text-3-preference/</loc>
+    <loc>https://0x400.com/experience/guide/dev-sublime-text-3-build-node/</loc>
     <lastmod>2023-03-11T09:35:49.864Z</lastmod>
     <data>
         <display>
-        <title>Sublime Text 3 配置</title>
-        <pubTime>2017-12-04T15:44:49.000Z</pubTime>
+        <title>Build Node.js developed environment on Windows 7</title>
+        <pubTime>2018-01-25T05:30:32.000Z</pubTime>
         
-        <tag>Sublime</tag>
-         
-        <tag>插件</tag>
+        <tag>Node</tag>
          
          
            
@@ -1698,14 +1694,16 @@
 
     
   <url>
-    <loc>https://0x400.com/experience/guide/dev-sublime-text-3-build-node/</loc>
+    <loc>https://0x400.com/experience/guide/dev-sublime-text-3-preference/</loc>
     <lastmod>2023-03-11T09:35:49.864Z</lastmod>
     <data>
         <display>
-        <title>Build Node.js developed environment on Windows 7</title>
-        <pubTime>2018-01-25T05:30:32.000Z</pubTime>
+        <title>Sublime Text 3 配置</title>
+        <pubTime>2017-12-04T15:44:49.000Z</pubTime>
         
-        <tag>Node</tag>
+        <tag>Sublime</tag>
+         
+        <tag>插件</tag>
          
          
            
@@ -1748,29 +1746,6 @@
 
     
   <url>
-    <loc>https://0x400.com/experience/guide/dev-environment-on-windows-and-linux/</loc>
-    <lastmod>2023-03-11T09:35:49.861Z</lastmod>
-    <data>
-        <display>
-        <title>Windows 10 配合 Ubuntu 搭建舒适开发环境不完全指北</title>
-        <pubTime>2019-07-02T09:52:34.000Z</pubTime>
-        
-        <tag>Dev</tag>
-         
-         
-           
-             
-              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
-          
-             
-              <breadCrumb title="Guide" url="https://0x400.com/categories/experience/guide/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://0x400.com/experience/guide/dev-environment-on-windows-with-wsl/</loc>
     <lastmod>2023-03-11T09:35:49.861Z</lastmod>
     <data>
@@ -1796,14 +1771,14 @@
 
     
   <url>
-    <loc>https://0x400.com/experience/debugging/linux-debug/</loc>
-    <lastmod>2023-03-11T09:35:49.860Z</lastmod>
+    <loc>https://0x400.com/experience/guide/dev-environment-on-windows-and-linux/</loc>
+    <lastmod>2023-03-11T09:35:49.861Z</lastmod>
     <data>
         <display>
-        <title>零散 bug 记录</title>
-        <pubTime>2017-11-10T12:44:49.000Z</pubTime>
+        <title>Windows 10 配合 Ubuntu 搭建舒适开发环境不完全指北</title>
+        <pubTime>2019-07-02T09:52:34.000Z</pubTime>
         
-        <tag>BUG</tag>
+        <tag>Dev</tag>
          
          
            
@@ -1811,7 +1786,7 @@
               <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
           
              
-              <breadCrumb title="Debugging" url="https://0x400.com/categories/experience/debugging/"/>
+              <breadCrumb title="Guide" url="https://0x400.com/categories/experience/guide/"/>
           
         </display>
     </data>
@@ -1827,6 +1802,29 @@
         <pubTime>2020-09-16T15:08:34.000Z</pubTime>
         
         <tag>XHR</tag>
+         
+         
+           
+             
+              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
+          
+             
+              <breadCrumb title="Debugging" url="https://0x400.com/categories/experience/debugging/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://0x400.com/experience/debugging/linux-debug/</loc>
+    <lastmod>2023-03-11T09:35:49.860Z</lastmod>
+    <data>
+        <display>
+        <title>零散 bug 记录</title>
+        <pubTime>2017-11-10T12:44:49.000Z</pubTime>
+        
+        <tag>BUG</tag>
          
          
            
@@ -1865,18 +1863,16 @@
 
     
   <url>
-    <loc>https://0x400.com/episode/jd-php-interview/</loc>
+    <loc>https://0x400.com/episode/alibaba-node-interview/</loc>
     <lastmod>2023-03-11T09:35:49.858Z</lastmod>
     <data>
         <display>
-        <title>京东 PHP 一面、二面总结</title>
-        <pubTime>2017-09-25T09:30:32.000Z</pubTime>
+        <title>阿里前端（Node.js方向）一面总结</title>
+        <pubTime>2017-08-17T09:41:32.000Z</pubTime>
         
-        <tag>缓存</tag>
+        <tag>Interview</tag>
          
-        <tag>优化</tag>
-         
-        <tag>HTTP</tag>
+        <tag>Node</tag>
          
          
            
@@ -1889,16 +1885,18 @@
 
     
   <url>
-    <loc>https://0x400.com/episode/alibaba-node-interview/</loc>
+    <loc>https://0x400.com/episode/jd-php-interview/</loc>
     <lastmod>2023-03-11T09:35:49.858Z</lastmod>
     <data>
         <display>
-        <title>阿里前端（Node.js方向）一面总结</title>
-        <pubTime>2017-08-17T09:41:32.000Z</pubTime>
+        <title>京东 PHP 一面、二面总结</title>
+        <pubTime>2017-09-25T09:30:32.000Z</pubTime>
         
-        <tag>Interview</tag>
+        <tag>缓存</tag>
          
-        <tag>Node</tag>
+        <tag>优化</tag>
+         
+        <tag>HTTP</tag>
          
          
            

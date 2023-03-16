@@ -10,15 +10,14 @@
       </categories>
       <tags>
         <tag>DDIA</tag>
-        <tag>Encoding</tag>
-        <tag>Serialization</tag>
-        <tag>Marshalling</tag>
+        <tag>Replication</tag>
+        <tag>Replica</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[DDIA reading notes - chapter 4 Encoding & Evolution]]></title>
     <url>%2Ffundamental%2Fstorage%2Fddia-ch4-reading-notes%2F</url>
-    <content type="text"><![CDATA[Please refer to pdf]]></content>
+    <content type="text"><![CDATA[This chapter focuses on the challenges of encoding and evolving data formats in distributed systems. The chapter begins by discussing how data formats can impact system design and evolution. It then explores two common approaches to data encoding: binary encoding and text encoding. Binary encoding is more efficient but less human-readable, while text encoding is less efficient but more human-readable. The chapter then delves into the challenges of data evolution, such as adding new fields or changing the format of existing fields. It explains how versioning and compatibility checks can be used to manage these challenges. Next, the chapter introduces several data encoding formats, including Protocol Buffers, Thrift, Avro, and JSON. It discusses the pros and cons of each format and their suitability for different use cases. Finally, the chapter concludes by emphasizing the importance of careful data encoding and evolution in distributed systems, as it can greatly impact the ability of the system to evolve and meet changing needs over time.Please refer to the pdf reading noted in detailed:]]></content>
       <categories>
         <category>Fundamental</category>
         <category>storage</category>
