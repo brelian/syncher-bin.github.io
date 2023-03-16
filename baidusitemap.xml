@@ -4,18 +4,20 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/storage/ddia-ch5-reading-notes-i/</loc>
-    <lastmod>2023-03-16T04:15:40.578Z</lastmod>
+    <loc>https://0x400.com/fundamental/storage/ddia-ch4-reading-notes/</loc>
+    <lastmod>2023-03-16T04:23:25.174Z</lastmod>
     <data>
         <display>
-        <title>DDIA reading notes - chapter 5 Replication (Part I)</title>
-        <pubTime>2023-03-15T14:30:34.000Z</pubTime>
+        <title>DDIA reading notes - chapter 4 Encoding & Evolution</title>
+        <pubTime>2023-03-11T11:30:34.000Z</pubTime>
         
         <tag>DDIA</tag>
          
-        <tag>Replication</tag>
+        <tag>Encoding</tag>
          
-        <tag>Replica</tag>
+        <tag>Serialization</tag>
+         
+        <tag>Marshalling</tag>
          
          
            
@@ -31,20 +33,18 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/storage/ddia-ch4-reading-notes/</loc>
-    <lastmod>2023-03-16T04:14:52.259Z</lastmod>
+    <loc>https://0x400.com/fundamental/storage/ddia-ch5-reading-notes-i/</loc>
+    <lastmod>2023-03-16T04:23:16.374Z</lastmod>
     <data>
         <display>
-        <title>DDIA reading notes - chapter 4 Encoding & Evolution</title>
-        <pubTime>2023-03-11T11:30:34.000Z</pubTime>
+        <title>DDIA reading notes - chapter 5 Replication (Part I)</title>
+        <pubTime>2023-03-15T14:30:34.000Z</pubTime>
         
         <tag>DDIA</tag>
          
-        <tag>Encoding</tag>
+        <tag>Replication</tag>
          
-        <tag>Serialization</tag>
-         
-        <tag>Marshalling</tag>
+        <tag>Replica</tag>
          
          
            
@@ -132,12 +132,12 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/storage/mysql-sql-about-index/</loc>
+    <loc>https://0x400.com/fundamental/storage/mysql-optimize/</loc>
     <lastmod>2023-03-11T09:35:49.900Z</lastmod>
     <data>
         <display>
-        <title>MySQL 索引相关 SQL</title>
-        <pubTime>2018-01-19T08:41:35.000Z</pubTime>
+        <title>MySQL 基础优化</title>
+        <pubTime>2017-08-08T10:03:32.000Z</pubTime>
         
         <tag>MySQL</tag>
          
@@ -155,12 +155,12 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/storage/mysql-optimize/</loc>
+    <loc>https://0x400.com/fundamental/storage/mysql-sql-about-index/</loc>
     <lastmod>2023-03-11T09:35:49.900Z</lastmod>
     <data>
         <display>
-        <title>MySQL 基础优化</title>
-        <pubTime>2017-08-08T10:03:32.000Z</pubTime>
+        <title>MySQL 索引相关 SQL</title>
+        <pubTime>2018-01-19T08:41:35.000Z</pubTime>
         
         <tag>MySQL</tag>
          
@@ -525,14 +525,14 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/algorithm/lc-sliding-window-template/</loc>
+    <loc>https://0x400.com/fundamental/algorithm/lc-binary-search-template/</loc>
     <lastmod>2023-03-11T09:35:49.891Z</lastmod>
     <data>
         <display>
-        <title>滑动窗口解题模板</title>
+        <title>二分法解题模板</title>
         <pubTime>2019-10-24T11:12:10.000Z</pubTime>
         
-        <tag>Sliding Window</tag>
+        <tag>Binary Search</tag>
          
          
            
@@ -548,14 +548,14 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/algorithm/lc-binary-search-template/</loc>
+    <loc>https://0x400.com/fundamental/algorithm/lc-sliding-window-template/</loc>
     <lastmod>2023-03-11T09:35:49.891Z</lastmod>
     <data>
         <display>
-        <title>二分法解题模板</title>
+        <title>滑动窗口解题模板</title>
         <pubTime>2019-10-24T11:12:10.000Z</pubTime>
         
-        <tag>Binary Search</tag>
+        <tag>Sliding Window</tag>
          
          
            
@@ -711,14 +711,14 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/algorithm/lc-650-2-keys-keyboard/</loc>
+    <loc>https://0x400.com/fundamental/algorithm/lc-67-add-binary/</loc>
     <lastmod>2023-03-11T09:35:49.887Z</lastmod>
     <data>
         <display>
-        <title>Leetcode-650 —— 2 Keys Keyboard</title>
-        <pubTime>2019-10-18T11:44:49.000Z</pubTime>
+        <title>Leetcode-67 —— Add Binary</title>
+        <pubTime>2019-07-10T03:17:49.000Z</pubTime>
         
-        <tag>Stack</tag>
+        <tag>Binary</tag>
          
          
            
@@ -757,14 +757,14 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/algorithm/lc-67-add-binary/</loc>
+    <loc>https://0x400.com/fundamental/algorithm/lc-650-2-keys-keyboard/</loc>
     <lastmod>2023-03-11T09:35:49.887Z</lastmod>
     <data>
         <display>
-        <title>Leetcode-67 —— Add Binary</title>
-        <pubTime>2019-07-10T03:17:49.000Z</pubTime>
+        <title>Leetcode-650 —— 2 Keys Keyboard</title>
+        <pubTime>2019-10-18T11:44:49.000Z</pubTime>
         
-        <tag>Binary</tag>
+        <tag>Stack</tag>
          
          
            
@@ -872,29 +872,6 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/algorithm/lc-20-valid-parentheses/</loc>
-    <lastmod>2023-03-11T09:35:49.884Z</lastmod>
-    <data>
-        <display>
-        <title>Leetcode-20 —— Valid Parentheses</title>
-        <pubTime>2019-07-09T09:44:49.000Z</pubTime>
-        
-        <tag>Stack</tag>
-         
-         
-           
-             
-              <breadCrumb title="Fundamental" url="https://0x400.com/categories/fundamental/"/>
-          
-             
-              <breadCrumb title="Algorithm" url="https://0x400.com/categories/fundamental/algorithm/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://0x400.com/fundamental/algorithm/lc-21-merge-two-sorted-lists/</loc>
     <lastmod>2023-03-11T09:35:49.884Z</lastmod>
     <data>
@@ -926,6 +903,29 @@
         <pubTime>2019-07-30T16:00:00.000Z</pubTime>
         
         <tag>Algorithm</tag>
+         
+         
+           
+             
+              <breadCrumb title="Fundamental" url="https://0x400.com/categories/fundamental/"/>
+          
+             
+              <breadCrumb title="Algorithm" url="https://0x400.com/categories/fundamental/algorithm/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://0x400.com/fundamental/algorithm/lc-20-valid-parentheses/</loc>
+    <lastmod>2023-03-11T09:35:49.884Z</lastmod>
+    <data>
+        <display>
+        <title>Leetcode-20 —— Valid Parentheses</title>
+        <pubTime>2019-07-09T09:44:49.000Z</pubTime>
+        
+        <tag>Stack</tag>
          
          
            
@@ -1012,14 +1012,14 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/algorithm/lc-1143-longest-common-subsequence/</loc>
+    <loc>https://0x400.com/fundamental/algorithm/lc-121-best-time-to-buy-and-sell-stock/</loc>
     <lastmod>2023-03-11T09:35:49.881Z</lastmod>
     <data>
         <display>
-        <title>Leetcode-1143 Longest Common Subsequence</title>
-        <pubTime>2019-08-02T08:31:23.000Z</pubTime>
+        <title>Leetcode-121 Best Time to Buy and Sell Stock</title>
+        <pubTime>2019-07-12T11:17:49.000Z</pubTime>
         
-        <tag>DP</tag>
+        <tag>Dynamic Programming</tag>
          
          
            
@@ -1035,14 +1035,14 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/algorithm/lc-121-best-time-to-buy-and-sell-stock/</loc>
+    <loc>https://0x400.com/fundamental/algorithm/lc-1143-longest-common-subsequence/</loc>
     <lastmod>2023-03-11T09:35:49.881Z</lastmod>
     <data>
         <display>
-        <title>Leetcode-121 Best Time to Buy and Sell Stock</title>
-        <pubTime>2019-07-12T11:17:49.000Z</pubTime>
+        <title>Leetcode-1143 Longest Common Subsequence</title>
+        <pubTime>2019-08-02T08:31:23.000Z</pubTime>
         
-        <tag>Dynamic Programming</tag>
+        <tag>DP</tag>
          
          
            
@@ -1127,16 +1127,14 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/algorithm/algorithm-find-max-number-in-array/</loc>
+    <loc>https://0x400.com/fundamental/algorithm/dev-lru-implementation/</loc>
     <lastmod>2023-03-11T09:35:49.877Z</lastmod>
     <data>
         <display>
-        <title>JavaScript 查找数组最大值</title>
-        <pubTime>2017-08-23T07:41:32.000Z</pubTime>
+        <title>LRU 实现</title>
+        <pubTime>2020-04-20T11:20:00.000Z</pubTime>
         
-        <tag>algorithm</tag>
-         
-        <tag>JavaScript</tag>
+        <tag>LRU</tag>
          
          
            
@@ -1152,14 +1150,16 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/algorithm/dev-lru-implementation/</loc>
+    <loc>https://0x400.com/fundamental/algorithm/algorithm-find-max-number-in-array/</loc>
     <lastmod>2023-03-11T09:35:49.877Z</lastmod>
     <data>
         <display>
-        <title>LRU 实现</title>
-        <pubTime>2020-04-20T11:20:00.000Z</pubTime>
+        <title>JavaScript 查找数组最大值</title>
+        <pubTime>2017-08-23T07:41:32.000Z</pubTime>
         
-        <tag>LRU</tag>
+        <tag>algorithm</tag>
+         
+        <tag>JavaScript</tag>
          
          
            
@@ -1273,12 +1273,12 @@
 
     
   <url>
-    <loc>https://0x400.com/experience/practice/linux-reading-note-of-practical-vim-I/</loc>
+    <loc>https://0x400.com/experience/practice/linux-reading-note-of-practical-vim-II/</loc>
     <lastmod>2023-03-11T09:35:49.873Z</lastmod>
     <data>
         <display>
-        <title>《Vim 实用技巧》读书笔记</title>
-        <pubTime>2018-05-08T06:20:11.000Z</pubTime>
+        <title>《Vim 实用技巧》读书笔记（第二部分）</title>
+        <pubTime>2018-05-10T11:00:11.000Z</pubTime>
         
         <tag>Linux</tag>
          
@@ -1298,12 +1298,12 @@
 
     
   <url>
-    <loc>https://0x400.com/experience/practice/linux-reading-note-of-practical-vim-II/</loc>
+    <loc>https://0x400.com/experience/practice/linux-reading-note-of-practical-vim-I/</loc>
     <lastmod>2023-03-11T09:35:49.873Z</lastmod>
     <data>
         <display>
-        <title>《Vim 实用技巧》读书笔记（第二部分）</title>
-        <pubTime>2018-05-10T11:00:11.000Z</pubTime>
+        <title>《Vim 实用技巧》读书笔记</title>
+        <pubTime>2018-05-08T06:20:11.000Z</pubTime>
         
         <tag>Linux</tag>
          
@@ -1373,16 +1373,16 @@
 
     
   <url>
-    <loc>https://0x400.com/experience/practice/linux-learning-docker-I/</loc>
+    <loc>https://0x400.com/experience/practice/linux-command-note/</loc>
     <lastmod>2023-03-11T09:35:49.871Z</lastmod>
     <data>
         <display>
-        <title>Docker 学习笔记（1）</title>
-        <pubTime>2018-07-05T14:23:19.000Z</pubTime>
+        <title>Linux 命令使用笔记</title>
+        <pubTime>2017-03-24T15:44:49.000Z</pubTime>
         
         <tag>Linux</tag>
          
-        <tag>Docker</tag>
+        <tag>命令</tag>
          
          
            
@@ -1398,16 +1398,16 @@
 
     
   <url>
-    <loc>https://0x400.com/experience/practice/linux-command-note/</loc>
+    <loc>https://0x400.com/experience/practice/linux-learning-docker-I/</loc>
     <lastmod>2023-03-11T09:35:49.871Z</lastmod>
     <data>
         <display>
-        <title>Linux 命令使用笔记</title>
-        <pubTime>2017-03-24T15:44:49.000Z</pubTime>
+        <title>Docker 学习笔记（1）</title>
+        <pubTime>2018-07-05T14:23:19.000Z</pubTime>
         
         <tag>Linux</tag>
          
-        <tag>命令</tag>
+        <tag>Docker</tag>
          
          
            
@@ -1475,6 +1475,29 @@
 
     
   <url>
+    <loc>https://0x400.com/experience/practice/frontend-learn-about-cros/</loc>
+    <lastmod>2023-03-11T09:35:49.868Z</lastmod>
+    <data>
+        <display>
+        <title>关于 CORS 跨域的一点点理解</title>
+        <pubTime>2017-08-02T05:41:32.000Z</pubTime>
+        
+        <tag>CORS</tag>
+         
+         
+           
+             
+              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
+          
+             
+              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://0x400.com/experience/practice/frontend-datatable-js-example/</loc>
     <lastmod>2023-03-11T09:35:49.868Z</lastmod>
     <data>
@@ -1500,14 +1523,16 @@
 
     
   <url>
-    <loc>https://0x400.com/experience/practice/frontend-learn-about-cros/</loc>
-    <lastmod>2023-03-11T09:35:49.868Z</lastmod>
+    <loc>https://0x400.com/experience/practice/dev-wolf-warriors-II-box-office-forecast/</loc>
+    <lastmod>2023-03-11T09:35:49.867Z</lastmod>
     <data>
         <display>
-        <title>关于 CORS 跨域的一点点理解</title>
-        <pubTime>2017-08-02T05:41:32.000Z</pubTime>
+        <title>战狼 2 票房是否会达到 40 亿？</title>
+        <pubTime>2017-08-06T04:41:32.000Z</pubTime>
         
-        <tag>CORS</tag>
+        <tag>战狼</tag>
+         
+        <tag>GM</tag>
          
          
            
@@ -1533,31 +1558,6 @@
         <tag>API</tag>
          
         <tag>PHP</tag>
-         
-         
-           
-             
-              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
-          
-             
-              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://0x400.com/experience/practice/dev-wolf-warriors-II-box-office-forecast/</loc>
-    <lastmod>2023-03-11T09:35:49.867Z</lastmod>
-    <data>
-        <display>
-        <title>战狼 2 票房是否会达到 40 亿？</title>
-        <pubTime>2017-08-06T04:41:32.000Z</pubTime>
-        
-        <tag>战狼</tag>
-         
-        <tag>GM</tag>
          
          
            
@@ -1746,16 +1746,14 @@
 
     
   <url>
-    <loc>https://0x400.com/experience/guide/dev-environment-on-windows-with-wsl/</loc>
+    <loc>https://0x400.com/experience/guide/dev-environment-on-windows-and-linux/</loc>
     <lastmod>2023-03-11T09:35:49.861Z</lastmod>
     <data>
         <display>
-        <title>搭建基于 Windows 10 和 WSL 的开发环境不完全指南</title>
-        <pubTime>2019-09-23T14:01:34.000Z</pubTime>
+        <title>Windows 10 配合 Ubuntu 搭建舒适开发环境不完全指北</title>
+        <pubTime>2019-07-02T09:52:34.000Z</pubTime>
         
-        <tag>Windows</tag>
-         
-        <tag>WSL</tag>
+        <tag>Dev</tag>
          
          
            
@@ -1771,14 +1769,16 @@
 
     
   <url>
-    <loc>https://0x400.com/experience/guide/dev-environment-on-windows-and-linux/</loc>
+    <loc>https://0x400.com/experience/guide/dev-environment-on-windows-with-wsl/</loc>
     <lastmod>2023-03-11T09:35:49.861Z</lastmod>
     <data>
         <display>
-        <title>Windows 10 配合 Ubuntu 搭建舒适开发环境不完全指北</title>
-        <pubTime>2019-07-02T09:52:34.000Z</pubTime>
+        <title>搭建基于 Windows 10 和 WSL 的开发环境不完全指南</title>
+        <pubTime>2019-09-23T14:01:34.000Z</pubTime>
         
-        <tag>Dev</tag>
+        <tag>Windows</tag>
+         
+        <tag>WSL</tag>
          
          
            
@@ -1863,28 +1863,6 @@
 
     
   <url>
-    <loc>https://0x400.com/episode/alibaba-node-interview/</loc>
-    <lastmod>2023-03-11T09:35:49.858Z</lastmod>
-    <data>
-        <display>
-        <title>阿里前端（Node.js方向）一面总结</title>
-        <pubTime>2017-08-17T09:41:32.000Z</pubTime>
-        
-        <tag>Interview</tag>
-         
-        <tag>Node</tag>
-         
-         
-           
-             
-              <breadCrumb title="Episode" url="https://0x400.com/categories/episode/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://0x400.com/episode/jd-php-interview/</loc>
     <lastmod>2023-03-11T09:35:49.858Z</lastmod>
     <data>
@@ -1897,6 +1875,28 @@
         <tag>优化</tag>
          
         <tag>HTTP</tag>
+         
+         
+           
+             
+              <breadCrumb title="Episode" url="https://0x400.com/categories/episode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://0x400.com/episode/alibaba-node-interview/</loc>
+    <lastmod>2023-03-11T09:35:49.858Z</lastmod>
+    <data>
+        <display>
+        <title>阿里前端（Node.js方向）一面总结</title>
+        <pubTime>2017-08-17T09:41:32.000Z</pubTime>
+        
+        <tag>Interview</tag>
+         
+        <tag>Node</tag>
          
          
            
