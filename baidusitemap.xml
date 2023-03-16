@@ -4,20 +4,18 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/storage/ddia-ch4-reading-notes/</loc>
-    <lastmod>2023-03-16T04:23:25.174Z</lastmod>
+    <loc>https://0x400.com/fundamental/storage/ddia-ch5-reading-notes-i/</loc>
+    <lastmod>2023-03-16T14:07:40.925Z</lastmod>
     <data>
         <display>
-        <title>DDIA reading notes - chapter 4 Encoding & Evolution</title>
-        <pubTime>2023-03-11T11:30:34.000Z</pubTime>
+        <title>DDIA reading notes - chapter 5 Replication (Part I)</title>
+        <pubTime>2023-03-15T14:30:34.000Z</pubTime>
         
         <tag>DDIA</tag>
          
-        <tag>Encoding</tag>
+        <tag>Replication</tag>
          
-        <tag>Serialization</tag>
-         
-        <tag>Marshalling</tag>
+        <tag>Replica</tag>
          
          
            
@@ -33,18 +31,20 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/storage/ddia-ch5-reading-notes-i/</loc>
-    <lastmod>2023-03-16T04:23:16.374Z</lastmod>
+    <loc>https://0x400.com/fundamental/storage/ddia-ch4-reading-notes/</loc>
+    <lastmod>2023-03-16T04:23:25.174Z</lastmod>
     <data>
         <display>
-        <title>DDIA reading notes - chapter 5 Replication (Part I)</title>
-        <pubTime>2023-03-15T14:30:34.000Z</pubTime>
+        <title>DDIA reading notes - chapter 4 Encoding & Evolution</title>
+        <pubTime>2023-03-11T11:30:34.000Z</pubTime>
         
         <tag>DDIA</tag>
          
-        <tag>Replication</tag>
+        <tag>Encoding</tag>
          
-        <tag>Replica</tag>
+        <tag>Serialization</tag>
+         
+        <tag>Marshalling</tag>
          
          
            
