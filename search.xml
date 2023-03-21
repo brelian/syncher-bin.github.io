@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[DDIA reading notes - chapter 5 Replication (Part II)]]></title>
+    <url>%2Ffundamental%2Fstorage%2Fddia-ch5-reading-notes-ii%2F</url>
+    <content type="text"><![CDATA[Last section of Chapter 5 is Leaderless Replication. Leaderless Replication is a different approach compared to Single Leader Replication and Multi-Leader Replication, abandoning the concept of a leader and allowing any replica to directly accept writes from clients. In some leaderless replication implementations, the client directly sends its writes to several replicas, while in others, a coordinator node does this on behalf of the client. This is the reading notes Leaderless Replication of DDIA. Please refer to pdf to dive into the detailed notes.]]></content>
+      <categories>
+        <category>Fundamental</category>
+        <category>storage</category>
+      </categories>
+      <tags>
+        <tag>DDIA</tag>
+        <tag>Replication</tag>
+        <tag>Leaderless</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[DDIA reading notes - chapter 5 Replication (Part I)]]></title>
     <url>%2Ffundamental%2Fstorage%2Fddia-ch5-reading-notes-i%2F</url>
     <content type="text"><![CDATA[Chapter 5 of this book covers the important topic of replication in the context of database systems. Replication is the process of creating and maintaining multiple copies of the same database on different servers. This is done to ensure data availability, improve performance, and provide fault tolerance. The chapter starts by introducing the concept of replication and its benefits. It then goes on to explain the different types of replication, including master-slave, master-master, and multi-master replication. Each type is discussed in detail, with its advantages and disadvantages. The chapter also covers the different replication topologies, such as star, tree, and mesh. It explains how each topology works and when it is appropriate to use them. Next, the chapter discusses the issues related to replication, such as consistency, conflicts, and latency. It explains how these issues can be addressed using techniques such as locking, timestamping, and conflict resolution. Finally, the chapter concludes with a discussion on the challenges of replication and how they can be overcome. It also provides some best practices for designing and implementing replication systems. Please refer to pdf version to see more reading notes in detailed.]]></content>
