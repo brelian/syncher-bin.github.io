@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[DDIA reading notes - chapter 6 Partitioning]]></title>
+    <url>%2Ffundamental%2Fstorage%2Fddia-ch6-reading-notes%2F</url>
+    <content type="text"><![CDATA[Chapter 6 of this book discusses the concept of data partitioning. The chapter explains how data partitioning can be used to improve the scalability and performance of distributed systems. The author describes various partitioning techniques and their advantages and disadvantages. The chapter also covers the challenges that arise when partitioning data, such as data skew and hotspots, and explains how to mitigate these issues. Overall, Chapter 6 provides a comprehensive overview of the partitioning strategies that can be used in modern distributed systems. Please refer to pdf to dive into the detailed notes.]]></content>
+      <categories>
+        <category>Fundamental</category>
+        <category>storage</category>
+      </categories>
+      <tags>
+        <tag>DDIA</tag>
+        <tag>Partitioning</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[DDIA reading notes - chapter 5 Replication (Part II)]]></title>
     <url>%2Ffundamental%2Fstorage%2Fddia-ch5-reading-notes-ii%2F</url>
     <content type="text"><![CDATA[Last section of Chapter 5 is Leaderless Replication. Leaderless Replication is a different approach compared to Single Leader Replication and Multi-Leader Replication, abandoning the concept of a leader and allowing any replica to directly accept writes from clients. In some leaderless replication implementations, the client directly sends its writes to several replicas, while in others, a coordinator node does this on behalf of the client. This is the reading notes Leaderless Replication of DDIA. Please refer to pdf to dive into the detailed notes.]]></content>
