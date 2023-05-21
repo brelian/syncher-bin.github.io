@@ -3,6 +3,32 @@
 
 
     
+    
+  <url>
+    <loc>https://0x400.com/fundamental/storage/ddia-ch7-reading-notes/</loc>
+    <lastmod>2023-05-21T02:42:13.672Z</lastmod>
+    <data>
+        <display>
+        <title>DDIA reading notes - chapter 7 Transactions</title>
+        <pubTime>2023-05-20T15:58:00.000Z</pubTime>
+        
+        <tag>DDIA</tag>
+         
+        <tag>Transaction</tag>
+         
+         
+           
+             
+              <breadCrumb title="Fundamental" url="https://0x400.com/categories/fundamental/"/>
+          
+             
+              <breadCrumb title="storage" url="https://0x400.com/categories/fundamental/storage/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
   <url>
     <loc>https://0x400.com/fundamental/storage/ddia-ch6-reading-notes/</loc>
     <lastmod>2023-03-22T14:15:37.998Z</lastmod>
@@ -133,7 +159,6 @@
     </data>
     </url>
 
-    
     
   <url>
     <loc>https://0x400.com/fundamental/storage/mysql-store-tree-using-closure-table/</loc>

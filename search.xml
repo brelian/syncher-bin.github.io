@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[DDIA reading notes - chapter 7 Transactions]]></title>
+    <url>%2Ffundamental%2Fstorage%2Fddia-ch7-reading-notes%2F</url>
+    <content type="text"><![CDATA[Chapter 6 of this book discusses Transactions. For decades, transactions have been the mechanism of choice for simplifying these issues. A transaction is a way for an application to group several reads and writes together into a logical unit. Conceptually, all the reads and writes in a transaction are executed as one operation: either the entire transaction succeeds (commit) or it fails(abort, rollback).Transactions are created with a purpose: to simplify the programming model for applications accessing a database. By using transactions, the application is free to ignore specific potential error scenarios and concurrency issues. Please refer to pdf to dive into the detailed notes.]]></content>
+      <categories>
+        <category>Fundamental</category>
+        <category>storage</category>
+      </categories>
+      <tags>
+        <tag>DDIA</tag>
+        <tag>Transaction</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[DDIA reading notes - chapter 6 Partitioning]]></title>
     <url>%2Ffundamental%2Fstorage%2Fddia-ch6-reading-notes%2F</url>
     <content type="text"><![CDATA[Chapter 6 of this book discusses the concept of data partitioning. The chapter explains how data partitioning can be used to improve the scalability and performance of distributed systems. The author describes various partitioning techniques and their advantages and disadvantages. The chapter also covers the challenges that arise when partitioning data, such as data skew and hotspots, and explains how to mitigate these issues. Overall, Chapter 6 provides a comprehensive overview of the partitioning strategies that can be used in modern distributed systems. Please refer to pdf to dive into the detailed notes.]]></content>
