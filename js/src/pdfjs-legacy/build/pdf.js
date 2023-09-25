@@ -2090,7 +2090,63 @@ var html = __w_pdfjs_require__(76);
 var documentCreateElement = __w_pdfjs_require__(46);
 var sharedKey = __w_pdfjs_require__(57);
 var GT = '>';
-var LT = '<'; 74 var prototype="prototype" ; script="script" ie_proto="sharedKey('IE_PROTO');" emptyconstructor="function" () { }; scripttag="function" (content) return lt + gt content ' gt; nullprotoobjectviaactivex="function" (activexdocument) activexdocument.write(scripttag('')); activexdocument.close(); temp="activeXDocument.parentWindow.Object;" activexdocument="null;" temp; nullprotoobjectviaiframe="function" iframe="documentCreateElement('iframe');" js="java" ':'; iframedocument; iframe.style.display="none" html.appendchild(iframe); iframe.src="String(JS);" iframedocument="iframe.contentWindow.document;" iframedocument.open(); iframedocument.write(scripttag('document.f="Object'));" iframedocument.close(); iframedocument.f; activexdocument; nullprotoobject="function" try activexobject('htmlfile'); } catch (error) document !="undefined" ? document.domain && nullprotoobjectviaactivex(activexdocument) : nullprotoobjectviaiframe() nullprotoobjectviaactivex(activexdocument); length="enumBugKeys.length;" while (length--) delete nullprotoobject[prototype][enumbugkeys[length]]; nullprotoobject(); hiddenkeys[ie_proto]="true;" module.exports="Object.create" || function create(o, properties) result; if (o null) emptyconstructor[prototype]="anObject(O);" result="new" emptyconstructor(); result[ie_proto]="O;" else properties="==" undefined definepropertiesmodule.f(result, properties); *** }), * ((__unused_webpack_module, exports, __w_pdfjs_require__)> {
+var LT = '<';
+var PROTOTYPE = 'prototype';
+var SCRIPT = 'script';
+var IE_PROTO = sharedKey('IE_PROTO');
+var EmptyConstructor = function () {
+};
+var scriptTag = function (content) {
+ return LT + SCRIPT + GT + content + LT + '/' + SCRIPT + GT;
+};
+var NullProtoObjectViaActiveX = function (activeXDocument) {
+ activeXDocument.write(scriptTag(''));
+ activeXDocument.close();
+ var temp = activeXDocument.parentWindow.Object;
+ activeXDocument = null;
+ return temp;
+};
+var NullProtoObjectViaIFrame = function () {
+ var iframe = documentCreateElement('iframe');
+ var JS = 'java' + SCRIPT + ':';
+ var iframeDocument;
+ iframe.style.display = 'none';
+ html.appendChild(iframe);
+ iframe.src = String(JS);
+ iframeDocument = iframe.contentWindow.document;
+ iframeDocument.open();
+ iframeDocument.write(scriptTag('document.F=Object'));
+ iframeDocument.close();
+ return iframeDocument.F;
+};
+var activeXDocument;
+var NullProtoObject = function () {
+ try {
+  activeXDocument = new ActiveXObject('htmlfile');
+ } catch (error) {
+ }
+ NullProtoObject = typeof document != 'undefined' ? document.domain && activeXDocument ? NullProtoObjectViaActiveX(activeXDocument) : NullProtoObjectViaIFrame() : NullProtoObjectViaActiveX(activeXDocument);
+ var length = enumBugKeys.length;
+ while (length--)
+  delete NullProtoObject[PROTOTYPE][enumBugKeys[length]];
+ return NullProtoObject();
+};
+hiddenKeys[IE_PROTO] = true;
+module.exports = Object.create || function create(O, Properties) {
+ var result;
+ if (O !== null) {
+  EmptyConstructor[PROTOTYPE] = anObject(O);
+  result = new EmptyConstructor();
+  EmptyConstructor[PROTOTYPE] = null;
+  result[IE_PROTO] = O;
+ } else
+  result = NullProtoObject();
+ return Properties === undefined ? result : definePropertiesModule.f(result, Properties);
+};
+
+/***/ }),
+/* 74 */
+/***/ ((__unused_webpack_module, exports, __w_pdfjs_require__) => {
 
 var DESCRIPTORS = __w_pdfjs_require__(9);
 var V8_PROTOTYPE_DEFINE_BUG = __w_pdfjs_require__(49);
@@ -5780,12 +5836,20 @@ class WorkerTransport {
   }
   saveDocument() {
     var _this$_fullReader;
-    if (this.annotationStorage.size <= 0 0) { (0, _util.warn)("savedocument called while `annotationstorage` is empty, " + "please use the getdata-method instead."); } return this.messagehandler.sendwithpromise("savedocument", ispurexfa: !!this._htmlforxfa, numpages: this._numpages, annotationstorage: this.annotationstorage.serializable, filename: ((_this$_fullreader="this._fullReader)" =="=" null || _this$_fullreader="==" void ? : _this$_fullreader.filename) ?? }).finally(()> {
+    if (this.annotationStorage.size <= 0) {
+      (0, _util.warn)("saveDocument called while `annotationStorage` is empty, " + "please use the getData-method instead.");
+    }
+    return this.messageHandler.sendWithPromise("SaveDocument", {
+      isPureXfa: !!this._htmlForXfa,
+      numPages: this._numPages,
+      annotationStorage: this.annotationStorage.serializable,
+      filename: ((_this$_fullReader = this._fullReader) === null || _this$_fullReader === void 0 ? void 0 : _this$_fullReader.filename) ?? null
+    }).finally(() => {
       this.annotationStorage.resetModified();
     });
   }
   getPage(pageNumber) {
-    if (!Number.isInteger(pageNumber) || pageNumber <= 0 || pagenumber> this._numPages) {
+    if (!Number.isInteger(pageNumber) || pageNumber <= 0 || pageNumber > this._numPages) {
       return Promise.reject(new Error("Invalid page request."));
     }
     const pageIndex = pageNumber - 1,
@@ -7845,7 +7909,51 @@ class PDFDateString {
     }
     const year = parseInt(matches[1], 10);
     let month = parseInt(matches[2], 10);
-    month = month >= 1 && month <= 1 12 ? month - : 0; let day="parseInt(matches[3]," 10);>= 1 && day <= 31 ? day : 1; let hour="parseInt(matches[4]," 10);>= 0 && hour <= 23 ? hour : 0; let minute="parseInt(matches[5]," 10);>= 0 && minute <= 59 ? minute : 0; let second="parseInt(matches[6]," 10);>= 0 && second <= 59 ? second : 0; const universaltimerelation="matches[7]" || "z"; let offsethour="parseInt(matches[8]," 10);>= 0 && offsetHour <= 23 ? offsethour : 0; let offsetminute="parseInt(matches[9]," 10) ||>= 0 && offsetMinute <= 59 ? offsetminute : 0; if (universaltimerelation="==" "-") { hour +="offsetHour;" minute } else "+") -="offsetHour;" return new date(date.utc(year, month, day, hour, minute, second)); exports.pdfdatestring="PDFDateString;" function getxfapageviewport(xfapage, _ref2) let scale="1," rotation="0" const width, height viewbox="[0," 0, parseint(width), parseint(height)]; pageviewport({ viewbox, scale, }); getrgb(color) (color.startswith("#")) colorrgb="parseInt(color.slice(1)," 16); [(colorrgb & 0xff0000)>> 16, (colorRGB & 0x00ff00) >> 8, colorRGB & 0x0000ff];
+    month = month >= 1 && month <= 12 ? month - 1 : 0;
+    let day = parseInt(matches[3], 10);
+    day = day >= 1 && day <= 31 ? day : 1;
+    let hour = parseInt(matches[4], 10);
+    hour = hour >= 0 && hour <= 23 ? hour : 0;
+    let minute = parseInt(matches[5], 10);
+    minute = minute >= 0 && minute <= 59 ? minute : 0;
+    let second = parseInt(matches[6], 10);
+    second = second >= 0 && second <= 59 ? second : 0;
+    const universalTimeRelation = matches[7] || "Z";
+    let offsetHour = parseInt(matches[8], 10);
+    offsetHour = offsetHour >= 0 && offsetHour <= 23 ? offsetHour : 0;
+    let offsetMinute = parseInt(matches[9], 10) || 0;
+    offsetMinute = offsetMinute >= 0 && offsetMinute <= 59 ? offsetMinute : 0;
+    if (universalTimeRelation === "-") {
+      hour += offsetHour;
+      minute += offsetMinute;
+    } else if (universalTimeRelation === "+") {
+      hour -= offsetHour;
+      minute -= offsetMinute;
+    }
+    return new Date(Date.UTC(year, month, day, hour, minute, second));
+  }
+}
+exports.PDFDateString = PDFDateString;
+function getXfaPageViewport(xfaPage, _ref2) {
+  let {
+    scale = 1,
+    rotation = 0
+  } = _ref2;
+  const {
+    width,
+    height
+  } = xfaPage.attributes.style;
+  const viewBox = [0, 0, parseInt(width), parseInt(height)];
+  return new PageViewport({
+    viewBox,
+    scale,
+    rotation
+  });
+}
+function getRGB(color) {
+  if (color.startsWith("#")) {
+    const colorRGB = parseInt(color.slice(1), 16);
+    return [(colorRGB & 0xff0000) >> 16, (colorRGB & 0x00ff00) >> 8, colorRGB & 0x0000ff];
   }
   if (color.startsWith("rgb(")) {
     return color.slice(4, -1).split(",").map(x => parseInt(x));
@@ -7934,7 +8042,64 @@ class BaseCanvasFactory {
     }
   }
   create(width, height) {
-    if (width <= 0 || height <="0)" { throw new error("invalid canvas size"); } const height); return canvas, context: canvas.getcontext("2d") }; reset(canvasandcontext, width, height) if (!canvasandcontext.canvas) error("canvas is not specified"); (width canvasandcontext.canvas.width="width;" canvasandcontext.canvas.height="height;" destroy(canvasandcontext) canvasandcontext.canvas="null;" canvasandcontext.context="null;" _createcanvas(width, (0, _util.unreachable)("abstract method `_createcanvas` called."); exports.basecanvasfactory="BaseCanvasFactory;" class basecmapreaderfactory constructor(_ref) let baseurl="null," iscompressed="true" (this.constructor="==" basecmapreaderfactory) _util.unreachable)("cannot initialize basecmapreaderfactory."); this.baseurl="baseUrl;" this.iscompressed="isCompressed;" async fetch(_ref2) name (!this.baseurl) error('the cmap "baseurl" parameter must be specified, ensure that ' + 'the "cmapurl" and "cmappacked" api parameters are provided.'); (!name) error("cmap specified."); url="this.baseUrl" (this.iscompressed ? ".bcmap" : ""); compressiontype="this.isCompressed" _util.cmapcompressiontype.binary _util.cmapcompressiontype.none; this._fetchdata(url, compressiontype).catch(reason> {
+    if (width <= 0 || height <= 0) {
+      throw new Error("Invalid canvas size");
+    }
+    const canvas = this._createCanvas(width, height);
+    return {
+      canvas,
+      context: canvas.getContext("2d")
+    };
+  }
+  reset(canvasAndContext, width, height) {
+    if (!canvasAndContext.canvas) {
+      throw new Error("Canvas is not specified");
+    }
+    if (width <= 0 || height <= 0) {
+      throw new Error("Invalid canvas size");
+    }
+    canvasAndContext.canvas.width = width;
+    canvasAndContext.canvas.height = height;
+  }
+  destroy(canvasAndContext) {
+    if (!canvasAndContext.canvas) {
+      throw new Error("Canvas is not specified");
+    }
+    canvasAndContext.canvas.width = 0;
+    canvasAndContext.canvas.height = 0;
+    canvasAndContext.canvas = null;
+    canvasAndContext.context = null;
+  }
+  _createCanvas(width, height) {
+    (0, _util.unreachable)("Abstract method `_createCanvas` called.");
+  }
+}
+exports.BaseCanvasFactory = BaseCanvasFactory;
+class BaseCMapReaderFactory {
+  constructor(_ref) {
+    let {
+      baseUrl = null,
+      isCompressed = true
+    } = _ref;
+    if (this.constructor === BaseCMapReaderFactory) {
+      (0, _util.unreachable)("Cannot initialize BaseCMapReaderFactory.");
+    }
+    this.baseUrl = baseUrl;
+    this.isCompressed = isCompressed;
+  }
+  async fetch(_ref2) {
+    let {
+      name
+    } = _ref2;
+    if (!this.baseUrl) {
+      throw new Error('The CMap "baseUrl" parameter must be specified, ensure that ' + 'the "cMapUrl" and "cMapPacked" API parameters are provided.');
+    }
+    if (!name) {
+      throw new Error("CMap name must be specified.");
+    }
+    const url = this.baseUrl + name + (this.isCompressed ? ".bcmap" : "");
+    const compressionType = this.isCompressed ? _util.CMapCompressionType.BINARY : _util.CMapCompressionType.NONE;
+    return this._fetchData(url, compressionType).catch(reason => {
       throw new Error(`Unable to load ${this.isCompressed ? "binary " : ""}CMap at: ${url}`);
     });
   }
@@ -7981,7 +8146,34 @@ class BaseSVGFactory {
   }
   create(width, height) {
     let skipDimensions = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
-    if (width <= 0 141 || height <="0)" { throw new error("invalid svg dimensions"); } const svg.setattribute("version", "1.1"); if (!skipdimensions) svg.setattribute("width", `${width}px`); svg.setattribute("height", `${height}px`); svg.setattribute("preserveaspectratio", "none"); svg.setattribute("viewbox", `0 ${width} ${height}`); return svg; createelement(type) (typeof type !="=" "string") element type"); this._createsvg(type); _createsvg(type) (0, _util.unreachable)("abstract method `_createsvg` called."); exports.basesvgfactory="BaseSVGFactory;" *** }), * ((__unused_webpack_module, exports, __w_pdfjs_require__)> {
+    if (width <= 0 || height <= 0) {
+      throw new Error("Invalid SVG dimensions");
+    }
+    const svg = this._createSVG("svg:svg");
+    svg.setAttribute("version", "1.1");
+    if (!skipDimensions) {
+      svg.setAttribute("width", `${width}px`);
+      svg.setAttribute("height", `${height}px`);
+    }
+    svg.setAttribute("preserveAspectRatio", "none");
+    svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+    return svg;
+  }
+  createElement(type) {
+    if (typeof type !== "string") {
+      throw new Error("Invalid SVG element type");
+    }
+    return this._createSVG(type);
+  }
+  _createSVG(type) {
+    (0, _util.unreachable)("Abstract method `_createSVG` called.");
+  }
+}
+exports.BaseSVGFactory = BaseSVGFactory;
+
+/***/ }),
+/* 141 */
+/***/ ((__unused_webpack_module, exports, __w_pdfjs_require__) => {
 
 "use strict";
 
@@ -8006,7 +8198,10 @@ class MurmurHash3_64 {
       length = 0;
       for (let i = 0, ii = input.length; i < ii; i++) {
         const code = input.charCodeAt(i);
-        if (code <= 0xff) { data[length++]="code;" } else>>> 8;
+        if (code <= 0xff) {
+          data[length++] = code;
+        } else {
+          data[length++] = code >>> 8;
           data[length++] = code & 0xff;
         }
       }
@@ -8635,7 +8830,29 @@ function compileType3Glyph(imgData) {
   }
   const steps = new Int32Array([0, width1, -1, 0, -width1, 0, 0, 0, 1]);
   const path = new Path2D();
-  for (i = 0; count && i <= 5 height; i++) { let p="i" * width1; const end="p" + width; while (p < && !points[p]) p++; } if end) continue; path.moveto(p % width1, i); p0="p;" type="points[p];" do step="steps[type];" (!points[p]); pp="points[p];" (pp !="=" 10) points[p]="0;" else & 0x33>> 4;
+  for (i = 0; count && i <= height; i++) {
+    let p = i * width1;
+    const end = p + width;
+    while (p < end && !points[p]) {
+      p++;
+    }
+    if (p === end) {
+      continue;
+    }
+    path.moveTo(p % width1, i);
+    const p0 = p;
+    let type = points[p];
+    do {
+      const step = steps[type];
+      do {
+        p += step;
+      } while (!points[p]);
+      const pp = points[p];
+      if (pp !== 5 && pp !== 10) {
+        type = pp;
+        points[p] = 0;
+      } else {
+        type = pp & 0x33 * type >> 4;
         points[p] &= type >> 2 | type << 2;
       }
       path.lineTo(p % width1, p / width1 | 0);
@@ -9055,7 +9272,59 @@ function getImageSmoothingEnabled(transform, interpolate) {
   const actualScale = Math.fround((globalThis.devicePixelRatio || 1) * _display_utils.PixelsPerInch.PDF_TO_CSS_UNITS);
   if (interpolate !== undefined) {
     return interpolate;
-  } else if (scale[0] <= 0 actualscale || scale[1] <="actualScale)" { return true; } false; const line_cap_styles="["butt"," "round", "square"]; line_join_styles="["miter"," "bevel"]; normal_clip="{};" eo_clip="{};" var _restoreinitialstate="/*#__PURE__*/new" weakset(); class canvasgraphics constructor(canvasctx, commonobjs, objs, canvasfactory, _ref, annotationcanvasmap, pagecolors) let optionalcontentconfig, markedcontentstack="null" _classprivatemethodinitspec(this, _restoreinitialstate); this.ctx="canvasCtx;" this.current="new" canvasextrastate(this.ctx.canvas.width, this.ctx.canvas.height); this.statestack="[];" this.pendingclip="null;" this.pendingeofill="false;" this.res="null;" this.xobjs="null;" this.commonobjs="commonObjs;" this.objs="objs;" this.canvasfactory="canvasFactory;" this.groupstack="[];" this.processingtype3="null;" this.basetransform="null;" this.basetransformstack="[];" this.grouplevel="0;" this.smaskstack="[];" this.smaskcounter="0;" this.tempsmask="null;" this.suspendedctx="null;" this.contentvisible="true;" this.markedcontentstack="markedContentStack" []; this.optionalcontentconfig="optionalContentConfig;" this.cachedcanvases="new" cachedcanvases(this.canvasfactory); this.cachedpatterns="new" map(); this.annotationcanvasmap="annotationCanvasMap;" this.viewportscale="1;" this.outputscalex="1;" this.outputscaley="1;" this.backgroundcolor="(pageColors" =="=" null pagecolors="==" void ? : pagecolors.background) null; this.foregroundcolor="(pageColors" pagecolors.foreground) this._cachedscaleforstroking="null;" this._cachedgetsinglepixelwidth="null;" this._cachedbitmapsmap="new" getobject(data) fallback="arguments.length"> 1 && arguments[1] !== undefined ? arguments[1] : null;
+  } else if (scale[0] <= actualScale || scale[1] <= actualScale) {
+    return true;
+  }
+  return false;
+}
+const LINE_CAP_STYLES = ["butt", "round", "square"];
+const LINE_JOIN_STYLES = ["miter", "round", "bevel"];
+const NORMAL_CLIP = {};
+const EO_CLIP = {};
+var _restoreInitialState = /*#__PURE__*/new WeakSet();
+class CanvasGraphics {
+  constructor(canvasCtx, commonObjs, objs, canvasFactory, _ref, annotationCanvasMap, pageColors) {
+    let {
+      optionalContentConfig,
+      markedContentStack = null
+    } = _ref;
+    _classPrivateMethodInitSpec(this, _restoreInitialState);
+    this.ctx = canvasCtx;
+    this.current = new CanvasExtraState(this.ctx.canvas.width, this.ctx.canvas.height);
+    this.stateStack = [];
+    this.pendingClip = null;
+    this.pendingEOFill = false;
+    this.res = null;
+    this.xobjs = null;
+    this.commonObjs = commonObjs;
+    this.objs = objs;
+    this.canvasFactory = canvasFactory;
+    this.groupStack = [];
+    this.processingType3 = null;
+    this.baseTransform = null;
+    this.baseTransformStack = [];
+    this.groupLevel = 0;
+    this.smaskStack = [];
+    this.smaskCounter = 0;
+    this.tempSMask = null;
+    this.suspendedCtx = null;
+    this.contentVisible = true;
+    this.markedContentStack = markedContentStack || [];
+    this.optionalContentConfig = optionalContentConfig;
+    this.cachedCanvases = new CachedCanvases(this.canvasFactory);
+    this.cachedPatterns = new Map();
+    this.annotationCanvasMap = annotationCanvasMap;
+    this.viewportScale = 1;
+    this.outputScaleX = 1;
+    this.outputScaleY = 1;
+    this.backgroundColor = (pageColors === null || pageColors === void 0 ? void 0 : pageColors.background) || null;
+    this.foregroundColor = (pageColors === null || pageColors === void 0 ? void 0 : pageColors.foreground) || null;
+    this._cachedScaleForStroking = null;
+    this._cachedGetSinglePixelWidth = null;
+    this._cachedBitmapsMap = new Map();
+  }
+  getObject(data) {
+    let fallback = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
     if (typeof data === "string") {
       return data.startsWith("g_") ? this.commonObjs.get(data) : this.objs.get(data);
     }
@@ -9088,7 +9357,10 @@ function getImageSmoothingEnabled(transform, interpolate) {
         const [rB, gB, bB] = (0, _display_utils.getRGB)(defaultBg);
         const newComp = x => {
           x /= 255;
-          return x <= 0.03928 ? x 12.92 : ((x + 0.055) 1.055) ** 2.4; }; const lumb="Math.round(0.2126" * newcomp(rb) 0.7152 newcomp(gb) 0.0722 newcomp(bb)); this.selectcolor="(r," g, b)> {
+          return x <= 0.03928 ? x / 12.92 : ((x + 0.055) / 1.055) ** 2.4;
+        };
+        const lumB = Math.round(0.2126 * newComp(rB) + 0.7152 * newComp(gB) + 0.0722 * newComp(bB));
+        this.selectColor = (r, g, b) => {
           const lumC = 0.2126 * newComp(r) + 0.7152 * newComp(g) + 0.0722 * newComp(b);
           return Math.round(lumC) === lumB ? bg : fg;
         };
@@ -10698,7 +10970,21 @@ function drawTriangle(data, context, p1, p2, p3, c1, c2, c3) {
     maxY = Math.round(y3);
   let xa, car, cag, cab;
   let xb, cbr, cbg, cbb;
-  for (let y = minY; y <= maxy; y++) { if (y < y2) let k; y1) k="0;" } else - y) (y1 y2); xa="x1" (x1 x2) * car="c1r" (c1r c2r) cag="c1g" (c1g c2g) cab="c1b" (c1b c2b)> y3) {
+  for (let y = minY; y <= maxY; y++) {
+    if (y < y2) {
+      let k;
+      if (y < y1) {
+        k = 0;
+      } else {
+        k = (y1 - y) / (y1 - y2);
+      }
+      xa = x1 - (x1 - x2) * k;
+      car = c1r - (c1r - c2r) * k;
+      cag = c1g - (c1g - c2g) * k;
+      cab = c1b - (c1b - c2b) * k;
+    } else {
+      let k;
+      if (y > y3) {
         k = 1;
       } else if (y2 === y3) {
         k = 0;
@@ -10725,7 +11011,11 @@ function drawTriangle(data, context, p1, p2, p3, c1, c2, c3) {
     const x1_ = Math.round(Math.min(xa, xb));
     const x2_ = Math.round(Math.max(xa, xb));
     let j = rowSize * y + x1_ * 4;
-    for (let x = x1_; x <= x2_; x++) { k="(xa" - x) (xa xb); if (k < 0) } else> 1) {
+    for (let x = x1_; x <= x2_; x++) {
+      k = (xa - x) / (xa - xb);
+      if (k < 0) {
+        k = 0;
+      } else if (k > 1) {
         k = 1;
       }
       bytes[j++] = car - (car - cbr) * k | 0;
@@ -11284,7 +11574,109 @@ class MessageHandler {
         }
         const lastDesiredSize = this.desiredSize;
         this.desiredSize -= size;
-        if (lastDesiredSize > 0 && this.desiredSize <= 0) { this.sinkcapability="(0," _util.createpromisecapability)(); this.ready="this.sinkCapability.promise;" } comobj.postmessage({ sourcename, targetname, stream: streamkind.enqueue, streamid, chunk }, transfers); close() if (this.iscancelled) return; this.iscancelled="true;" streamkind.close, streamid }); delete self.streamsinks[streamid]; error(reason) (0, _util.assert)(reason instanceof error, "error must have a valid reason"); streamkind.error, reason: wrapreason(reason) sinkcapability: _util.createpromisecapability)(), onpull: null, oncancel: iscancelled: false, desiredsize: data.desiredsize, ready: null }; streamsink.sinkcapability.resolve(); streamsink.ready="streamSink.sinkCapability.promise;" this.streamsinks[streamid]="streamSink;" new promise(function (resolve) resolve(action(data.data, streamsink)); }).then(function () streamkind.start_complete, success: true function (reason) _processstreammessage(data) const sourcename="this.sourceName," targetname="data.sourceName," comobj="this.comObj;" streamcontroller="this.streamControllers[streamId]," streamsink="this.streamSinks[streamId];" switch (data.stream) case streamkind.start_complete: (data.success) streamcontroller.startcall.resolve(); else streamcontroller.startcall.reject(wrapreason(data.reason)); break; streamkind.pull_complete: streamcontroller.pullcall.resolve(); streamcontroller.pullcall.reject(wrapreason(data.reason)); streamkind.pull: (!streamsink) streamkind.pull_complete, (streamsink.desiredsize <="0" && data.desiredsize> 0) {
+        if (lastDesiredSize > 0 && this.desiredSize <= 0) {
+          this.sinkCapability = (0, _util.createPromiseCapability)();
+          this.ready = this.sinkCapability.promise;
+        }
+        comObj.postMessage({
+          sourceName,
+          targetName,
+          stream: StreamKind.ENQUEUE,
+          streamId,
+          chunk
+        }, transfers);
+      },
+      close() {
+        if (this.isCancelled) {
+          return;
+        }
+        this.isCancelled = true;
+        comObj.postMessage({
+          sourceName,
+          targetName,
+          stream: StreamKind.CLOSE,
+          streamId
+        });
+        delete self.streamSinks[streamId];
+      },
+      error(reason) {
+        (0, _util.assert)(reason instanceof Error, "error must have a valid reason");
+        if (this.isCancelled) {
+          return;
+        }
+        this.isCancelled = true;
+        comObj.postMessage({
+          sourceName,
+          targetName,
+          stream: StreamKind.ERROR,
+          streamId,
+          reason: wrapReason(reason)
+        });
+      },
+      sinkCapability: (0, _util.createPromiseCapability)(),
+      onPull: null,
+      onCancel: null,
+      isCancelled: false,
+      desiredSize: data.desiredSize,
+      ready: null
+    };
+    streamSink.sinkCapability.resolve();
+    streamSink.ready = streamSink.sinkCapability.promise;
+    this.streamSinks[streamId] = streamSink;
+    new Promise(function (resolve) {
+      resolve(action(data.data, streamSink));
+    }).then(function () {
+      comObj.postMessage({
+        sourceName,
+        targetName,
+        stream: StreamKind.START_COMPLETE,
+        streamId,
+        success: true
+      });
+    }, function (reason) {
+      comObj.postMessage({
+        sourceName,
+        targetName,
+        stream: StreamKind.START_COMPLETE,
+        streamId,
+        reason: wrapReason(reason)
+      });
+    });
+  }
+  _processStreamMessage(data) {
+    const streamId = data.streamId,
+      sourceName = this.sourceName,
+      targetName = data.sourceName,
+      comObj = this.comObj;
+    const streamController = this.streamControllers[streamId],
+      streamSink = this.streamSinks[streamId];
+    switch (data.stream) {
+      case StreamKind.START_COMPLETE:
+        if (data.success) {
+          streamController.startCall.resolve();
+        } else {
+          streamController.startCall.reject(wrapReason(data.reason));
+        }
+        break;
+      case StreamKind.PULL_COMPLETE:
+        if (data.success) {
+          streamController.pullCall.resolve();
+        } else {
+          streamController.pullCall.reject(wrapReason(data.reason));
+        }
+        break;
+      case StreamKind.PULL:
+        if (!streamSink) {
+          comObj.postMessage({
+            sourceName,
+            targetName,
+            stream: StreamKind.PULL_COMPLETE,
+            streamId,
+            success: true
+          });
+          break;
+        }
+        if (streamSink.desiredSize <= 0 && data.desiredSize > 0) {
           streamSink.sinkCapability.resolve();
         }
         streamSink.desiredSize = data.desiredSize;
@@ -11766,7 +12158,27 @@ class PDFDataTransportStream {
     return new PDFDataTransportStreamReader(this, queuedChunks, this._progressiveDone, this._contentDispositionFilename);
   }
   getRangeReader(begin, end) {
-    if (end <= 0 this._progressivedatalength) { return null; } const reader="new" pdfdatatransportstreamrangereader(this, begin, end); this._pdfdatarangetransport.requestdatarange(begin, this._rangereaders.push(reader); reader; cancelallrequests(reason) var _this$_fullrequestrea5; (_this$_fullrequestrea5="this._fullRequestReader)" =="=" null || _this$_fullrequestrea5="==" void ? : _this$_fullrequestrea5.cancel(reason); for (const of this._rangereaders.slice(0)) reader.cancel(reason); this._pdfdatarangetransport.abort(); exports.pdfdatatransportstream="PDFDataTransportStream;" class pdfdatatransportstreamreader constructor(stream, queuedchunks) let progressivedone="arguments.length"> 2 && arguments[2] !== undefined ? arguments[2] : false;
+    if (end <= this._progressiveDataLength) {
+      return null;
+    }
+    const reader = new PDFDataTransportStreamRangeReader(this, begin, end);
+    this._pdfDataRangeTransport.requestDataRange(begin, end);
+    this._rangeReaders.push(reader);
+    return reader;
+  }
+  cancelAllRequests(reason) {
+    var _this$_fullRequestRea5;
+    (_this$_fullRequestRea5 = this._fullRequestReader) === null || _this$_fullRequestRea5 === void 0 ? void 0 : _this$_fullRequestRea5.cancel(reason);
+    for (const reader of this._rangeReaders.slice(0)) {
+      reader.cancel(reason);
+    }
+    this._pdfDataRangeTransport.abort();
+  }
+}
+exports.PDFDataTransportStream = PDFDataTransportStream;
+class PDFDataTransportStreamReader {
+  constructor(stream, queuedChunks) {
+    let progressiveDone = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
     let contentDispositionFilename = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : null;
     this._stream = stream;
     this._done = progressiveDone || false;
@@ -12071,7 +12483,100 @@ class PDFNodeStream {
     return this._fullRequestReader;
   }
   getRangeReader(start, end) {
-    if (end <= 0 this._progressivedatalength) { return null; } const rangereader="this.isFsUrl" ? new pdfnodestreamfsrangereader(this, start, end) : pdfnodestreamrangereader(this, end); this._rangerequestreaders.push(rangereader); rangereader; cancelallrequests(reason) var _this$_fullrequestrea2; (_this$_fullrequestrea2="this._fullRequestReader)" =="=" null || _this$_fullrequestrea2="==" void _this$_fullrequestrea2.cancel(reason); for (const reader of this._rangerequestreaders.slice(0)) reader.cancel(reason); exports.pdfnodestream="PDFNodeStream;" class basefullreader constructor(stream) this._url="stream.url;" this._done="false;" this._storederror="null;" this.onprogress="null;" source="stream.source;" this._contentlength="source.length;" this._loaded="0;" this._filename="null;" this._disablerange="source.disableRange" false; this._rangechunksize="source.rangeChunkSize;" if (!this._rangechunksize && !this._disablerange) this._isstreamingsupported="!source.disableStream;" this._israngesupported="!source.disableRange;" this._readablestream="null;" this._readcapability="(0," _util.createpromisecapability)(); this._headerscapability="(0," get headersready() this._headerscapability.promise; filename() this._filename; contentlength() this._contentlength; israngesupported() this._israngesupported; isstreamingsupported() this._isstreamingsupported; async read() _this$onprogress; await this._readcapability.promise; (this._done) value: undefined, done: true }; (this._storederror) throw this._storederror; chunk="this._readableStream.read();" (chunk="==" null) this.read(); +="chunk.length;" (_this$onprogress="this.onProgress)" _this$onprogress="==" _this$onprogress.call(this, loaded: this._loaded, total: }); buffer="new" uint8array(chunk).buffer; buffer, false cancel(reason) (!this._readablestream) this._error(reason); return; this._readablestream.destroy(reason); _error(reason) this._readcapability.resolve(); _setreadablestream(readablestream) readablestream.on("readable", ()> {
+    if (end <= this._progressiveDataLength) {
+      return null;
+    }
+    const rangeReader = this.isFsUrl ? new PDFNodeStreamFsRangeReader(this, start, end) : new PDFNodeStreamRangeReader(this, start, end);
+    this._rangeRequestReaders.push(rangeReader);
+    return rangeReader;
+  }
+  cancelAllRequests(reason) {
+    var _this$_fullRequestRea2;
+    (_this$_fullRequestRea2 = this._fullRequestReader) === null || _this$_fullRequestRea2 === void 0 ? void 0 : _this$_fullRequestRea2.cancel(reason);
+    for (const reader of this._rangeRequestReaders.slice(0)) {
+      reader.cancel(reason);
+    }
+  }
+}
+exports.PDFNodeStream = PDFNodeStream;
+class BaseFullReader {
+  constructor(stream) {
+    this._url = stream.url;
+    this._done = false;
+    this._storedError = null;
+    this.onProgress = null;
+    const source = stream.source;
+    this._contentLength = source.length;
+    this._loaded = 0;
+    this._filename = null;
+    this._disableRange = source.disableRange || false;
+    this._rangeChunkSize = source.rangeChunkSize;
+    if (!this._rangeChunkSize && !this._disableRange) {
+      this._disableRange = true;
+    }
+    this._isStreamingSupported = !source.disableStream;
+    this._isRangeSupported = !source.disableRange;
+    this._readableStream = null;
+    this._readCapability = (0, _util.createPromiseCapability)();
+    this._headersCapability = (0, _util.createPromiseCapability)();
+  }
+  get headersReady() {
+    return this._headersCapability.promise;
+  }
+  get filename() {
+    return this._filename;
+  }
+  get contentLength() {
+    return this._contentLength;
+  }
+  get isRangeSupported() {
+    return this._isRangeSupported;
+  }
+  get isStreamingSupported() {
+    return this._isStreamingSupported;
+  }
+  async read() {
+    var _this$onProgress;
+    await this._readCapability.promise;
+    if (this._done) {
+      return {
+        value: undefined,
+        done: true
+      };
+    }
+    if (this._storedError) {
+      throw this._storedError;
+    }
+    const chunk = this._readableStream.read();
+    if (chunk === null) {
+      this._readCapability = (0, _util.createPromiseCapability)();
+      return this.read();
+    }
+    this._loaded += chunk.length;
+    (_this$onProgress = this.onProgress) === null || _this$onProgress === void 0 ? void 0 : _this$onProgress.call(this, {
+      loaded: this._loaded,
+      total: this._contentLength
+    });
+    const buffer = new Uint8Array(chunk).buffer;
+    return {
+      value: buffer,
+      done: false
+    };
+  }
+  cancel(reason) {
+    if (!this._readableStream) {
+      this._error(reason);
+      return;
+    }
+    this._readableStream.destroy(reason);
+  }
+  _error(reason) {
+    this._storedError = reason;
+    this._readCapability.resolve();
+  }
+  _setReadableStream(readableStream) {
+    this._readableStream = readableStream;
+    readableStream.on("readable", () => {
       this._readCapability.resolve();
     });
     readableStream.on("end", () => {
@@ -12314,7 +12819,50 @@ function validateRangeRequestCapabilities(_ref) {
     return returnValues;
   }
   returnValues.suggestedLength = length;
-  if (length <= 0 2 155 200 404 * rangechunksize) { return returnvalues; } if (disablerange || !ishttp) (getresponseheader("accept-ranges") !="=" "bytes") const contentencoding="getResponseHeader("Content-Encoding")" "identity"; (contentencoding "identity") returnvalues.allowrangerequests="true;" function extractfilenamefromheader(getresponseheader) contentdisposition="getResponseHeader("Content-Disposition");" (contentdisposition) let filename="(0," _content_disposition.getfilenamefromcontentdispositionheader)(contentdisposition); (filename.includes("%")) try catch (ex) {} ((0, _display_utils.ispdffile)(filename)) filename; null; createresponsestatuserror(status, url) (status="==" status="==" && url.startswith("file:")) new _util.missingpdfexception('missing pdf "' + url '".'); _util.unexpectedresponseexception(`unexpected server response (${status}) while retrieving "${url}".`, status); validateresponsestatus(status) 206; *** }), ((__unused_webpack_module, exports, __w_pdfjs_require__)> {
+  if (length <= 2 * rangeChunkSize) {
+    return returnValues;
+  }
+  if (disableRange || !isHttp) {
+    return returnValues;
+  }
+  if (getResponseHeader("Accept-Ranges") !== "bytes") {
+    return returnValues;
+  }
+  const contentEncoding = getResponseHeader("Content-Encoding") || "identity";
+  if (contentEncoding !== "identity") {
+    return returnValues;
+  }
+  returnValues.allowRangeRequests = true;
+  return returnValues;
+}
+function extractFilenameFromHeader(getResponseHeader) {
+  const contentDisposition = getResponseHeader("Content-Disposition");
+  if (contentDisposition) {
+    let filename = (0, _content_disposition.getFilenameFromContentDispositionHeader)(contentDisposition);
+    if (filename.includes("%")) {
+      try {
+        filename = decodeURIComponent(filename);
+      } catch (ex) {}
+    }
+    if ((0, _display_utils.isPdfFile)(filename)) {
+      return filename;
+    }
+  }
+  return null;
+}
+function createResponseStatusError(status, url) {
+  if (status === 404 || status === 0 && url.startsWith("file:")) {
+    return new _util.MissingPDFException('Missing PDF "' + url + '".');
+  }
+  return new _util.UnexpectedResponseException(`Unexpected server response (${status}) while retrieving PDF "${url}".`, status);
+}
+function validateResponseStatus(status) {
+  return status === 200 || status === 206;
+}
+
+/***/ }),
+/* 155 */
+/***/ ((__unused_webpack_module, exports, __w_pdfjs_require__) => {
 
 "use strict";
 
@@ -12948,7 +13496,43 @@ class PDFFetchStream {
     return this._fullRequestReader;
   }
   getRangeReader(begin, end) {
-    if (end <= 0 this._progressivedatalength) { return null; } const reader="new" pdffetchstreamrangereader(this, begin, end); this._rangerequestreaders.push(reader); reader; cancelallrequests(reason) var _this$_fullrequestrea2; (_this$_fullrequestrea2="this._fullRequestReader)" =="=" null || _this$_fullrequestrea2="==" void ? : _this$_fullrequestrea2.cancel(reason); for (const of this._rangerequestreaders.slice(0)) reader.cancel(reason); exports.pdffetchstream="PDFFetchStream;" class pdffetchstreamreader constructor(stream) this._stream="stream;" this._reader="null;" this._loaded="0;" this._filename="null;" source="stream.source;" this._withcredentials="source.withCredentials" false; this._contentlength="source.length;" this._headerscapability="(0," _util.createpromisecapability)(); this._disablerange="source.disableRange" this._rangechunksize="source.rangeChunkSize;" if (!this._rangechunksize && !this._disablerange) this._abortcontroller="new" abortcontroller(); this._isstreamingsupported="!source.disableStream;" this._israngesupported="!source.disableRange;" this._headers="createHeaders(this._stream.httpHeaders);" url="source.url;" fetch(url, createfetchoptions(this._headers, this._withcredentials, this._abortcontroller)).then(response> {
+    if (end <= this._progressiveDataLength) {
+      return null;
+    }
+    const reader = new PDFFetchStreamRangeReader(this, begin, end);
+    this._rangeRequestReaders.push(reader);
+    return reader;
+  }
+  cancelAllRequests(reason) {
+    var _this$_fullRequestRea2;
+    (_this$_fullRequestRea2 = this._fullRequestReader) === null || _this$_fullRequestRea2 === void 0 ? void 0 : _this$_fullRequestRea2.cancel(reason);
+    for (const reader of this._rangeRequestReaders.slice(0)) {
+      reader.cancel(reason);
+    }
+  }
+}
+exports.PDFFetchStream = PDFFetchStream;
+class PDFFetchStreamReader {
+  constructor(stream) {
+    this._stream = stream;
+    this._reader = null;
+    this._loaded = 0;
+    this._filename = null;
+    const source = stream.source;
+    this._withCredentials = source.withCredentials || false;
+    this._contentLength = source.length;
+    this._headersCapability = (0, _util.createPromiseCapability)();
+    this._disableRange = source.disableRange || false;
+    this._rangeChunkSize = source.rangeChunkSize;
+    if (!this._rangeChunkSize && !this._disableRange) {
+      this._disableRange = true;
+    }
+    this._abortController = new AbortController();
+    this._isStreamingSupported = !source.disableStream;
+    this._isRangeSupported = !source.disableRange;
+    this._headers = createHeaders(this._stream.httpHeaders);
+    const url = source.url;
+    fetch(url, createFetchOptions(this._headers, this._withCredentials, this._abortController)).then(response => {
       if (!(0, _network_utils.validateResponseStatus)(response.status)) {
         throw (0, _network_utils.createResponseStatusError)(response.status, url);
       }
@@ -14998,7 +15582,29 @@ function _isAlmostFlat2(p10, p11, p20, p21, p30, p31, p40, p41) {
   const ay = (3 * p21 - 2 * p11 - p41) ** 2;
   const bx = (3 * p30 - p10 - 2 * p40) ** 2;
   const by = (3 * p31 - p11 - 2 * p41) ** 2;
-  return Math.max(ax, bx) + Math.max(ay, by) <= tol; } function _getbbox2() { let xmin="Infinity;" xmax="-Infinity;" ymin="Infinity;" ymax="-Infinity;" for (const path of this.paths) [first, control1, control2, second] path) const bbox="_util.Util.bezierBoundingBox(...first," ...control1, ...control2, ...second); bbox[0]); bbox[1]); bbox[2]); bbox[3]); return [xmin, ymin, xmax, ymax]; _getpadding2() _classprivatefieldget(this, _disableediting) ? math.ceil(this.thickness * this.parentscale) : 0; _fittocontent2() firsttime="arguments.length"> 0 && arguments[0] !== undefined ? arguments[0] : false;
+  return Math.max(ax, bx) + Math.max(ay, by) <= tol;
+}
+function _getBbox2() {
+  let xMin = Infinity;
+  let xMax = -Infinity;
+  let yMin = Infinity;
+  let yMax = -Infinity;
+  for (const path of this.paths) {
+    for (const [first, control1, control2, second] of path) {
+      const bbox = _util.Util.bezierBoundingBox(...first, ...control1, ...control2, ...second);
+      xMin = Math.min(xMin, bbox[0]);
+      yMin = Math.min(yMin, bbox[1]);
+      xMax = Math.max(xMax, bbox[2]);
+      yMax = Math.max(yMax, bbox[3]);
+    }
+  }
+  return [xMin, yMin, xMax, yMax];
+}
+function _getPadding2() {
+  return _classPrivateFieldGet(this, _disableEditing) ? Math.ceil(this.thickness * this.parentScale) : 0;
+}
+function _fitToContent2() {
+  let firstTime = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
   if (this.isEmpty()) {
     return;
   }
@@ -15259,7 +15865,13 @@ var mapTtoRelativeDistances = function (bez, B_parts) {
   var B_t_dist = [0];
   var B_t_prev = bez[0];
   var sumLen = 0;
-  for (var i = 1; i <= b_parts; i++) { b_t_curr="bezier.q(bez," i b_parts); sumlen +="maths.vectorLen(maths.subtract(B_t_curr," b_t_prev)); b_t_dist.push(sumlen); b_t_prev="B_t_curr;" } b_t_dist="B_t_dist.map(x" => x / sumLen);
+  for (var i = 1; i <= B_parts; i++) {
+    B_t_curr = bezier.q(bez, i / B_parts);
+    sumLen += maths.vectorLen(maths.subtract(B_t_curr, B_t_prev));
+    B_t_dist.push(sumLen);
+    B_t_prev = B_t_curr;
+  }
+  B_t_dist = B_t_dist.map(x => x / sumLen);
   return B_t_dist;
 };
 function find_t(bez, param, t_distMap, B_parts) {
@@ -15270,7 +15882,31 @@ function find_t(bez, param, t_distMap, B_parts) {
     return 1;
   }
   var lenMax, lenMin, tMax, tMin, t;
-  for (var i = 1; i <= b_parts; i++) { if (param <="t_distMap[i])" tmin="(i" - 1) tmax="i" lenmin="t_distMap[i" 1]; lenmax="t_distMap[i];" t="(param" lenmin) (lenmax * (tmax tmin) + tmin; break; } return t; function createtangent(pointa, pointb) maths.normalize(maths.subtract(pointa, pointb)); class maths static zeros_xx2x2(x) var zs="[];" while (x--) zs.push([0, 0]); zs; mulitems(items, multiplier) items.map(x> x * multiplier);
+  for (var i = 1; i <= B_parts; i++) {
+    if (param <= t_distMap[i]) {
+      tMin = (i - 1) / B_parts;
+      tMax = i / B_parts;
+      lenMin = t_distMap[i - 1];
+      lenMax = t_distMap[i];
+      t = (param - lenMin) / (lenMax - lenMin) * (tMax - tMin) + tMin;
+      break;
+    }
+  }
+  return t;
+}
+function createTangent(pointA, pointB) {
+  return maths.normalize(maths.subtract(pointA, pointB));
+}
+class maths {
+  static zeros_Xx2x2(x) {
+    var zs = [];
+    while (x--) {
+      zs.push([0, 0]);
+    }
+    return zs;
+  }
+  static mulItems(items, multiplier) {
+    return items.map(x => x * multiplier);
   }
   static mulMatrix(m1, m2) {
     return m1.reduce((sum, x1, i) => sum + x1 * m2[i], 0);
@@ -15980,7 +16616,7 @@ class TextAnnotationElement extends AnnotationElement {
     this.container.className = "textAnnotation";
     const image = document.createElement("img");
     image.src = this.imageResourcesPath + "annotation-" + this.data.name.toLowerCase() + ".svg";
-    image.alt = "[ Annotation]";
+    image.alt = "[{{type}} Annotation]";
     image.dataset.l10nId = "text_annotation_type";
     image.dataset.l10nArgs = JSON.stringify({
       type: this.data.name
@@ -16214,7 +16850,31 @@ class TextWidgetAnnotationElement extends WidgetAnnotationElement {
               }
               target.setAttribute("maxLength", charLimit);
               let value = elementData.userValue;
-              if (!value || value.length <= 0 charlimit) { return; } value="value.slice(0," charlimit); target.value="elementData.userValue" = value; storage.setvalue(id, }); (_this$linkservice$eve5="this.linkService.eventBus)" null || _this$linkservice$eve5="==" void ? : _this$linkservice$eve5.dispatch("dispatcheventinsandbox", source: this, detail: id, name: "keystroke", value, willcommit: true, commitkey: 1, selstart: target.selectionstart, selend: target.selectionend }; this._dispatcheventfromsandbox(actions, jsevent); element.addeventlistener("keydown", event> {
+              if (!value || value.length <= charLimit) {
+                return;
+              }
+              value = value.slice(0, charLimit);
+              target.value = elementData.userValue = value;
+              storage.setValue(id, {
+                value
+              });
+              (_this$linkService$eve5 = this.linkService.eventBus) === null || _this$linkService$eve5 === void 0 ? void 0 : _this$linkService$eve5.dispatch("dispatcheventinsandbox", {
+                source: this,
+                detail: {
+                  id,
+                  name: "Keystroke",
+                  value,
+                  willCommit: true,
+                  commitKey: 1,
+                  selStart: target.selectionStart,
+                  selEnd: target.selectionEnd
+                }
+              });
+            }
+          };
+          this._dispatchEventFromSandbox(actions, jsEvent);
+        });
+        element.addEventListener("keydown", event => {
           var _this$linkService$eve6;
           elementData.commitKey = 1;
           let commitKey = -1;
@@ -16833,7 +17493,7 @@ class PopupElement {
     if (dateObject) {
       const modificationDate = document.createElement("span");
       modificationDate.className = "popupDate";
-      modificationDate.textContent = "1695375479549, ";
+      modificationDate.textContent = "{{date}}, {{time}}";
       modificationDate.dataset.l10nId = "annotation_date_string";
       modificationDate.dataset.l10nArgs = JSON.stringify({
         date: dateObject.toLocaleDateString(),
@@ -17307,7 +17967,81 @@ class AnnotationLayer {
           width,
           height
         } = getRectDims(data.rect);
-        if (width <= 0 165 || height <="0)" { continue; } elementparams.data="data;" const element="AnnotationElementFactory.create(elementParams);" if (!element.isrenderable) rendered="element.render();" (data.hidden) rendered.style.visibility="hidden" ; (array.isarray(rendered)) for (const renderedelement of rendered) renderedelement.style.zindex="zIndex++;" _classstaticprivatemethodget(annotationlayer, annotationlayer, _appendelement).call(annotationlayer, renderedelement, data.id, div, accessibilitymanager); else rendered.style.zindex="zIndex++;" (element instanceof popupannotationelement) div.prepend(rendered); rendered, _classstaticprivatemethodget(this, _setannotationcanvasmap).call(this, params.annotationcanvasmap); static update(params) annotationcanvasmap, viewport (0, _display_utils.setlayerdimensions)(div, rotation: viewport.rotation }); annotationcanvasmap); div.hidden="false;" exports.annotationlayer="AnnotationLayer;" function _appendelement(element, id, accessibilitymanager) contentelement="element.firstChild" element; contentelement.id="`${_display_utils.AnnotationPrefix}${id}`;" div.append(element); accessibilitymanager="==" null void ? : accessibilitymanager.moveelementindom(div, element, contentelement, false); _setannotationcanvasmap(div, annotationcanvasmap) (!annotationcanvasmap) return; [id, canvas] (!element) firstchild (!firstchild) element.append(canvas); (firstchild.nodename="==" "canvas") firstchild.replacewith(canvas); firstchild.before(canvas); annotationcanvasmap.clear(); *** }), * ((__unused_webpack_module, exports)> {
+        if (width <= 0 || height <= 0) {
+          continue;
+        }
+      }
+      elementParams.data = data;
+      const element = AnnotationElementFactory.create(elementParams);
+      if (!element.isRenderable) {
+        continue;
+      }
+      const rendered = element.render();
+      if (data.hidden) {
+        rendered.style.visibility = "hidden";
+      }
+      if (Array.isArray(rendered)) {
+        for (const renderedElement of rendered) {
+          renderedElement.style.zIndex = zIndex++;
+          _classStaticPrivateMethodGet(AnnotationLayer, AnnotationLayer, _appendElement).call(AnnotationLayer, renderedElement, data.id, div, accessibilityManager);
+        }
+      } else {
+        rendered.style.zIndex = zIndex++;
+        if (element instanceof PopupAnnotationElement) {
+          div.prepend(rendered);
+        } else {
+          _classStaticPrivateMethodGet(AnnotationLayer, AnnotationLayer, _appendElement).call(AnnotationLayer, rendered, data.id, div, accessibilityManager);
+        }
+      }
+    }
+    _classStaticPrivateMethodGet(this, AnnotationLayer, _setAnnotationCanvasMap).call(this, div, params.annotationCanvasMap);
+  }
+  static update(params) {
+    const {
+      annotationCanvasMap,
+      div,
+      viewport
+    } = params;
+    (0, _display_utils.setLayerDimensions)(div, {
+      rotation: viewport.rotation
+    });
+    _classStaticPrivateMethodGet(this, AnnotationLayer, _setAnnotationCanvasMap).call(this, div, annotationCanvasMap);
+    div.hidden = false;
+  }
+}
+exports.AnnotationLayer = AnnotationLayer;
+function _appendElement(element, id, div, accessibilityManager) {
+  const contentElement = element.firstChild || element;
+  contentElement.id = `${_display_utils.AnnotationPrefix}${id}`;
+  div.append(element);
+  accessibilityManager === null || accessibilityManager === void 0 ? void 0 : accessibilityManager.moveElementInDOM(div, element, contentElement, false);
+}
+function _setAnnotationCanvasMap(div, annotationCanvasMap) {
+  if (!annotationCanvasMap) {
+    return;
+  }
+  for (const [id, canvas] of annotationCanvasMap) {
+    const element = div.querySelector(`[data-annotation-id="${id}"]`);
+    if (!element) {
+      continue;
+    }
+    const {
+      firstChild
+    } = element;
+    if (!firstChild) {
+      element.append(canvas);
+    } else if (firstChild.nodeName === "CANVAS") {
+      firstChild.replaceWith(canvas);
+    } else {
+      firstChild.before(canvas);
+    }
+  }
+  annotationCanvasMap.clear();
+}
+
+/***/ }),
+/* 165 */
+/***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
 
@@ -19168,4 +19902,4 @@ const pdfjsBuild = 'af6414988';
 /******/ })()
 ;
 });
-//# sourceMappingURL=pdf.js.map</=></=></=></=></=></=></=></=></=></=></=></=></=></=></=></=></=></=></=></=></=></=></=></=></=></=></=></';>
+//# sourceMappingURL=pdf.js.map

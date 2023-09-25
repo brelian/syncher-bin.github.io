@@ -238,7 +238,80 @@ const Stepper = (function StepperClosure() {
   function simplifyArgs(args) {
     if (typeof args === "string") {
       const MAX_STRING_LENGTH = 75;
-      return args.length <= max_string_length ? args : args.substring(0, max_string_length) + "..."; } if (typeof !="=" "object" || null) { return args; ("length" in args) array const max_items="10," simpleargs="[];" let i, ii; for (i="0," ii="Math.min(MAX_ITEMS," args.length); i < i++) simpleargs.push(simplifyargs(args[i])); args.length) simpleargs.push("..."); simpleargs; simpleobj="{};" (const key simpleobj[key]="simplifyArgs(args[key]);" simpleobj; eslint-disable-next-line no-shadow class stepper constructor(panel, pageindex, initialbreakpoints) this.panel="panel;" this.breakpoint="0;" this.nextbreakpoint="null;" this.pageindex="pageIndex;" this.breakpoints="initialBreakPoints;" this.currentidx="-1;" this.operatorlistidx="0;" this.indentlevel="0;" init(operatorlist) panel="this.panel;" content="c("div"," "c="continue," s="step");" table="c("table");" content.append(table); table.cellspacing="0;" headerrow="c("tr");" table.append(headerrow); headerrow.append( c("th", "break"), "idx"), "fn"), "args") ); panel.append(content); this.table="table;" this.updateoperatorlist(operatorlist); updateoperatorlist(operatorlist) self="this;" function cboxonclick() x="+this.dataset.idx;" (this.checked) self.breakpoints.push(x); else self.breakpoints.splice(self.breakpoints.indexof(x), 1); steppermanager.savebreakpoints(self.pageindex, self.breakpoints); max_operators_count="15000;" (this.operatorlistidx> MAX_OPERATORS_COUNT) {
+      return args.length <= MAX_STRING_LENGTH
+        ? args
+        : args.substring(0, MAX_STRING_LENGTH) + "...";
+    }
+    if (typeof args !== "object" || args === null) {
+      return args;
+    }
+    if ("length" in args) {
+      // array
+      const MAX_ITEMS = 10,
+        simpleArgs = [];
+      let i, ii;
+      for (i = 0, ii = Math.min(MAX_ITEMS, args.length); i < ii; i++) {
+        simpleArgs.push(simplifyArgs(args[i]));
+      }
+      if (i < args.length) {
+        simpleArgs.push("...");
+      }
+      return simpleArgs;
+    }
+    const simpleObj = {};
+    for (const key in args) {
+      simpleObj[key] = simplifyArgs(args[key]);
+    }
+    return simpleObj;
+  }
+
+  // eslint-disable-next-line no-shadow
+  class Stepper {
+    constructor(panel, pageIndex, initialBreakPoints) {
+      this.panel = panel;
+      this.breakPoint = 0;
+      this.nextBreakPoint = null;
+      this.pageIndex = pageIndex;
+      this.breakPoints = initialBreakPoints;
+      this.currentIdx = -1;
+      this.operatorListIdx = 0;
+      this.indentLevel = 0;
+    }
+
+    init(operatorList) {
+      const panel = this.panel;
+      const content = c("div", "c=continue, s=step");
+      const table = c("table");
+      content.append(table);
+      table.cellSpacing = 0;
+      const headerRow = c("tr");
+      table.append(headerRow);
+      headerRow.append(
+        c("th", "Break"),
+        c("th", "Idx"),
+        c("th", "fn"),
+        c("th", "args")
+      );
+      panel.append(content);
+      this.table = table;
+      this.updateOperatorList(operatorList);
+    }
+
+    updateOperatorList(operatorList) {
+      const self = this;
+
+      function cboxOnClick() {
+        const x = +this.dataset.idx;
+        if (this.checked) {
+          self.breakPoints.push(x);
+        } else {
+          self.breakPoints.splice(self.breakPoints.indexOf(x), 1);
+        }
+        StepperManager.saveBreakPoints(self.pageIndex, self.breakPoints);
+      }
+
+      const MAX_OPERATORS_COUNT = 15000;
+      if (this.operatorListIdx > MAX_OPERATORS_COUNT) {
         return;
       }
 
@@ -537,4 +610,3 @@ globalThis.StepperManager = StepperManager;
 globalThis.Stats = Stats;
 
 export { PDFBug };
-</=>

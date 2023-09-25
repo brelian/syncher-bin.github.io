@@ -841,7 +841,18 @@ const PDFViewerApplication = {
       return;
     }
     const percent = Math.round(level * 100);
-    if (percent <= 0 this.loadingbar.percent) { return; } this.loadingbar.percent="percent;" if (((_this$pdfdocument3="this.pdfDocument)" =="=" null || _this$pdfdocument3="==" void ? : _this$pdfdocument3.loadingparams.disableautofetch) ?? _app_options.appoptions.get("disableautofetch")) this.loadingbar.setdisableautofetch(); }, load(pdfdocument) var _this$toolbar2, _this$secondarytoolba2, _this$pdfdocumentprop2, _this$pdfthumbnailvie2; this.pdfdocument="pdfDocument;" pdfdocument.getdownloadinfo().then(_ref2> {
+    if (percent <= this.loadingBar.percent) {
+      return;
+    }
+    this.loadingBar.percent = percent;
+    if (((_this$pdfDocument3 = this.pdfDocument) === null || _this$pdfDocument3 === void 0 ? void 0 : _this$pdfDocument3.loadingParams.disableAutoFetch) ?? _app_options.AppOptions.get("disableAutoFetch")) {
+      this.loadingBar.setDisableAutoFetch();
+    }
+  },
+  load(pdfDocument) {
+    var _this$toolbar2, _this$secondaryToolba2, _this$pdfDocumentProp2, _this$pdfThumbnailVie2;
+    this.pdfDocument = pdfDocument;
+    pdfDocument.getDownloadInfo().then(_ref2 => {
       var _this$loadingBar;
       let {
         length
@@ -2129,7 +2140,20 @@ function webViewerTouchMove(evt) {
     touch1X: pTouch1X,
     touch1Y: pTouch1Y
   } = _touchInfo;
-  if (Math.abs(pTouch0X - page0X) <= 1 && math.abs(ptouch0y - page0y) <="1" math.abs(ptouch1x page1x) math.abs(ptouch1y page1y) { return; } _touchinfo.touch0x="page0X;" _touchinfo.touch0y="page0Y;" _touchinfo.touch1x="page1X;" _touchinfo.touch1y="page1Y;" if (ptouch0x="==" page0x ptouch0y="==" const v1x="pTouch1X" page0x; v1y="pTouch1Y" page0y; v2x="page1X" v2y="page1Y" det="v1X" * v2x; (math.abs(det)> 0.02 * Math.hypot(v1X, v1Y) * Math.hypot(v2X, v2Y)) {
+  if (Math.abs(pTouch0X - page0X) <= 1 && Math.abs(pTouch0Y - page0Y) <= 1 && Math.abs(pTouch1X - page1X) <= 1 && Math.abs(pTouch1Y - page1Y) <= 1) {
+    return;
+  }
+  _touchInfo.touch0X = page0X;
+  _touchInfo.touch0Y = page0Y;
+  _touchInfo.touch1X = page1X;
+  _touchInfo.touch1Y = page1Y;
+  if (pTouch0X === page0X && pTouch0Y === page0Y) {
+    const v1X = pTouch1X - page0X;
+    const v1Y = pTouch1Y - page0Y;
+    const v2X = page1X - page0X;
+    const v2Y = page1Y - page0Y;
+    const det = v1X * v2Y - v1Y * v2X;
+    if (Math.abs(det) > 0.02 * Math.hypot(v1X, v1Y) * Math.hypot(v2X, v2Y)) {
       return;
     }
   } else if (pTouch1X === page1X && pTouch1Y === page1Y) {
@@ -2442,7 +2466,38 @@ function webViewerKeyDown(evt) {
     }
   }
   if (!handled && !isViewerInPresentationMode) {
-    if (evt.keyCode >= 33 && evt.keyCode <= 3 32 40 || evt.keycode="==" && curelementtagname !="=" "button") { ensureviewerfocused="true;" } if (ensureviewerfocused !pdfviewer.containselement(curelement)) pdfviewer.focus(); (handled) evt.preventdefault(); function beforeunload(evt) evt.returnvalue ; return false; webviewerannotationeditorstateschanged(data) pdfviewerapplication.externalservices.updateeditorstates(data); const pdfprintservicefactory="{" instance: supportsprinting: false, createprintservice() throw new error("not implemented: createprintservice"); }; exports.pdfprintservicefactory="PDFPrintServiceFactory;" *** }), * ((__unused_webpack_module, exports)> {
+    if (evt.keyCode >= 33 && evt.keyCode <= 40 || evt.keyCode === 32 && curElementTagName !== "BUTTON") {
+      ensureViewerFocused = true;
+    }
+  }
+  if (ensureViewerFocused && !pdfViewer.containsElement(curElement)) {
+    pdfViewer.focus();
+  }
+  if (handled) {
+    evt.preventDefault();
+  }
+}
+function beforeUnload(evt) {
+  evt.preventDefault();
+  evt.returnValue = "";
+  return false;
+}
+function webViewerAnnotationEditorStatesChanged(data) {
+  PDFViewerApplication.externalServices.updateEditorStates(data);
+}
+const PDFPrintServiceFactory = {
+  instance: {
+    supportsPrinting: false,
+    createPrintService() {
+      throw new Error("Not implemented: createPrintService");
+    }
+  }
+};
+exports.PDFPrintServiceFactory = PDFPrintServiceFactory;
+
+/***/ }),
+/* 3 */
+/***/ ((__unused_webpack_module, exports) => {
 
 
 
@@ -2680,13 +2735,76 @@ function approximateFraction(x) {
     if (q > limit) {
       break;
     }
-    if (x_ <= 0 72 180 p q) { c="p;" d="q;" } else a="p;" b="q;" let result; if (x_ - < x_) result="x_" =="=" x ? [a, b] : [b, a]; [c, d] [d, c]; return function roundtodivide(x, div) const r="x" % div; math.round(x + div); getpagesizeinches(_ref) view, userunit, rotate [x1, y1, x2, y2]="view;" changeorientation="rotate" !="=" 0; width="(x2" x1) * userunit; height="(y2" y1) width: width, height: }; backtrackbeforeallvisibleelements(index, views, top) (index 2) index; elt="views[index].div;" pagetop="elt.offsetTop" elt.clienttop; (pagetop>= top) {
+    if (x_ <= p / q) {
+      c = p;
+      d = q;
+    } else {
+      a = p;
+      b = q;
+    }
+  }
+  let result;
+  if (x_ - a / b < c / d - x_) {
+    result = x_ === x ? [a, b] : [b, a];
+  } else {
+    result = x_ === x ? [c, d] : [d, c];
+  }
+  return result;
+}
+function roundToDivide(x, div) {
+  const r = x % div;
+  return r === 0 ? x : Math.round(x - r + div);
+}
+function getPageSizeInches(_ref) {
+  let {
+    view,
+    userUnit,
+    rotate
+  } = _ref;
+  const [x1, y1, x2, y2] = view;
+  const changeOrientation = rotate % 180 !== 0;
+  const width = (x2 - x1) / 72 * userUnit;
+  const height = (y2 - y1) / 72 * userUnit;
+  return {
+    width: changeOrientation ? height : width,
+    height: changeOrientation ? width : height
+  };
+}
+function backtrackBeforeAllVisibleElements(index, views, top) {
+  if (index < 2) {
+    return index;
+  }
+  let elt = views[index].div;
+  let pageTop = elt.offsetTop + elt.clientTop;
+  if (pageTop >= top) {
     elt = views[index - 1].div;
     pageTop = elt.offsetTop + elt.clientTop;
   }
   for (let i = index - 2; i >= 0; --i) {
     elt = views[i].div;
-    if (elt.offsetTop + elt.clientTop + elt.clientHeight <= pagetop) { break; } index="i;" return index; function getvisibleelements(_ref2) let scrollel, views, sortbyvisibility="false," horizontal="false," rtl="false" const top="scrollEl.scrollTop," bottom="top" + scrollel.clientheight; left="scrollEl.scrollLeft," right="left" scrollel.clientwidth; iselementbottomafterviewtop(view) element="view.div;" elementbottom="element.offsetTop" element.clienttop element.clientheight;> top;
+    if (elt.offsetTop + elt.clientTop + elt.clientHeight <= pageTop) {
+      break;
+    }
+    index = i;
+  }
+  return index;
+}
+function getVisibleElements(_ref2) {
+  let {
+    scrollEl,
+    views,
+    sortByVisibility = false,
+    horizontal = false,
+    rtl = false
+  } = _ref2;
+  const top = scrollEl.scrollTop,
+    bottom = top + scrollEl.clientHeight;
+  const left = scrollEl.scrollLeft,
+    right = left + scrollEl.clientWidth;
+  function isElementBottomAfterViewTop(view) {
+    const element = view.div;
+    const elementBottom = element.offsetTop + element.clientTop + element.clientHeight;
+    return elementBottom > top;
   }
   function isElementNextAfterViewHorizontally(view) {
     const element = view.div;
@@ -2718,7 +2836,7 @@ function approximateFraction(x) {
     } else if ((horizontal ? currentWidth : currentHeight) > lastEdge) {
       break;
     }
-    if (viewBottom <= top || currentheight>= bottom || viewRight <= left || currentwidth>= right) {
+    if (viewBottom <= top || currentHeight >= bottom || viewRight <= left || currentWidth >= right) {
       continue;
     }
     const hiddenHeight = Math.max(0, top - currentHeight) + Math.max(0, viewBottom - bottom);
@@ -2787,7 +2905,46 @@ function isValidSpreadMode(mode) {
   return Number.isInteger(mode) && Object.values(SpreadMode).includes(mode) && mode !== SpreadMode.UNKNOWN;
 }
 function isPortraitOrientation(size) {
-  return size.width <= size.height; } const animationstarted="new" promise(function (resolve) { window.requestanimationframe(resolve); }); exports.animationstarted="animationStarted;" docstyle="document.documentElement.style;" exports.docstyle="docStyle;" function clamp(v, min, max) return math.min(math.max(v, min), max); class progressbar #classlist="null;" #disableautofetchtimeout="null;" #percent="0;" #style="null;" #visible="true;" constructor(bar) this.#classlist="bar.classList;" this.#style="bar.style;" get percent() this.#percent; set percent(val) this.#percent="clamp(val," 0, 100); if (isnan(val)) this.#classlist.add("indeterminate"); return; this.#classlist.remove("indeterminate"); this.#style.setproperty("--progressbar-percent", `${this.#percent}%`); setwidth(viewer) (!viewer) container="viewer.parentNode;" scrollbarwidth="container.offsetWidth" - viewer.offsetwidth; (scrollbarwidth> 0) {
+  return size.width <= size.height;
+}
+const animationStarted = new Promise(function (resolve) {
+  window.requestAnimationFrame(resolve);
+});
+exports.animationStarted = animationStarted;
+const docStyle = document.documentElement.style;
+exports.docStyle = docStyle;
+function clamp(v, min, max) {
+  return Math.min(Math.max(v, min), max);
+}
+class ProgressBar {
+  #classList = null;
+  #disableAutoFetchTimeout = null;
+  #percent = 0;
+  #style = null;
+  #visible = true;
+  constructor(bar) {
+    this.#classList = bar.classList;
+    this.#style = bar.style;
+  }
+  get percent() {
+    return this.#percent;
+  }
+  set percent(val) {
+    this.#percent = clamp(val, 0, 100);
+    if (isNaN(val)) {
+      this.#classList.add("indeterminate");
+      return;
+    }
+    this.#classList.remove("indeterminate");
+    this.#style.setProperty("--progressBar-percent", `${this.#percent}%`);
+  }
+  setWidth(viewer) {
+    if (!viewer) {
+      return;
+    }
+    const container = viewer.parentNode;
+    const scrollbarWidth = container.offsetWidth - viewer.offsetWidth;
+    if (scrollbarWidth > 0) {
       this.#style.setProperty("--progressBar-end-offset", `${scrollbarWidth}px`);
     }
   }
@@ -3449,7 +3606,20 @@ class PDFLinkService {
       return;
     }
     const pageNumber = typeof val === "string" && this.pdfViewer.pageLabelToPageNumber(val) || val | 0;
-    if (!(Number.isInteger(pageNumber) && pageNumber > 0 && pageNumber <= this.pagescount)) { console.error(`pdflinkservice.gotopage: "${val}" is not a valid page.`); return; } if (this.pdfhistory) this.pdfhistory.pushcurrentposition(); this.pdfhistory.pushpage(pagenumber); this.pdfviewer.scrollpageintoview({ pagenumber }); addlinkattributes(link, url) let newwindow="arguments.length"> 2 && arguments[2] !== undefined ? arguments[2] : false;
+    if (!(Number.isInteger(pageNumber) && pageNumber > 0 && pageNumber <= this.pagesCount)) {
+      console.error(`PDFLinkService.goToPage: "${val}" is not a valid page.`);
+      return;
+    }
+    if (this.pdfHistory) {
+      this.pdfHistory.pushCurrentPosition();
+      this.pdfHistory.pushPage(pageNumber);
+    }
+    this.pdfViewer.scrollPageIntoView({
+      pageNumber
+    });
+  }
+  addLinkAttributes(link, url) {
+    let newWindow = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
     addLinkAttributes(link, {
       url,
       target: newWindow ? LinkTarget.BLANK : this.externalLinkTarget,
@@ -5707,7 +5877,62 @@ function normalize(text) {
         jj -= rawDiacriticsPositions[rawDiacriticsIndex][0];
         ++rawDiacriticsIndex;
       }
-      for (let j = 1; j <= 0 1 jj; j++) { positions.push([i - shift + j, j]); } shiftorigin if (hastrailingdasheol) i 1; 1, shift]); eol return p4.slice(0, len); p4; (p5) p5.charat(0); (p6) p6.charat(0); (p7) 1]); " "; (i ((_syllablepositions$sy="syllablePositions[syllableIndex])" =="=" null || _syllablepositions$sy="==" void ? : _syllablepositions$sy[1])) const newcharlen="syllablePositions[syllableIndex][0]" ++syllableindex; for (let j="1;" <="newCharLen;" (shift j), p8; }); positions.push([normalized.length, [normalized, positions, hasdiacritics]; function getoriginalindex(diffs, pos, len) (!diffs) [pos, len]; start="pos;" end="pos" len; let _ui_utils.binarysearchfirstitem)(diffs, x> x[0] >= start);
+      for (let j = 1; j <= jj; j++) {
+        positions.push([i - 1 - shift + j, shift - j]);
+      }
+      shift -= jj;
+      shiftOrigin += jj;
+      if (hasTrailingDashEOL) {
+        i += len - 1;
+        positions.push([i - shift + 1, 1 + shift]);
+        shift += 1;
+        shiftOrigin += 1;
+        eol += 1;
+        return p4.slice(0, len);
+      }
+      return p4;
+    }
+    if (p5) {
+      positions.push([i - shift + 1, 1 + shift]);
+      shift += 1;
+      shiftOrigin += 1;
+      eol += 1;
+      return p5.charAt(0);
+    }
+    if (p6) {
+      positions.push([i - shift + 1, shift]);
+      shiftOrigin += 1;
+      eol += 1;
+      return p6.charAt(0);
+    }
+    if (p7) {
+      positions.push([i - shift + 1, shift - 1]);
+      shift -= 1;
+      shiftOrigin += 1;
+      eol += 1;
+      return " ";
+    }
+    if (i + eol === ((_syllablePositions$sy = syllablePositions[syllableIndex]) === null || _syllablePositions$sy === void 0 ? void 0 : _syllablePositions$sy[1])) {
+      const newCharLen = syllablePositions[syllableIndex][0] - 1;
+      ++syllableIndex;
+      for (let j = 1; j <= newCharLen; j++) {
+        positions.push([i - (shift - j), shift - j]);
+      }
+      shift -= newCharLen;
+      shiftOrigin += newCharLen;
+    }
+    return p8;
+  });
+  positions.push([normalized.length, shift]);
+  return [normalized, positions, hasDiacritics];
+}
+function getOriginalIndex(diffs, pos, len) {
+  if (!diffs) {
+    return [pos, len];
+  }
+  const start = pos;
+  const end = pos + len;
+  let i = (0, _ui_utils.binarySearchFirstItem)(diffs, x => x[0] >= start);
   if (diffs[i][0] > start) {
     --i;
   }
@@ -5927,7 +6152,59 @@ function _shouldDirtyMatch2(state) {
     case "again":
       const pageNumber = this._selected.pageIdx + 1;
       const linkService = this._linkService;
-      if (pageNumber >= 1 && pageNumber <= linkservice.pagescount && pagenumber !="=" linkservice.page !linkservice.ispagevisible(pagenumber)) { return true; } false; case "highlightallchange": function _isentireword2(content, startidx, length) let match="content.slice(0," startidx).match(not_diacritic_from_end_reg_exp); if (match) const first="content.charCodeAt(startIdx);" limit="match[1].charCodeAt(0);" ((0, _pdf_find_utils.getcharactertype)(first)="==" (0, _pdf_find_utils.getcharactertype)(limit)) + length).match(not_diacritic_from_start_reg_exp); last="content.charCodeAt(startIdx" length - 1); _pdf_find_utils.getcharactertype)(last)="==" _calculateregexpmatch2(query, entireword, pageindex, pagecontent) matches="this._pageMatches[pageIndex]" = []; matcheslength="this._pageMatchesLength[pageIndex]" (!query) return; diffs="this._pageDiffs[pageIndex];" match; while ((match="query.exec(pageContent))" null) (entireword !_classprivatemethodget(this, _isentireword, _isentireword2).call(this, pagecontent, match.index, match[0].length)) continue; [matchpos, matchlen]="getOriginalIndex(diffs," match[0].length); (matchlen) matches.push(matchpos); matcheslength.push(matchlen); _converttoregexpstring2(query, hasdiacritics) matchdiacritics isunicode="false;" query="query.replace(SPECIAL_CHARS_REG_EXP," (match, p1, p2, p3, p4, p5)> {
+      if (pageNumber >= 1 && pageNumber <= linkService.pagesCount && pageNumber !== linkService.page && !linkService.isPageVisible(pageNumber)) {
+        return true;
+      }
+      return false;
+    case "highlightallchange":
+      return false;
+  }
+  return true;
+}
+function _isEntireWord2(content, startIdx, length) {
+  let match = content.slice(0, startIdx).match(NOT_DIACRITIC_FROM_END_REG_EXP);
+  if (match) {
+    const first = content.charCodeAt(startIdx);
+    const limit = match[1].charCodeAt(0);
+    if ((0, _pdf_find_utils.getCharacterType)(first) === (0, _pdf_find_utils.getCharacterType)(limit)) {
+      return false;
+    }
+  }
+  match = content.slice(startIdx + length).match(NOT_DIACRITIC_FROM_START_REG_EXP);
+  if (match) {
+    const last = content.charCodeAt(startIdx + length - 1);
+    const limit = match[1].charCodeAt(0);
+    if ((0, _pdf_find_utils.getCharacterType)(last) === (0, _pdf_find_utils.getCharacterType)(limit)) {
+      return false;
+    }
+  }
+  return true;
+}
+function _calculateRegExpMatch2(query, entireWord, pageIndex, pageContent) {
+  const matches = this._pageMatches[pageIndex] = [];
+  const matchesLength = this._pageMatchesLength[pageIndex] = [];
+  if (!query) {
+    return;
+  }
+  const diffs = this._pageDiffs[pageIndex];
+  let match;
+  while ((match = query.exec(pageContent)) !== null) {
+    if (entireWord && !_classPrivateMethodGet(this, _isEntireWord, _isEntireWord2).call(this, pageContent, match.index, match[0].length)) {
+      continue;
+    }
+    const [matchPos, matchLen] = getOriginalIndex(diffs, match.index, match[0].length);
+    if (matchLen) {
+      matches.push(matchPos);
+      matchesLength.push(matchLen);
+    }
+  }
+}
+function _convertToRegExpString2(query, hasDiacritics) {
+  const {
+    matchDiacritics
+  } = this._state;
+  let isUnicode = false;
+  query = query.replace(SPECIAL_CHARS_REG_EXP, (match, p1, p2, p3, p4, p5) => {
     if (p1) {
       return `[ ]*\\${p1}[ ]*`;
     }
@@ -6257,7 +6534,60 @@ function isAscii(charCode) {
   return (charCode & 0xff80) === 0;
 }
 function isAsciiAlpha(charCode) {
-  return charCode >= 0x61 && charCode <= 0x7a || charcode>= 0x41 && charCode <= 0x5a; } function isasciidigit(charcode) { return charcode>= 0x30 && charCode <= 0x39; } function isasciispace(charcode) { return charcode="==" 0x20 || 0x09 0x0d 0x0a; ishan(charcode)>= 0x3400 && charCode <= 0x9fff || charcode>= 0xf900 && charCode <= 0xfaff; } function iskatakana(charcode) { return charcode>= 0x30a0 && charCode <= 0x30ff; } function ishiragana(charcode) { return charcode>= 0x3040 && charCode <= 0x309f; } function ishalfwidthkatakana(charcode) { return charcode>= 0xff60 && charCode <= 20 0xff9f; } function isthai(charcode) { return (charcode & 0xff80)="==" 0x0e00; getcharactertype(charcode) if (isalphabeticalscript(charcode)) (isascii(charcode)) (isasciispace(charcode)) charactertype.space; else (isasciialpha(charcode) || isasciidigit(charcode) charcode="==" 0x5f) charactertype.alpha_letter; charactertype.punct; (isthai(charcode)) charactertype.thai_letter; 0xa0) (ishan(charcode)) charactertype.han_letter; (iskatakana(charcode)) charactertype.katakana_letter; (ishiragana(charcode)) charactertype.hiragana_letter; (ishalfwidthkatakana(charcode)) charactertype.halfwidth_katakana_letter; *** }), * ((__unused_webpack_module, exports, __webpack_require__)> {
+  return charCode >= 0x61 && charCode <= 0x7a || charCode >= 0x41 && charCode <= 0x5a;
+}
+function isAsciiDigit(charCode) {
+  return charCode >= 0x30 && charCode <= 0x39;
+}
+function isAsciiSpace(charCode) {
+  return charCode === 0x20 || charCode === 0x09 || charCode === 0x0d || charCode === 0x0a;
+}
+function isHan(charCode) {
+  return charCode >= 0x3400 && charCode <= 0x9fff || charCode >= 0xf900 && charCode <= 0xfaff;
+}
+function isKatakana(charCode) {
+  return charCode >= 0x30a0 && charCode <= 0x30ff;
+}
+function isHiragana(charCode) {
+  return charCode >= 0x3040 && charCode <= 0x309f;
+}
+function isHalfwidthKatakana(charCode) {
+  return charCode >= 0xff60 && charCode <= 0xff9f;
+}
+function isThai(charCode) {
+  return (charCode & 0xff80) === 0x0e00;
+}
+function getCharacterType(charCode) {
+  if (isAlphabeticalScript(charCode)) {
+    if (isAscii(charCode)) {
+      if (isAsciiSpace(charCode)) {
+        return CharacterType.SPACE;
+      } else if (isAsciiAlpha(charCode) || isAsciiDigit(charCode) || charCode === 0x5f) {
+        return CharacterType.ALPHA_LETTER;
+      }
+      return CharacterType.PUNCT;
+    } else if (isThai(charCode)) {
+      return CharacterType.THAI_LETTER;
+    } else if (charCode === 0xa0) {
+      return CharacterType.SPACE;
+    }
+    return CharacterType.ALPHA_LETTER;
+  }
+  if (isHan(charCode)) {
+    return CharacterType.HAN_LETTER;
+  } else if (isKatakana(charCode)) {
+    return CharacterType.KATAKANA_LETTER;
+  } else if (isHiragana(charCode)) {
+    return CharacterType.HIRAGANA_LETTER;
+  } else if (isHalfwidthKatakana(charCode)) {
+    return CharacterType.HALFWIDTH_KATAKANA_LETTER;
+  }
+  return CharacterType.ALPHA_LETTER;
+}
+
+/***/ }),
+/* 20 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
 
@@ -6518,7 +6848,23 @@ class PDFHistory {
     if (this._destination.hash === position.hash) {
       return;
     }
-    if (!this._destination.page && (POSITION_UPDATED_THRESHOLD <= 0 || this._numpositionupdates <="POSITION_UPDATED_THRESHOLD))" { return; } let forcereplace="false;" if (this._destination.page>= position.first && this._destination.page <= position.page) { if (this._destination.dest !="=" undefined || !this._destination.first) return; } forcereplace="true;" this._pushorreplacestate(position, forcereplace); _isvalidpage(val) return number.isinteger(val) && val> 0 && val <= this.linkservice.pagescount; } _isvalidstate(state) { let checkreload="arguments.length"> 1 && arguments[1] !== undefined ? arguments[1] : false;
+    if (!this._destination.page && (POSITION_UPDATED_THRESHOLD <= 0 || this._numPositionUpdates <= POSITION_UPDATED_THRESHOLD)) {
+      return;
+    }
+    let forceReplace = false;
+    if (this._destination.page >= position.first && this._destination.page <= position.page) {
+      if (this._destination.dest !== undefined || !this._destination.first) {
+        return;
+      }
+      forceReplace = true;
+    }
+    this._pushOrReplaceState(position, forceReplace);
+  }
+  _isValidPage(val) {
+    return Number.isInteger(val) && val > 0 && val <= this.linkService.pagesCount;
+  }
+  _isValidState(state) {
+    let checkReload = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
     if (!state) {
       return false;
     }
@@ -7470,9 +7816,12 @@ function _touchSwipe2(evt) {
       const dx = this.touchSwipeState.endX - this.touchSwipeState.startX;
       const dy = this.touchSwipeState.endY - this.touchSwipeState.startY;
       const absAngle = Math.abs(Math.atan2(dy, dx));
-      if (Math.abs(dx) > SWIPE_MIN_DISTANCE_THRESHOLD && (absAngle <= swipe_angle_threshold || absangle>= Math.PI - SWIPE_ANGLE_THRESHOLD)) {
+      if (Math.abs(dx) > SWIPE_MIN_DISTANCE_THRESHOLD && (absAngle <= SWIPE_ANGLE_THRESHOLD || absAngle >= Math.PI - SWIPE_ANGLE_THRESHOLD)) {
         delta = dx;
-      } else if (Math.abs(dy) > SWIPE_MIN_DISTANCE_THRESHOLD && Math.abs(absAngle - Math.PI / 2) <= swipe_angle_threshold) { delta="dy;" } if (delta> 0) {
+      } else if (Math.abs(dy) > SWIPE_MIN_DISTANCE_THRESHOLD && Math.abs(absAngle - Math.PI / 2) <= SWIPE_ANGLE_THRESHOLD) {
+        delta = dy;
+      }
+      if (delta > 0) {
         this.pdfViewer.previousPage();
       } else if (delta < 0) {
         this.pdfViewer.nextPage();
@@ -8528,7 +8877,7 @@ class PDFThumbnailViewer {
     } = this._getVisibleThumbs();
     if (views.length > 0) {
       let shouldScroll = false;
-      if (pageNumber <= first.id || pagenumber>= last.id) {
+      if (pageNumber <= first.id || pageNumber >= last.id) {
         shouldScroll = true;
       } else {
         for (const {
@@ -8603,7 +8952,23 @@ class PDFThumbnailViewer {
       const viewport = firstPdfPage.getViewport({
         scale: 1
       });
-      for (let pageNum = 1; pageNum <= 0 pagescount; ++pagenum) { const thumbnail="new" _pdf_thumbnail_view.pdfthumbnailview({ container: this.container, id: pagenum, defaultviewport: viewport.clone(), optionalcontentconfigpromise, linkservice: this.linkservice, renderingqueue: this.renderingqueue, l10n: this.l10n, pagecolors: this.pagecolors }); this._thumbnails.push(thumbnail); } (_this$_thumbnails$="this._thumbnails[0])" =="=" null || _this$_thumbnails$="==" void ? : _this$_thumbnails$.setpdfpage(firstpdfpage); thumbnailview="this._thumbnails[this._currentPageNumber" - 1]; thumbnailview.div.classlist.add(thumbnail_selected_class); }).catch(reason> {
+      for (let pageNum = 1; pageNum <= pagesCount; ++pageNum) {
+        const thumbnail = new _pdf_thumbnail_view.PDFThumbnailView({
+          container: this.container,
+          id: pageNum,
+          defaultViewport: viewport.clone(),
+          optionalContentConfigPromise,
+          linkService: this.linkService,
+          renderingQueue: this.renderingQueue,
+          l10n: this.l10n,
+          pageColors: this.pageColors
+        });
+        this._thumbnails.push(thumbnail);
+      }
+      (_this$_thumbnails$ = this._thumbnails[0]) === null || _this$_thumbnails$ === void 0 ? void 0 : _this$_thumbnails$.setPdfPage(firstPdfPage);
+      const thumbnailView = this._thumbnails[this._currentPageNumber - 1];
+      thumbnailView.div.classList.add(THUMBNAIL_SELECTED_CLASS);
+    }).catch(reason => {
       console.error("Unable to initialize thumbnail viewer", reason);
     });
   }
@@ -8954,7 +9319,14 @@ class PDFThumbnailView {
       ctx,
       canvas
     } = this._getPageDrawContext();
-    if (img.width <= 2 * canvas.width) { ctx.drawimage(img, 0, img.width, img.height, canvas.width, canvas.height); return canvas; } let reducedwidth="canvas.width" << max_num_scaling_steps; reducedheight="canvas.height" const [reducedimage, reducedimagectx]="TempImageFactory.getCanvas(reducedWidth," reducedheight); while (reducedwidth> img.width || reducedHeight > img.height) {
+    if (img.width <= 2 * canvas.width) {
+      ctx.drawImage(img, 0, 0, img.width, img.height, 0, 0, canvas.width, canvas.height);
+      return canvas;
+    }
+    let reducedWidth = canvas.width << MAX_NUM_SCALING_STEPS;
+    let reducedHeight = canvas.height << MAX_NUM_SCALING_STEPS;
+    const [reducedImage, reducedImageCtx] = TempImageFactory.getCanvas(reducedWidth, reducedHeight);
+    while (reducedWidth > img.width || reducedHeight > img.height) {
       reducedWidth >>= 1;
       reducedHeight >>= 1;
     }
@@ -9267,7 +9639,34 @@ class PDFViewer {
       }
       return true;
     }
-    if (!(0 < val && val <= 0 this.pagescount)) { return false; } const previous="this._currentPageNumber;" this._currentpagenumber="val;" this.eventbus.dispatch("pagechanging", source: this, pagenumber: val, pagelabel: ((_this$_pagelabels="this._pageLabels)" =="=" null || _this$_pagelabels="==" void ? : _this$_pagelabels[val - 1]) ?? null, }); if (resetcurrentpageview) _classprivatemethodget(this, _resetcurrentpageview, _resetcurrentpageview2).call(this); true; get currentpagelabel() var _this$_pagelabels2; ((_this$_pagelabels2="this._pageLabels)" _this$_pagelabels2="==" _this$_pagelabels2[this._currentpagenumber null; set currentpagelabel(val) (!this.pdfdocument) return; let page="val" | 0; (this._pagelabels) i="this._pageLabels.indexOf(val);" (i>= 0) {
+    if (!(0 < val && val <= this.pagesCount)) {
+      return false;
+    }
+    const previous = this._currentPageNumber;
+    this._currentPageNumber = val;
+    this.eventBus.dispatch("pagechanging", {
+      source: this,
+      pageNumber: val,
+      pageLabel: ((_this$_pageLabels = this._pageLabels) === null || _this$_pageLabels === void 0 ? void 0 : _this$_pageLabels[val - 1]) ?? null,
+      previous
+    });
+    if (resetCurrentPageView) {
+      _classPrivateMethodGet(this, _resetCurrentPageView, _resetCurrentPageView2).call(this);
+    }
+    return true;
+  }
+  get currentPageLabel() {
+    var _this$_pageLabels2;
+    return ((_this$_pageLabels2 = this._pageLabels) === null || _this$_pageLabels2 === void 0 ? void 0 : _this$_pageLabels2[this._currentPageNumber - 1]) ?? null;
+  }
+  set currentPageLabel(val) {
+    if (!this.pdfDocument) {
+      return;
+    }
+    let page = val | 0;
+    if (this._pageLabels) {
+      const i = this._pageLabels.indexOf(val);
+      if (i >= 0) {
         page = i + 1;
       }
     }
@@ -9437,7 +9836,39 @@ class PDFViewer {
         scale: scale * _pdfjsLib.PixelsPerInch.PDF_TO_CSS_UNITS
       });
       this.viewer.style.setProperty("--scale-factor", viewport.scale);
-      for (let pageNum = 1; pageNum <= pagescount; ++pagenum) { const pageview="new" _pdf_page_view.pdfpageview({ container: viewerelement, eventbus: this.eventbus, id: pagenum, scale, defaultviewport: viewport.clone(), optionalcontentconfigpromise, renderingqueue: this.renderingqueue, textlayermode, annotationmode, imageresourcespath: this.imageresourcespath, renderer: this.renderer, useonlycsszoom: this.useonlycsszoom, isoffscreencanvassupported: this.isoffscreencanvassupported, maxcanvaspixels: this.maxcanvaspixels, pagecolors: this.pagecolors, l10n: this.l10n, layerproperties }); this._pages.push(pageview); } firstpageview="this._pages[0];" if (firstpageview) firstpageview.setpdfpage(firstpdfpage); this.linkservice.cachepageref(1, firstpdfpage.ref); (this._scrollmode="==" _ui_utils.scrollmode.page) _classprivatemethodget(this, _ensurepageviewvisible, _ensurepageviewvisible2).call(this); else (this._spreadmode !="=" _ui_utils.spreadmode.none) this._updatespreadmode(); _onepagerenderedorforcefetch, _onepagerenderedorforcefetch2).call(this).then(async ()> {
+      for (let pageNum = 1; pageNum <= pagesCount; ++pageNum) {
+        const pageView = new _pdf_page_view.PDFPageView({
+          container: viewerElement,
+          eventBus: this.eventBus,
+          id: pageNum,
+          scale,
+          defaultViewport: viewport.clone(),
+          optionalContentConfigPromise,
+          renderingQueue: this.renderingQueue,
+          textLayerMode,
+          annotationMode,
+          imageResourcesPath: this.imageResourcesPath,
+          renderer: this.renderer,
+          useOnlyCssZoom: this.useOnlyCssZoom,
+          isOffscreenCanvasSupported: this.isOffscreenCanvasSupported,
+          maxCanvasPixels: this.maxCanvasPixels,
+          pageColors: this.pageColors,
+          l10n: this.l10n,
+          layerProperties
+        });
+        this._pages.push(pageView);
+      }
+      const firstPageView = this._pages[0];
+      if (firstPageView) {
+        firstPageView.setPdfPage(firstPdfPage);
+        this.linkService.cachePageRef(1, firstPdfPage.ref);
+      }
+      if (this._scrollMode === _ui_utils.ScrollMode.PAGE) {
+        _classPrivateMethodGet(this, _ensurePageViewVisible, _ensurePageViewVisible2).call(this);
+      } else if (this._spreadMode !== _ui_utils.SpreadMode.NONE) {
+        this._updateSpreadMode();
+      }
+      _classPrivateMethodGet(this, _onePageRenderedOrForceFetch, _onePageRenderedOrForceFetch2).call(this).then(async () => {
         var _this$findController2, _this$_scriptingManag2;
         (_this$findController2 = this.findController) === null || _this$findController2 === void 0 ? void 0 : _this$findController2.setDocument(pdfDocument);
         (_this$_scriptingManag2 = this._scriptingManager) === null || _this$_scriptingManag2 === void 0 ? void 0 : _this$_scriptingManag2.setDocument(pdfDocument);
@@ -9452,7 +9883,12 @@ class PDFViewer {
           return;
         }
         let getPagesLeft = pagesCount - 1;
-        if (getPagesLeft <= 0) { this._pagescapability.resolve(); return; } for (let pagenum="2;" <="pagesCount;" ++pagenum) const promise="pdfDocument.getPage(pageNum).then(pdfPage" => {
+        if (getPagesLeft <= 0) {
+          this._pagesCapability.resolve();
+          return;
+        }
+        for (let pageNum = 2; pageNum <= pagesCount; ++pageNum) {
+          const promise = pdfDocument.getPage(pageNum).then(pdfPage => {
             const pageView = this._pages[pageNum - 1];
             if (!pageView.pdfPage) {
               pageView.setPdfPage(pdfPage);
@@ -9863,7 +10299,42 @@ class PDFViewer {
     if (!this.pdfDocument) {
       return false;
     }
-    if (!(Number.isInteger(pageNumber) && pageNumber > 0 && pageNumber <= this.pagescount)) { console.error(`ispagevisible: "${pagenumber}" is not a valid page.`); return false; } this._getvisiblepages().ids.has(pagenumber); ispagecached(pagenumber) if (!this.pdfdocument) (!(number.isinteger(pagenumber) && pagenumber> 0 && pageNumber <= this.pagescount)) { console.error(`ispagecached: "${pagenumber}" is not a valid page.`); return false; } const pageview="this._pages[pageNumber" - 1]; _classprivatefieldget(this, _buffer).has(pageview); cleanup() for (const of this._pages) if (pageview.renderingstate !="=" _ui_utils.renderingstates.finished) pageview.reset(); _cancelrendering() pageview.cancelrendering(); forcerendering(currentlyvisiblepages) visiblepages="currentlyVisiblePages" || this._getvisiblepages(); scrollahead="_classPrivateMethodGet(this," _getscrollahead, _getscrollahead2).call(this, visiblepages); prerenderextra="this._spreadMode" _ui_utils.spreadmode.none && this._scrollmode _ui_utils.scrollmode.horizontal; this._pages, scrollahead, prerenderextra); (pageview) _classprivatemethodget(this, _ensurepdfpageloaded, _ensurepdfpageloaded2).call(this, pageview).then(()> {
+    if (!(Number.isInteger(pageNumber) && pageNumber > 0 && pageNumber <= this.pagesCount)) {
+      console.error(`isPageVisible: "${pageNumber}" is not a valid page.`);
+      return false;
+    }
+    return this._getVisiblePages().ids.has(pageNumber);
+  }
+  isPageCached(pageNumber) {
+    if (!this.pdfDocument) {
+      return false;
+    }
+    if (!(Number.isInteger(pageNumber) && pageNumber > 0 && pageNumber <= this.pagesCount)) {
+      console.error(`isPageCached: "${pageNumber}" is not a valid page.`);
+      return false;
+    }
+    const pageView = this._pages[pageNumber - 1];
+    return _classPrivateFieldGet(this, _buffer).has(pageView);
+  }
+  cleanup() {
+    for (const pageView of this._pages) {
+      if (pageView.renderingState !== _ui_utils.RenderingStates.FINISHED) {
+        pageView.reset();
+      }
+    }
+  }
+  _cancelRendering() {
+    for (const pageView of this._pages) {
+      pageView.cancelRendering();
+    }
+  }
+  forceRendering(currentlyVisiblePages) {
+    const visiblePages = currentlyVisiblePages || this._getVisiblePages();
+    const scrollAhead = _classPrivateMethodGet(this, _getScrollAhead, _getScrollAhead2).call(this, visiblePages);
+    const preRenderExtra = this._spreadMode !== _ui_utils.SpreadMode.NONE && this._scrollMode !== _ui_utils.ScrollMode.HORIZONTAL;
+    const pageView = this.renderingQueue.getHighestPriority(visiblePages, this._pages, scrollAhead, preRenderExtra);
+    if (pageView) {
+      _classPrivateMethodGet(this, _ensurePdfPageLoaded, _ensurePdfPageLoaded2).call(this, pageView).then(() => {
         this.renderingQueue.renderView(pageView);
       });
       return true;
@@ -10145,7 +10616,15 @@ class PDFViewer {
   }
   previousPage() {
     const currentPageNumber = this._currentPageNumber;
-    if (currentPageNumber <= 1) { return false; } const advance="this._getPageAdvance(currentPageNumber," true) || 1; this.currentpagenumber="Math.max(currentPageNumber" - advance, 1); true; increasescale() let options="arguments.length"> 0 && arguments[0] !== undefined ? arguments[0] : null;
+    if (currentPageNumber <= 1) {
+      return false;
+    }
+    const advance = this._getPageAdvance(currentPageNumber, true) || 1;
+    this.currentPageNumber = Math.max(currentPageNumber - advance, 1);
+    return true;
+  }
+  increaseScale() {
+    let options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
     if (typeof options === "number") {
       console.error("The `increaseScale` method-signature was updated, please use an object instead.");
       options = {
@@ -10473,11 +10952,11 @@ exports.NullL10n = void 0;
 exports.fixupLangCode = fixupLangCode;
 exports.getL10nFallback = getL10nFallback;
 const DEFAULT_L10N_STRINGS = {
-  of_pages: "of ",
-  page_of_pages: "( of )",
-  document_properties_kb: " KB ( bytes)",
-  document_properties_mb: " MB ( bytes)",
-  document_properties_date_string: "1695375479831, ",
+  of_pages: "of {{pagesCount}}",
+  page_of_pages: "({{pageNumber}} of {{pagesCount}})",
+  document_properties_kb: "{{size_kb}} KB ({{size_b}} bytes)",
+  document_properties_mb: "{{size_mb}} MB ({{size_b}} bytes)",
+  document_properties_date_string: "{{date}}, {{time}}",
   document_properties_page_size_unit_inches: "in",
   document_properties_page_size_unit_millimeters: "mm",
   document_properties_page_size_orientation_portrait: "portrait",
@@ -10486,26 +10965,26 @@ const DEFAULT_L10N_STRINGS = {
   document_properties_page_size_name_a4: "A4",
   document_properties_page_size_name_letter: "Letter",
   document_properties_page_size_name_legal: "Legal",
-  document_properties_page_size_dimension_string: " ×   ()",
-  document_properties_page_size_dimension_name_string: " ×   (, )",
+  document_properties_page_size_dimension_string: "{{width}} × {{height}} {{unit}} ({{orientation}})",
+  document_properties_page_size_dimension_name_string: "{{width}} × {{height}} {{unit}} ({{name}}, {{orientation}})",
   document_properties_linearized_yes: "Yes",
   document_properties_linearized_no: "No",
   additional_layers: "Additional Layers",
-  page_landmark: "Page ",
-  thumb_page_title: "Page ",
-  thumb_page_canvas: "Thumbnail of Page ",
+  page_landmark: "Page {{page}}",
+  thumb_page_title: "Page {{page}}",
+  thumb_page_canvas: "Thumbnail of Page {{page}}",
   find_reached_top: "Reached top of document, continued from bottom",
   find_reached_bottom: "Reached end of document, continued from top",
-  "find_match_count[one]": " of  match",
-  "find_match_count[other]": " of  matches",
-  "find_match_count_limit[one]": "More than  match",
-  "find_match_count_limit[other]": "More than  matches",
+  "find_match_count[one]": "{{current}} of {{total}} match",
+  "find_match_count[other]": "{{current}} of {{total}} matches",
+  "find_match_count_limit[one]": "More than {{limit}} match",
+  "find_match_count_limit[other]": "More than {{limit}} matches",
   find_not_found: "Phrase not found",
   page_scale_width: "Page Width",
   page_scale_fit: "Page Fit",
   page_scale_auto: "Automatic Zoom",
   page_scale_actual: "Actual Size",
-  page_scale_percent: "%",
+  page_scale_percent: "{{scale}}%",
   loading_error: "An error occurred while loading the PDF.",
   invalid_file_error: "Invalid or corrupted PDF file.",
   missing_file_error: "Missing PDF file.",
@@ -10520,7 +10999,7 @@ const DEFAULT_L10N_STRINGS = {
   editor_ink_canvas_aria_label: "User-created image"
 };
 {
-  DEFAULT_L10N_STRINGS.print_progress_percent = "%";
+  DEFAULT_L10N_STRINGS.print_progress_percent = "{{progress}}%";
 }
 function getL10nFallback(key, args) {
   switch (key) {
@@ -10557,7 +11036,7 @@ function formatL10nValue(text, args) {
     return text;
   }
   return text.replace(/\{\{\s*(\w+)\s*\}\}/g, (all, name) => {
-    return name in args ? args[name] : " + name + ";
+    return name in args ? args[name] : "{{" + name + "}}";
   });
 }
 const NullL10n = {
@@ -12039,10 +12518,10 @@ function _compareElementPositions(e1, e2) {
   const top2 = rect2.y;
   const bot2 = rect2.y + rect2.height;
   const mid2 = rect2.y + rect2.height / 2;
-  if (mid1 <= top2 && mid2>= bot1) {
+  if (mid1 <= top2 && mid2 >= bot1) {
     return -1;
   }
-  if (mid2 <= top1 && mid1>= bot2) {
+  if (mid2 <= top1 && mid1 >= bot2) {
     return +1;
   }
   const centerX1 = rect1.x + rect1.width / 2;
@@ -12264,7 +12743,27 @@ class TextHighlighter {
     let clearedUntilDivIdx = -1;
     for (const match of matches) {
       const begin = Math.max(clearedUntilDivIdx, match.begin.divIdx);
-      for (let n = begin, end = match.end.divIdx; n <= 0 38 end; n++) { const div="textDivs[n];" div.textcontent="textContentItemsStr[n];" div.classname ; } cleareduntildividx="match.end.divIdx" + 1; if (!(findcontroller !="=" null && findcontroller void findcontroller.highlightmatches) || reset) return; pagematches="findController.pageMatches[pageIdx]" null; pagematcheslength="findController.pageMatchesLength[pageIdx]" this.matches="this._convertMatches(pageMatches," pagematcheslength); this._rendermatches(this.matches); exports.texthighlighter="TextHighlighter;" *** }), * ((__unused_webpack_module, exports, __webpack_require__)> {
+      for (let n = begin, end = match.end.divIdx; n <= end; n++) {
+        const div = textDivs[n];
+        div.textContent = textContentItemsStr[n];
+        div.className = "";
+      }
+      clearedUntilDivIdx = match.end.divIdx + 1;
+    }
+    if (!(findController !== null && findController !== void 0 && findController.highlightMatches) || reset) {
+      return;
+    }
+    const pageMatches = findController.pageMatches[pageIdx] || null;
+    const pageMatchesLength = findController.pageMatchesLength[pageIdx] || null;
+    this.matches = this._convertMatches(pageMatches, pageMatchesLength);
+    this._renderMatches(this.matches);
+  }
+}
+exports.TextHighlighter = TextHighlighter;
+
+/***/ }),
+/* 38 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
 
@@ -12716,7 +13215,8 @@ class SecondaryToolbar {
 }
 exports.SecondaryToolbar = SecondaryToolbar;
 function _updateUIState2() {
-  this.items.firstPage.disabled = this.pageNumber <= 1; this.items.lastpage.disabled="this.pageNumber">= this.pagesCount;
+  this.items.firstPage.disabled = this.pageNumber <= 1;
+  this.items.lastPage.disabled = this.pageNumber >= this.pagesCount;
   this.items.pageRotateCw.disabled = this.pagesCount === 0;
   this.items.pageRotateCcw.disabled = this.pagesCount === 0;
 }
@@ -13108,8 +13608,10 @@ function _updateUIState2() {
   } else {
     items.pageNumber.value = pageNumber;
   }
-  items.previous.disabled = pageNumber <= 1; items.next.disabled="pageNumber">= pagesCount;
-  items.zoomOut.disabled = pageScale <= _ui_utils.min_scale; items.zoomin.disabled="pageScale">= _ui_utils.MAX_SCALE;
+  items.previous.disabled = pageNumber <= 1;
+  items.next.disabled = pageNumber >= pagesCount;
+  items.zoomOut.disabled = pageScale <= _ui_utils.MIN_SCALE;
+  items.zoomIn.disabled = pageScale >= _ui_utils.MAX_SCALE;
   this.l10n.get("page_scale_percent", {
     scale: Math.round(pageScale * 10000) / 100
   }).then(msg => {
@@ -13867,7 +14369,284 @@ document.webL10n = function (window, document, undefined) {
       return list.indexOf(n) !== -1;
     }
     function isBetween(n, start, end) {
-      return start <= 0 1 2 3 10="==" 20="==" 100 1000000="==" n && <="end;" } var pluralrules="{" '0': function (n) { return 'other'; }, '1': if (isbetween(n % 100, 3, 10)) 'few'; (n="==" 0) 'zero'; 11, 99)) 'many'; 2) 'two'; 1) 'one'; '2': !="=" '3': '4': (isbetween(n, 0, 1)) '5': '6': '7': '8': 6)) 7, '9': || isbetween(n 1, 19)) '10': 10, 2, 9) !isbetween(n '11': 4) 12, 14)) 5, '12': 4)) '13': '14': '15': '16': '17': 3) 6) '18': '19': '20': ((isbetween(n !(isbetween(n 19) 70, 79) 90, 99))) !isin(n [12, 72, 92])) [11, 71, 91])) '21': '22': isbetween(n, '23': '24': 10) 13, (isin(n, [2, 12])) [1, 11])) }; index="locales2rules[lang.replace(/-.*$/," '')]; (!(index in pluralrules)) console.warn('plural form unknown for [' + lang ']'); () pluralrules[index]; gmacros.plural="function" (str, param, key, prop) (isnan(n)) str; (prop (!gmacros._pluralrules) gmacros._pluralrules="getPluralRules(gLanguage);" gmacros._pluralrules(n) ']'; key '[zero]' gl10ndata) str="gL10nData[key" '[zero]'][prop]; else '[one]' '[one]'][prop]; '[two]' '[two]'][prop]; (key index][prop]; '[other]' '[other]'][prop]; getl10ndata(key, args, fallback) data="gL10nData[key];" (!data) console.warn('#' ' is undefined.'); (!fallback) null; rv="{};" (var prop data) prop); key); rv[prop]="str;" rv; substindexes(str, reindex="/\{\[\s*([a-zA-Z]+)\(([a-zA-Z]+)\)\s*\]\}/;" rematch="reIndex.exec(str);" (!rematch !rematch.length) macroname="reMatch[1];" paramname="reMatch[2];" param; (args args) param="args[paramName];" (paramname (macroname gmacros) macro="gMacros[macroName];" substarguments(str, key) reargs="/\{\{\s*(.+?)\s*\}\}/g;" str.replace(reargs, (matched_text, arg) arg args[arg]; (arg gl10ndata[arg]; console.log('argument #' matched_text; }); translateelement(element) l10n="getL10nAttributes(element);" (!l10n.id) return; l10n.args); l10n.id (data[gtextprop]) (getchildelementcount(element)="==" element[gtextprop]="data[gTextProp];" children="element.childNodes;" found="false;" i="0," l="children.length;" l; i++) (children[i].nodetype="==" \s .test(children[i].nodevalue)) (found) children[i].nodevalue ; (!found) textnode="document.createTextNode(data[gTextProp]);" element.prepend(textnode); delete data[gtextprop]; k element[k]="data[k];" getchildelementcount(element) (element.children) element.children.length; (typeof element.childelementcount 'undefined') element.childelementcount; count="0;" element.childnodes.length; =="=" ? : 0; count; translatefragment(element) element="element" document.documentelement; elementcount="children.length;" elementcount; translateelement(children[i]); translateelement(element); get: (key, fallbackstring) (index> 0) {
+      return start <= n && n <= end;
+    }
+    var pluralRules = {
+      '0': function (n) {
+        return 'other';
+      },
+      '1': function (n) {
+        if (isBetween(n % 100, 3, 10)) return 'few';
+        if (n === 0) return 'zero';
+        if (isBetween(n % 100, 11, 99)) return 'many';
+        if (n == 2) return 'two';
+        if (n == 1) return 'one';
+        return 'other';
+      },
+      '2': function (n) {
+        if (n !== 0 && n % 10 === 0) return 'many';
+        if (n == 2) return 'two';
+        if (n == 1) return 'one';
+        return 'other';
+      },
+      '3': function (n) {
+        if (n == 1) return 'one';
+        return 'other';
+      },
+      '4': function (n) {
+        if (isBetween(n, 0, 1)) return 'one';
+        return 'other';
+      },
+      '5': function (n) {
+        if (isBetween(n, 0, 2) && n != 2) return 'one';
+        return 'other';
+      },
+      '6': function (n) {
+        if (n === 0) return 'zero';
+        if (n % 10 == 1 && n % 100 != 11) return 'one';
+        return 'other';
+      },
+      '7': function (n) {
+        if (n == 2) return 'two';
+        if (n == 1) return 'one';
+        return 'other';
+      },
+      '8': function (n) {
+        if (isBetween(n, 3, 6)) return 'few';
+        if (isBetween(n, 7, 10)) return 'many';
+        if (n == 2) return 'two';
+        if (n == 1) return 'one';
+        return 'other';
+      },
+      '9': function (n) {
+        if (n === 0 || n != 1 && isBetween(n % 100, 1, 19)) return 'few';
+        if (n == 1) return 'one';
+        return 'other';
+      },
+      '10': function (n) {
+        if (isBetween(n % 10, 2, 9) && !isBetween(n % 100, 11, 19)) return 'few';
+        if (n % 10 == 1 && !isBetween(n % 100, 11, 19)) return 'one';
+        return 'other';
+      },
+      '11': function (n) {
+        if (isBetween(n % 10, 2, 4) && !isBetween(n % 100, 12, 14)) return 'few';
+        if (n % 10 === 0 || isBetween(n % 10, 5, 9) || isBetween(n % 100, 11, 14)) return 'many';
+        if (n % 10 == 1 && n % 100 != 11) return 'one';
+        return 'other';
+      },
+      '12': function (n) {
+        if (isBetween(n, 2, 4)) return 'few';
+        if (n == 1) return 'one';
+        return 'other';
+      },
+      '13': function (n) {
+        if (isBetween(n % 10, 2, 4) && !isBetween(n % 100, 12, 14)) return 'few';
+        if (n != 1 && isBetween(n % 10, 0, 1) || isBetween(n % 10, 5, 9) || isBetween(n % 100, 12, 14)) return 'many';
+        if (n == 1) return 'one';
+        return 'other';
+      },
+      '14': function (n) {
+        if (isBetween(n % 100, 3, 4)) return 'few';
+        if (n % 100 == 2) return 'two';
+        if (n % 100 == 1) return 'one';
+        return 'other';
+      },
+      '15': function (n) {
+        if (n === 0 || isBetween(n % 100, 2, 10)) return 'few';
+        if (isBetween(n % 100, 11, 19)) return 'many';
+        if (n == 1) return 'one';
+        return 'other';
+      },
+      '16': function (n) {
+        if (n % 10 == 1 && n != 11) return 'one';
+        return 'other';
+      },
+      '17': function (n) {
+        if (n == 3) return 'few';
+        if (n === 0) return 'zero';
+        if (n == 6) return 'many';
+        if (n == 2) return 'two';
+        if (n == 1) return 'one';
+        return 'other';
+      },
+      '18': function (n) {
+        if (n === 0) return 'zero';
+        if (isBetween(n, 0, 2) && n !== 0 && n != 2) return 'one';
+        return 'other';
+      },
+      '19': function (n) {
+        if (isBetween(n, 2, 10)) return 'few';
+        if (isBetween(n, 0, 1)) return 'one';
+        return 'other';
+      },
+      '20': function (n) {
+        if ((isBetween(n % 10, 3, 4) || n % 10 == 9) && !(isBetween(n % 100, 10, 19) || isBetween(n % 100, 70, 79) || isBetween(n % 100, 90, 99))) return 'few';
+        if (n % 1000000 === 0 && n !== 0) return 'many';
+        if (n % 10 == 2 && !isIn(n % 100, [12, 72, 92])) return 'two';
+        if (n % 10 == 1 && !isIn(n % 100, [11, 71, 91])) return 'one';
+        return 'other';
+      },
+      '21': function (n) {
+        if (n === 0) return 'zero';
+        if (n == 1) return 'one';
+        return 'other';
+      },
+      '22': function (n) {
+        if (isBetween(n, 0, 1) || isBetween(n, 11, 99)) return 'one';
+        return 'other';
+      },
+      '23': function (n) {
+        if (isBetween(n % 10, 1, 2) || n % 20 === 0) return 'one';
+        return 'other';
+      },
+      '24': function (n) {
+        if (isBetween(n, 3, 10) || isBetween(n, 13, 19)) return 'few';
+        if (isIn(n, [2, 12])) return 'two';
+        if (isIn(n, [1, 11])) return 'one';
+        return 'other';
+      }
+    };
+    var index = locales2rules[lang.replace(/-.*$/, '')];
+    if (!(index in pluralRules)) {
+      console.warn('plural form unknown for [' + lang + ']');
+      return function () {
+        return 'other';
+      };
+    }
+    return pluralRules[index];
+  }
+  gMacros.plural = function (str, param, key, prop) {
+    var n = parseFloat(param);
+    if (isNaN(n)) return str;
+    if (prop != gTextProp) return str;
+    if (!gMacros._pluralRules) {
+      gMacros._pluralRules = getPluralRules(gLanguage);
+    }
+    var index = '[' + gMacros._pluralRules(n) + ']';
+    if (n === 0 && key + '[zero]' in gL10nData) {
+      str = gL10nData[key + '[zero]'][prop];
+    } else if (n == 1 && key + '[one]' in gL10nData) {
+      str = gL10nData[key + '[one]'][prop];
+    } else if (n == 2 && key + '[two]' in gL10nData) {
+      str = gL10nData[key + '[two]'][prop];
+    } else if (key + index in gL10nData) {
+      str = gL10nData[key + index][prop];
+    } else if (key + '[other]' in gL10nData) {
+      str = gL10nData[key + '[other]'][prop];
+    }
+    return str;
+  };
+  function getL10nData(key, args, fallback) {
+    var data = gL10nData[key];
+    if (!data) {
+      console.warn('#' + key + ' is undefined.');
+      if (!fallback) {
+        return null;
+      }
+      data = fallback;
+    }
+    var rv = {};
+    for (var prop in data) {
+      var str = data[prop];
+      str = substIndexes(str, args, key, prop);
+      str = substArguments(str, args, key);
+      rv[prop] = str;
+    }
+    return rv;
+  }
+  function substIndexes(str, args, key, prop) {
+    var reIndex = /\{\[\s*([a-zA-Z]+)\(([a-zA-Z]+)\)\s*\]\}/;
+    var reMatch = reIndex.exec(str);
+    if (!reMatch || !reMatch.length) return str;
+    var macroName = reMatch[1];
+    var paramName = reMatch[2];
+    var param;
+    if (args && paramName in args) {
+      param = args[paramName];
+    } else if (paramName in gL10nData) {
+      param = gL10nData[paramName];
+    }
+    if (macroName in gMacros) {
+      var macro = gMacros[macroName];
+      str = macro(str, param, key, prop);
+    }
+    return str;
+  }
+  function substArguments(str, args, key) {
+    var reArgs = /\{\{\s*(.+?)\s*\}\}/g;
+    return str.replace(reArgs, function (matched_text, arg) {
+      if (args && arg in args) {
+        return args[arg];
+      }
+      if (arg in gL10nData) {
+        return gL10nData[arg];
+      }
+      console.log('argument {{' + arg + '}} for #' + key + ' is undefined.');
+      return matched_text;
+    });
+  }
+  function translateElement(element) {
+    var l10n = getL10nAttributes(element);
+    if (!l10n.id) return;
+    var data = getL10nData(l10n.id, l10n.args);
+    if (!data) {
+      console.warn('#' + l10n.id + ' is undefined.');
+      return;
+    }
+    if (data[gTextProp]) {
+      if (getChildElementCount(element) === 0) {
+        element[gTextProp] = data[gTextProp];
+      } else {
+        var children = element.childNodes;
+        var found = false;
+        for (var i = 0, l = children.length; i < l; i++) {
+          if (children[i].nodeType === 3 && /\S/.test(children[i].nodeValue)) {
+            if (found) {
+              children[i].nodeValue = '';
+            } else {
+              children[i].nodeValue = data[gTextProp];
+              found = true;
+            }
+          }
+        }
+        if (!found) {
+          var textNode = document.createTextNode(data[gTextProp]);
+          element.prepend(textNode);
+        }
+      }
+      delete data[gTextProp];
+    }
+    for (var k in data) {
+      element[k] = data[k];
+    }
+  }
+  function getChildElementCount(element) {
+    if (element.children) {
+      return element.children.length;
+    }
+    if (typeof element.childElementCount !== 'undefined') {
+      return element.childElementCount;
+    }
+    var count = 0;
+    for (var i = 0; i < element.childNodes.length; i++) {
+      count += element.nodeType === 1 ? 1 : 0;
+    }
+    return count;
+  }
+  function translateFragment(element) {
+    element = element || document.documentElement;
+    var children = getTranslatableChildren(element);
+    var elementCount = children.length;
+    for (var i = 0; i < elementCount; i++) {
+      translateElement(children[i]);
+    }
+    translateElement(element);
+  }
+  return {
+    get: function (key, args, fallbackString) {
+      var index = key.lastIndexOf('.');
+      var prop = gTextProp;
+      if (index > 0) {
         prop = key.substring(index + 1);
         key = key.substring(0, index);
       }
@@ -13880,7 +14659,7 @@ document.webL10n = function (window, document, undefined) {
       if (data && prop in data) {
         return data[prop];
       }
-      return ' + key + ';
+      return '{{' + key + '}}';
     },
     getData: function () {
       return gL10nData;
@@ -14480,4 +15259,4 @@ if (document.readyState === "interactive" || document.readyState === "complete")
 
 /******/ })()
 ;
-//# sourceMappingURL=viewer.js.map</=></=></=></=></=></=></=></=></=></=></=></=></=></=></=></=></=></=></=></=></=></=></=></=></=></=></=></=></=></=></=></dialog></=></=></=></=></=></=></=></=></=>
+//# sourceMappingURL=viewer.js.map
