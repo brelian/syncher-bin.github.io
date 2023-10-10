@@ -349,6 +349,171 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://0x400.com/fundamental/storage/mysql-store-tree-using-closure-table/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Pylon, Syncher">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/us.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Pylon's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/fundamental/storage/mysql-store-tree-using-closure-table/" itemprop="url">树在 MySQL 中的存储方式</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-19T16:41:35+08:00">
+                2019-01-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/fundamental/" itemprop="url" rel="index">
+                    <span itemprop="name">Fundamental</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/fundamental/storage/" itemprop="url" rel="index">
+                    <span itemprop="name">Storage</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>参考《大话数据结构》，如下定义树：</p>
+<blockquote>
+<p>树（Tree）是n（n&gt;=0）个结点的有限集。n=0时称为空树。在任意一颗非空树中：<br>有且仅有一个特定的称为根（root）的结点；<br>当n&gt;1时，其余结点可分为m(m&gt;0)个互补交互的有限集T1、T2…Tm，其中每一个集合本身又是一棵树，并称为根的子树（SubTree）。</p>
+</blockquote>
+<p>在工作中，树被广泛使用，最常见的就是数据库中的 B+ 树，除此之外，网站中的菜单也常常是用树来表达其中的层次关系的（hierarchical），本文重点讲解基于菜单树这种应用常见下树在数据库中的存储方式。<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/fundamental/storage/mysql-store-tree-using-closure-table/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </p></div>
+    
+    
+    
+
+    <div>
+    
+    </div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://0x400.com/experience/practice/frontend-datatable-js-example/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1815,178 +1980,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://0x400.com/fundamental/programming-language/php/php-codeigniter-load-database-analysis/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Pylon, Syncher">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/us.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Pylon's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/fundamental/programming-language/php/php-codeigniter-load-database-analysis/" itemprop="url">CodeIgniter load database 分析</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-31T05:47:30+08:00">
-                2018-03-31
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/fundamental/" itemprop="url" rel="index">
-                    <span itemprop="name">Fundamental</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/fundamental/programing-language/" itemprop="url" rel="index">
-                    <span itemprop="name">Programing-language</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/fundamental/programing-language/php/" itemprop="url" rel="index">
-                    <span itemprop="name">PHP</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>使用 CodeIgniter 2.x 可以配置 autoload 自动加载数据库，也可以在 Model 的构造函数中使用<code>$this-&gt;load-&gt;database()</code>方法加载数据库：</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/fundamental/programming-language/php/php-codeigniter-load-database-analysis/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    <div>
-    
-    </div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2035,7 +2028,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">81</span>
+                <span class="site-state-item-count">82</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -2057,7 +2050,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">81</span>
+                <span class="site-state-item-count">83</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
