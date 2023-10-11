@@ -4,8 +4,33 @@
 
     
   <url>
+    <loc>https://0x400.com/experience/practice/troubleshooting-in-practice/</loc>
+    <lastmod>2023-10-11T14:47:24.639Z</lastmod>
+    <data>
+        <display>
+        <title>Troubleshooting in Practice - connection leak detection as an example</title>
+        <pubTime>2023-10-11T14:45:49.000Z</pubTime>
+        
+        <tag>Practice</tag>
+         
+        <tag>Troubleshooting</tag>
+         
+         
+           
+             
+              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
+          
+             
+              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://0x400.com/experience/practice/error-handling-in-practice/</loc>
-    <lastmod>2023-10-10T15:21:52.818Z</lastmod>
+    <lastmod>2023-10-11T06:15:28.731Z</lastmod>
     <data>
         <display>
         <title>Error Handling in Practice - Centralizing Operational Errors in Node.js</title>
