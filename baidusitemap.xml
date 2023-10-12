@@ -4,6 +4,31 @@
 
     
   <url>
+    <loc>https://0x400.com/experience/practice/middleware-installation-in-practice/</loc>
+    <lastmod>2023-10-12T15:38:25.136Z</lastmod>
+    <data>
+        <display>
+        <title>Best Practices for Express Middleware Management</title>
+        <pubTime>2023-10-12T15:29:49.000Z</pubTime>
+        
+        <tag>Middleware</tag>
+         
+        <tag>Graph</tag>
+         
+         
+           
+             
+              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
+          
+             
+              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://0x400.com/experience/practice/troubleshooting-in-practice/</loc>
     <lastmod>2023-10-11T14:47:24.639Z</lastmod>
     <data>
@@ -311,16 +336,14 @@
 
     
   <url>
-    <loc>https://0x400.com/experience/guide/dev-environment-on-windows-with-wsl/</loc>
+    <loc>https://0x400.com/experience/debugging/dev-show-less-is-not-disappearing-debugging/</loc>
     <lastmod>2023-03-11T09:35:49.000Z</lastmod>
     <data>
         <display>
-        <title>搭建基于 Windows 10 和 WSL 的开发环境不完全指南</title>
-        <pubTime>2019-09-23T14:01:34.000Z</pubTime>
+        <title>一按钮不正常显示的 Debug 记录</title>
+        <pubTime>2020-09-16T15:08:34.000Z</pubTime>
         
-        <tag>Windows</tag>
-         
-        <tag>WSL</tag>
+        <tag>XHR</tag>
          
          
            
@@ -328,34 +351,7 @@
               <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
           
              
-              <breadCrumb title="Guide" url="https://0x400.com/categories/experience/guide/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://0x400.com/experience/guide/dev-getting-started-with-sapui5/</loc>
-    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>搭建 SAPUI5 开发环境</title>
-        <pubTime>2020-08-29T07:39:21.000Z</pubTime>
-        
-        <tag>SAPUI5</tag>
-         
-        <tag>SAP</tag>
-         
-        <tag>OpenUI5</tag>
-         
-         
-           
-             
-              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
-          
-             
-              <breadCrumb title="Guide" url="https://0x400.com/categories/experience/guide/"/>
+              <breadCrumb title="Debugging" url="https://0x400.com/categories/experience/debugging/"/>
           
         </display>
     </data>
@@ -371,6 +367,77 @@
         <pubTime>2019-07-02T09:52:34.000Z</pubTime>
         
         <tag>Dev</tag>
+         
+         
+           
+             
+              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
+          
+             
+              <breadCrumb title="Guide" url="https://0x400.com/categories/experience/guide/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://0x400.com/experience/debugging/dev-invalid-state-error-debug-log/</loc>
+    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>INVALID_STATE_ERR Debug 记录</title>
+        <pubTime>2020-05-28T13:08:34.000Z</pubTime>
+        
+        <tag>XHR</tag>
+         
+         
+           
+             
+              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
+          
+             
+              <breadCrumb title="Debugging" url="https://0x400.com/categories/experience/debugging/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://0x400.com/experience/debugging/linux-debug/</loc>
+    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>零散 bug 记录</title>
+        <pubTime>2017-11-10T12:44:49.000Z</pubTime>
+        
+        <tag>BUG</tag>
+         
+         
+           
+             
+              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
+          
+             
+              <breadCrumb title="Debugging" url="https://0x400.com/categories/experience/debugging/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://0x400.com/experience/guide/dev-environment-on-windows-with-wsl/</loc>
+    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>搭建基于 Windows 10 和 WSL 的开发环境不完全指南</title>
+        <pubTime>2019-09-23T14:01:34.000Z</pubTime>
+        
+        <tag>Windows</tag>
+         
+        <tag>WSL</tag>
          
          
            
@@ -434,29 +501,6 @@
 
     
   <url>
-    <loc>https://0x400.com/experience/debugging/dev-invalid-state-error-debug-log/</loc>
-    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>INVALID_STATE_ERR Debug 记录</title>
-        <pubTime>2020-05-28T13:08:34.000Z</pubTime>
-        
-        <tag>XHR</tag>
-         
-         
-           
-             
-              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
-          
-             
-              <breadCrumb title="Debugging" url="https://0x400.com/categories/experience/debugging/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://0x400.com/experience/guide/linux-blog-deployed-in-github-and-coding/</loc>
     <lastmod>2023-03-11T09:35:49.000Z</lastmod>
     <data>
@@ -507,14 +551,14 @@
 
     
   <url>
-    <loc>https://0x400.com/experience/debugging/linux-debug/</loc>
+    <loc>https://0x400.com/experience/practice/dev-load-balancing/</loc>
     <lastmod>2023-03-11T09:35:49.000Z</lastmod>
     <data>
         <display>
-        <title>零散 bug 记录</title>
-        <pubTime>2017-11-10T12:44:49.000Z</pubTime>
+        <title>常用负载均衡算法</title>
+        <pubTime>2019-03-18T12:35:22.000Z</pubTime>
         
-        <tag>BUG</tag>
+        <tag>Balancing</tag>
          
          
            
@@ -522,7 +566,434 @@
               <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
           
              
-              <breadCrumb title="Debugging" url="https://0x400.com/categories/experience/debugging/"/>
+              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://0x400.com/experience/practice/dev-restful-api-design/</loc>
+    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>RESTful API 设计指导</title>
+        <pubTime>2019-02-21T13:47:30.000Z</pubTime>
+        
+        <tag>API</tag>
+         
+        <tag>PHP</tag>
+         
+         
+           
+             
+              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
+          
+             
+              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://0x400.com/experience/guide/dev-getting-started-with-sapui5/</loc>
+    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>搭建 SAPUI5 开发环境</title>
+        <pubTime>2020-08-29T07:39:21.000Z</pubTime>
+        
+        <tag>SAPUI5</tag>
+         
+        <tag>SAP</tag>
+         
+        <tag>OpenUI5</tag>
+         
+         
+           
+             
+              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
+          
+             
+              <breadCrumb title="Guide" url="https://0x400.com/categories/experience/guide/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://0x400.com/experience/practice/dev-wolf-warriors-II-box-office-forecast/</loc>
+    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>战狼 2 票房是否会达到 40 亿？</title>
+        <pubTime>2017-08-06T04:41:32.000Z</pubTime>
+        
+        <tag>战狼</tag>
+         
+        <tag>GM</tag>
+         
+         
+           
+             
+              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
+          
+             
+              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://0x400.com/experience/practice/dev-send-weather-forecast-timely/</loc>
+    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>定时发送天气预报</title>
+        <pubTime>2017-08-11T09:15:49.000Z</pubTime>
+        
+        <tag>API</tag>
+         
+        <tag>PHP</tag>
+         
+         
+           
+             
+              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
+          
+             
+              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://0x400.com/experience/practice/frontend-datatable-js-example/</loc>
+    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>DataTable.js 使用笔记</title>
+        <pubTime>2018-08-10T02:44:55.000Z</pubTime>
+        
+        <tag>jQuery</tag>
+         
+        <tag>Web</tag>
+         
+         
+           
+             
+              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
+          
+             
+              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://0x400.com/experience/practice/frontend-learn-about-cros/</loc>
+    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>关于 CORS 跨域的一点点理解</title>
+        <pubTime>2017-08-02T05:41:32.000Z</pubTime>
+        
+        <tag>CORS</tag>
+         
+         
+           
+             
+              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
+          
+             
+              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://0x400.com/experience/practice/frontend-web-performance-optimization/</loc>
+    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>WEB 性能优化实战</title>
+        <pubTime>2017-08-31T03:30:32.000Z</pubTime>
+        
+        <tag>缓存</tag>
+         
+        <tag>优化</tag>
+         
+        <tag>HTTP</tag>
+         
+         
+           
+             
+              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
+          
+             
+              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://0x400.com/experience/practice/linux-apache-config/</loc>
+    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>Apache 配置文件简述</title>
+        <pubTime>2017-09-10T03:30:32.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>Apache</tag>
+         
+         
+           
+             
+              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
+          
+             
+              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://0x400.com/experience/practice/linux-command-note/</loc>
+    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>Linux 命令使用笔记</title>
+        <pubTime>2017-03-24T15:44:49.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>命令</tag>
+         
+         
+           
+             
+              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
+          
+             
+              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://0x400.com/experience/practice/linux-learning-docker-II/</loc>
+    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>Docker 学习笔记（2）</title>
+        <pubTime>2018-07-17T09:45:19.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>Docker</tag>
+         
+         
+           
+             
+              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
+          
+             
+              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://0x400.com/experience/practice/linux-learning-docker-I/</loc>
+    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>Docker 学习笔记（1）</title>
+        <pubTime>2018-07-05T14:23:19.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>Docker</tag>
+         
+         
+           
+             
+              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
+          
+             
+              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://0x400.com/experience/practice/linux-nginx-fpm-communication-explaination/</loc>
+    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>Nginx 与 PHP-FPM 通信机制</title>
+        <pubTime>2018-03-31T14:23:19.000Z</pubTime>
+        
+        <tag>PHP</tag>
+         
+        <tag>Nginx</tag>
+         
+         
+           
+             
+              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
+          
+             
+              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://0x400.com/experience/practice/linux-reading-note-of-practical-vim-I/</loc>
+    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>《Vim 实用技巧》读书笔记</title>
+        <pubTime>2018-05-08T06:20:11.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>Vim</tag>
+         
+         
+           
+             
+              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
+          
+             
+              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://0x400.com/experience/practice/linux-vim-using-system-clipboard/</loc>
+    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>Vim 使用系统剪切板</title>
+        <pubTime>2018-05-01T11:25:11.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>Vim</tag>
+         
+         
+           
+             
+              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
+          
+             
+              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://0x400.com/experience/practice/linux-reading-note-of-practical-vim-II/</loc>
+    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>《Vim 实用技巧》读书笔记（第二部分）</title>
+        <pubTime>2018-05-10T11:00:11.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>Vim</tag>
+         
+         
+           
+             
+              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
+          
+             
+              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://0x400.com/experience/practice/restful-api-design-along-with-swagger/</loc>
+    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>使用 OpenAPI 设计 RESTful API (一)</title>
+        <pubTime>2021-01-18T13:47:30.000Z</pubTime>
+        
+        <tag>API</tag>
+         
+        <tag>Swagger</tag>
+         
+        <tag>OpenAPI</tag>
+         
+         
+           
+             
+              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
+          
+             
+              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://0x400.com/experience/practice/linux-web-security/</loc>
+    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>WEB 安全实战</title>
+        <pubTime>2017-09-10T15:30:32.000Z</pubTime>
+        
+        <tag>安全</tag>
+         
+         
+           
+             
+              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
+          
+             
+              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
           
         </display>
     </data>
@@ -578,29 +1049,6 @@
 
     
   <url>
-    <loc>https://0x400.com/experience/debugging/dev-show-less-is-not-disappearing-debugging/</loc>
-    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>一按钮不正常显示的 Debug 记录</title>
-        <pubTime>2020-09-16T15:08:34.000Z</pubTime>
-        
-        <tag>XHR</tag>
-         
-         
-           
-             
-              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
-          
-             
-              <breadCrumb title="Debugging" url="https://0x400.com/categories/experience/debugging/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://0x400.com/fundamental/algorithm/dev-lru-implementation/</loc>
     <lastmod>2023-03-11T09:35:49.000Z</lastmod>
     <data>
@@ -632,29 +1080,6 @@
         <pubTime>2019-07-09T06:44:49.000Z</pubTime>
         
         <tag>HashMap</tag>
-         
-         
-           
-             
-              <breadCrumb title="Fundamental" url="https://0x400.com/categories/fundamental/"/>
-          
-             
-              <breadCrumb title="Algorithm" url="https://0x400.com/categories/fundamental/algorithm/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://0x400.com/fundamental/algorithm/lc-100-same-tree/</loc>
-    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>Leetcode-100 —— Same Tree</title>
-        <pubTime>2019-07-10T03:17:49.000Z</pubTime>
-        
-        <tag>Binary</tag>
          
          
            
@@ -739,14 +1164,14 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/algorithm/lc-121-best-time-to-buy-and-sell-stock/</loc>
+    <loc>https://0x400.com/fundamental/algorithm/lc-100-same-tree/</loc>
     <lastmod>2023-03-11T09:35:49.000Z</lastmod>
     <data>
         <display>
-        <title>Leetcode-121 Best Time to Buy and Sell Stock</title>
-        <pubTime>2019-07-12T11:17:49.000Z</pubTime>
+        <title>Leetcode-100 —— Same Tree</title>
+        <pubTime>2019-07-10T03:17:49.000Z</pubTime>
         
-        <tag>Dynamic Programming</tag>
+        <tag>Binary</tag>
          
          
            
@@ -787,14 +1212,14 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/algorithm/lc-202-happy-number/</loc>
+    <loc>https://0x400.com/fundamental/algorithm/lc-121-best-time-to-buy-and-sell-stock/</loc>
     <lastmod>2023-03-11T09:35:49.000Z</lastmod>
     <data>
         <display>
-        <title>Leetcode-202 Happy Number</title>
-        <pubTime>2019-07-30T16:00:00.000Z</pubTime>
+        <title>Leetcode-121 Best Time to Buy and Sell Stock</title>
+        <pubTime>2019-07-12T11:17:49.000Z</pubTime>
         
-        <tag>Algorithm</tag>
+        <tag>Dynamic Programming</tag>
          
          
            
@@ -856,6 +1281,29 @@
 
     
   <url>
+    <loc>https://0x400.com/fundamental/algorithm/lc-202-happy-number/</loc>
+    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>Leetcode-202 Happy Number</title>
+        <pubTime>2019-07-30T16:00:00.000Z</pubTime>
+        
+        <tag>Algorithm</tag>
+         
+         
+           
+             
+              <breadCrumb title="Fundamental" url="https://0x400.com/categories/fundamental/"/>
+          
+             
+              <breadCrumb title="Algorithm" url="https://0x400.com/categories/fundamental/algorithm/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://0x400.com/fundamental/algorithm/lc-21-merge-two-sorted-lists/</loc>
     <lastmod>2023-03-11T09:35:49.000Z</lastmod>
     <data>
@@ -902,29 +1350,6 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/algorithm/lc-435-non-overlapping-intervals/</loc>
-    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>Leetcode-435 non-overlapping intervals</title>
-        <pubTime>2019-07-10T10:17:49.000Z</pubTime>
-        
-        <tag>Tree</tag>
-         
-         
-           
-             
-              <breadCrumb title="Fundamental" url="https://0x400.com/categories/fundamental/"/>
-          
-             
-              <breadCrumb title="Algorithm" url="https://0x400.com/categories/fundamental/algorithm/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://0x400.com/fundamental/algorithm/lc-241-different-ways-to-add-parentheses/</loc>
     <lastmod>2023-03-11T09:35:49.000Z</lastmod>
     <data>
@@ -948,12 +1373,12 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/algorithm/lc-617-merge-tow-binary-trees/</loc>
+    <loc>https://0x400.com/fundamental/algorithm/lc-435-non-overlapping-intervals/</loc>
     <lastmod>2023-03-11T09:35:49.000Z</lastmod>
     <data>
         <display>
-        <title>Leetcode-617 Merge Two Binary Trees</title>
-        <pubTime>2019-07-22T00:52:34.000Z</pubTime>
+        <title>Leetcode-435 non-overlapping intervals</title>
+        <pubTime>2019-07-10T10:17:49.000Z</pubTime>
         
         <tag>Tree</tag>
          
@@ -994,14 +1419,14 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/algorithm/lc-739-daily-temperatures/</loc>
+    <loc>https://0x400.com/fundamental/algorithm/lc-617-merge-tow-binary-trees/</loc>
     <lastmod>2023-03-11T09:35:49.000Z</lastmod>
     <data>
         <display>
-        <title>Leetcode-739 Daily Temperatures</title>
-        <pubTime>2019-08-04T09:50:20.000Z</pubTime>
+        <title>Leetcode-617 Merge Two Binary Trees</title>
+        <pubTime>2019-07-22T00:52:34.000Z</pubTime>
         
-        <tag>Stack</tag>
+        <tag>Tree</tag>
          
          
            
@@ -1025,6 +1450,52 @@
         <pubTime>2019-07-10T03:17:49.000Z</pubTime>
         
         <tag>Binary</tag>
+         
+         
+           
+             
+              <breadCrumb title="Fundamental" url="https://0x400.com/categories/fundamental/"/>
+          
+             
+              <breadCrumb title="Algorithm" url="https://0x400.com/categories/fundamental/algorithm/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://0x400.com/fundamental/algorithm/lc-739-daily-temperatures/</loc>
+    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>Leetcode-739 Daily Temperatures</title>
+        <pubTime>2019-08-04T09:50:20.000Z</pubTime>
+        
+        <tag>Stack</tag>
+         
+         
+           
+             
+              <breadCrumb title="Fundamental" url="https://0x400.com/categories/fundamental/"/>
+          
+             
+              <breadCrumb title="Algorithm" url="https://0x400.com/categories/fundamental/algorithm/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://0x400.com/fundamental/algorithm/lc-80-remove-duplicates-from-sorted-array-ii/</loc>
+    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>LeetCode 80  Remove Duplicates from Sorted Array II</title>
+        <pubTime>2020-03-10T13:17:49.000Z</pubTime>
+        
+        <tag>Array</tag>
          
          
            
@@ -1088,12 +1559,12 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/algorithm/lc-80-remove-duplicates-from-sorted-array-ii/</loc>
+    <loc>https://0x400.com/fundamental/algorithm/lc-989-add-to-array-form-of-integer/</loc>
     <lastmod>2023-03-11T09:35:49.000Z</lastmod>
     <data>
         <display>
-        <title>LeetCode 80  Remove Duplicates from Sorted Array II</title>
-        <pubTime>2020-03-10T13:17:49.000Z</pubTime>
+        <title>Leetcode-898 Add to Array-Form of Integer</title>
+        <pubTime>2019-07-23T07:39:00.000Z</pubTime>
         
         <tag>Array</tag>
          
@@ -1134,52 +1605,6 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/algorithm/lc-989-add-to-array-form-of-integer/</loc>
-    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>Leetcode-898 Add to Array-Form of Integer</title>
-        <pubTime>2019-07-23T07:39:00.000Z</pubTime>
-        
-        <tag>Array</tag>
-         
-         
-           
-             
-              <breadCrumb title="Fundamental" url="https://0x400.com/categories/fundamental/"/>
-          
-             
-              <breadCrumb title="Algorithm" url="https://0x400.com/categories/fundamental/algorithm/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://0x400.com/experience/practice/dev-load-balancing/</loc>
-    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>常用负载均衡算法</title>
-        <pubTime>2019-03-18T12:35:22.000Z</pubTime>
-        
-        <tag>Balancing</tag>
-         
-         
-           
-             
-              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
-          
-             
-              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://0x400.com/fundamental/algorithm/lc-992-subarrays-with-k-different-integers/</loc>
     <lastmod>2023-03-11T09:35:49.000Z</lastmod>
     <data>
@@ -1196,381 +1621,6 @@
           
              
               <breadCrumb title="Algorithm" url="https://0x400.com/categories/fundamental/algorithm/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://0x400.com/experience/practice/dev-restful-api-design/</loc>
-    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>RESTful API 设计指导</title>
-        <pubTime>2019-02-21T13:47:30.000Z</pubTime>
-        
-        <tag>API</tag>
-         
-        <tag>PHP</tag>
-         
-         
-           
-             
-              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
-          
-             
-              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://0x400.com/experience/practice/dev-send-weather-forecast-timely/</loc>
-    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>定时发送天气预报</title>
-        <pubTime>2017-08-11T09:15:49.000Z</pubTime>
-        
-        <tag>API</tag>
-         
-        <tag>PHP</tag>
-         
-         
-           
-             
-              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
-          
-             
-              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://0x400.com/experience/practice/dev-wolf-warriors-II-box-office-forecast/</loc>
-    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>战狼 2 票房是否会达到 40 亿？</title>
-        <pubTime>2017-08-06T04:41:32.000Z</pubTime>
-        
-        <tag>战狼</tag>
-         
-        <tag>GM</tag>
-         
-         
-           
-             
-              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
-          
-             
-              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://0x400.com/experience/practice/frontend-learn-about-cros/</loc>
-    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>关于 CORS 跨域的一点点理解</title>
-        <pubTime>2017-08-02T05:41:32.000Z</pubTime>
-        
-        <tag>CORS</tag>
-         
-         
-           
-             
-              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
-          
-             
-              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://0x400.com/experience/practice/linux-apache-config/</loc>
-    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>Apache 配置文件简述</title>
-        <pubTime>2017-09-10T03:30:32.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>Apache</tag>
-         
-         
-           
-             
-              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
-          
-             
-              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://0x400.com/experience/practice/frontend-datatable-js-example/</loc>
-    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>DataTable.js 使用笔记</title>
-        <pubTime>2018-08-10T02:44:55.000Z</pubTime>
-        
-        <tag>jQuery</tag>
-         
-        <tag>Web</tag>
-         
-         
-           
-             
-              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
-          
-             
-              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://0x400.com/experience/practice/frontend-web-performance-optimization/</loc>
-    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>WEB 性能优化实战</title>
-        <pubTime>2017-08-31T03:30:32.000Z</pubTime>
-        
-        <tag>缓存</tag>
-         
-        <tag>优化</tag>
-         
-        <tag>HTTP</tag>
-         
-         
-           
-             
-              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
-          
-             
-              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://0x400.com/experience/practice/linux-command-note/</loc>
-    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>Linux 命令使用笔记</title>
-        <pubTime>2017-03-24T15:44:49.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>命令</tag>
-         
-         
-           
-             
-              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
-          
-             
-              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://0x400.com/experience/practice/linux-learning-docker-I/</loc>
-    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>Docker 学习笔记（1）</title>
-        <pubTime>2018-07-05T14:23:19.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>Docker</tag>
-         
-         
-           
-             
-              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
-          
-             
-              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://0x400.com/experience/practice/linux-reading-note-of-practical-vim-II/</loc>
-    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>《Vim 实用技巧》读书笔记（第二部分）</title>
-        <pubTime>2018-05-10T11:00:11.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>Vim</tag>
-         
-         
-           
-             
-              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
-          
-             
-              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://0x400.com/experience/practice/linux-nginx-fpm-communication-explaination/</loc>
-    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>Nginx 与 PHP-FPM 通信机制</title>
-        <pubTime>2018-03-31T14:23:19.000Z</pubTime>
-        
-        <tag>PHP</tag>
-         
-        <tag>Nginx</tag>
-         
-         
-           
-             
-              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
-          
-             
-              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://0x400.com/experience/practice/linux-reading-note-of-practical-vim-I/</loc>
-    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>《Vim 实用技巧》读书笔记</title>
-        <pubTime>2018-05-08T06:20:11.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>Vim</tag>
-         
-         
-           
-             
-              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
-          
-             
-              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://0x400.com/experience/practice/linux-learning-docker-II/</loc>
-    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>Docker 学习笔记（2）</title>
-        <pubTime>2018-07-17T09:45:19.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>Docker</tag>
-         
-         
-           
-             
-              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
-          
-             
-              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://0x400.com/experience/practice/restful-api-design-along-with-swagger/</loc>
-    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>使用 OpenAPI 设计 RESTful API (一)</title>
-        <pubTime>2021-01-18T13:47:30.000Z</pubTime>
-        
-        <tag>API</tag>
-         
-        <tag>Swagger</tag>
-         
-        <tag>OpenAPI</tag>
-         
-         
-           
-             
-              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
-          
-             
-              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://0x400.com/experience/practice/linux-web-security/</loc>
-    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>WEB 安全实战</title>
-        <pubTime>2017-09-10T15:30:32.000Z</pubTime>
-        
-        <tag>安全</tag>
-         
-         
-           
-             
-              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
-          
-             
-              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
           
         </display>
     </data>
@@ -1603,31 +1653,6 @@
 
     
   <url>
-    <loc>https://0x400.com/experience/practice/linux-vim-using-system-clipboard/</loc>
-    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>Vim 使用系统剪切板</title>
-        <pubTime>2018-05-01T11:25:11.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>Vim</tag>
-         
-         
-           
-             
-              <breadCrumb title="Experience" url="https://0x400.com/categories/experience/"/>
-          
-             
-              <breadCrumb title="Practice" url="https://0x400.com/categories/experience/practice/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://0x400.com/fundamental/network/network-introduction-of-wireshark/</loc>
     <lastmod>2023-03-11T09:35:49.000Z</lastmod>
     <data>
@@ -1648,29 +1673,6 @@
           
              
               <breadCrumb title="Network" url="https://0x400.com/categories/fundamental/network/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://0x400.com/fundamental/storage/mysql-optimize/</loc>
-    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>MySQL 基础优化</title>
-        <pubTime>2017-08-08T10:03:32.000Z</pubTime>
-        
-        <tag>MySQL</tag>
-         
-         
-           
-             
-              <breadCrumb title="Fundamental" url="https://0x400.com/categories/fundamental/"/>
-          
-             
-              <breadCrumb title="Storage" url="https://0x400.com/categories/fundamental/storage/"/>
           
         </display>
     </data>
@@ -1726,12 +1728,12 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/storage/mysql-sql-about-trigger/</loc>
+    <loc>https://0x400.com/fundamental/storage/mysql-optimize/</loc>
     <lastmod>2023-03-11T09:35:49.000Z</lastmod>
     <data>
         <display>
-        <title>MySQL 触发器相关的 SQL</title>
-        <pubTime>2018-03-26T11:42:28.000Z</pubTime>
+        <title>MySQL 基础优化</title>
+        <pubTime>2017-08-08T10:03:32.000Z</pubTime>
         
         <tag>MySQL</tag>
          
@@ -1774,14 +1776,14 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/programming-language/javascript/dev-translate-promise-a-plus-specification/</loc>
+    <loc>https://0x400.com/fundamental/storage/mysql-sql-about-trigger/</loc>
     <lastmod>2023-03-11T09:35:49.000Z</lastmod>
     <data>
         <display>
-        <title>Promises/A+ 标准翻译</title>
-        <pubTime>2019-10-17T11:23:12.000Z</pubTime>
+        <title>MySQL 触发器相关的 SQL</title>
+        <pubTime>2018-03-26T11:42:28.000Z</pubTime>
         
-        <tag>Promise</tag>
+        <tag>MySQL</tag>
          
          
            
@@ -1789,10 +1791,7 @@
               <breadCrumb title="Fundamental" url="https://0x400.com/categories/fundamental/"/>
           
              
-              <breadCrumb title="Programing-language" url="https://0x400.com/categories/fundamental/programing-language/"/>
-          
-             
-              <breadCrumb title="JavaScript" url="https://0x400.com/categories/fundamental/programing-language/javascript/"/>
+              <breadCrumb title="Storage" url="https://0x400.com/categories/fundamental/storage/"/>
           
         </display>
     </data>
@@ -1886,32 +1885,6 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/programming-language/php/php-codeigniter-load-database-analysis/</loc>
-    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>CodeIgniter load database 分析</title>
-        <pubTime>2018-03-30T21:47:30.000Z</pubTime>
-        
-        <tag>PHP</tag>
-         
-         
-           
-             
-              <breadCrumb title="Fundamental" url="https://0x400.com/categories/fundamental/"/>
-          
-             
-              <breadCrumb title="Programing-language" url="https://0x400.com/categories/fundamental/programing-language/"/>
-          
-             
-              <breadCrumb title="PHP" url="https://0x400.com/categories/fundamental/programing-language/php/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://0x400.com/fundamental/programming-language/javascript/frontend-javascript-execution-procession/</loc>
     <lastmod>2023-03-11T09:35:49.000Z</lastmod>
     <data>
@@ -1966,6 +1939,58 @@
 
     
   <url>
+    <loc>https://0x400.com/fundamental/programming-language/php/php-internal-function-note/</loc>
+    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>PHP 内置函数的一些注意事项</title>
+        <pubTime>2018-02-10T11:30:30.000Z</pubTime>
+        
+        <tag>PHP</tag>
+         
+         
+           
+             
+              <breadCrumb title="Fundamental" url="https://0x400.com/categories/fundamental/"/>
+          
+             
+              <breadCrumb title="Programing-language" url="https://0x400.com/categories/fundamental/programing-language/"/>
+          
+             
+              <breadCrumb title="PHP" url="https://0x400.com/categories/fundamental/programing-language/php/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://0x400.com/fundamental/programming-language/php/php-codeigniter-load-database-analysis/</loc>
+    <lastmod>2023-03-11T09:35:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>CodeIgniter load database 分析</title>
+        <pubTime>2018-03-30T21:47:30.000Z</pubTime>
+        
+        <tag>PHP</tag>
+         
+         
+           
+             
+              <breadCrumb title="Fundamental" url="https://0x400.com/categories/fundamental/"/>
+          
+             
+              <breadCrumb title="Programing-language" url="https://0x400.com/categories/fundamental/programing-language/"/>
+          
+             
+              <breadCrumb title="PHP" url="https://0x400.com/categories/fundamental/programing-language/php/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://0x400.com/fundamental/programming-language/php/php-learn-regular-expression/</loc>
     <lastmod>2023-03-11T09:35:49.000Z</lastmod>
     <data>
@@ -1992,14 +2017,14 @@
 
     
   <url>
-    <loc>https://0x400.com/fundamental/programming-language/php/php-internal-function-note/</loc>
+    <loc>https://0x400.com/fundamental/programming-language/javascript/dev-translate-promise-a-plus-specification/</loc>
     <lastmod>2023-03-11T09:35:49.000Z</lastmod>
     <data>
         <display>
-        <title>PHP 内置函数的一些注意事项</title>
-        <pubTime>2018-02-10T11:30:30.000Z</pubTime>
+        <title>Promises/A+ 标准翻译</title>
+        <pubTime>2019-10-17T11:23:12.000Z</pubTime>
         
-        <tag>PHP</tag>
+        <tag>Promise</tag>
          
          
            
@@ -2010,7 +2035,7 @@
               <breadCrumb title="Programing-language" url="https://0x400.com/categories/fundamental/programing-language/"/>
           
              
-              <breadCrumb title="PHP" url="https://0x400.com/categories/fundamental/programing-language/php/"/>
+              <breadCrumb title="JavaScript" url="https://0x400.com/categories/fundamental/programing-language/javascript/"/>
           
         </display>
     </data>
